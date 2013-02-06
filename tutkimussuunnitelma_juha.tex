@@ -44,19 +44,6 @@ Aalto-yliopisto,\\
 
 % ---------------------------------------------------------------------
 
-% POISTA TÄMÄ:
-Tämä pohja on lukuisia kandidaatintöitä ohjanneen Vesa Hirvisalon
-käyttämä sabluuna tutkimussuunnitelmaksi.  Annettua otsikointia ja
-järjestystä voi käyttää apuna oman suunnitelman laatimisessa.
-Tärkeintä on tuottaa työkalu sinun ja ohjaajan väliseen
-kommunikointiin aiheen selventämisessä. Lisäksi aikatauluksen
-miettiminen heti alussa on tarpeellista.
-
-Tämän lähdetiedoston nimi on \verb!tutkimussuunnitelma.tex! ja tästä
-saa PDF-tiedoston joko \verb!make tutkimussuunnitelma.pdf! tai
-\verb!pdflatex tutkimussuunnitelma.tex! (ja jos lähteitä, niin lisäksi
-\verb!bibtex tutkimussuunnitelma!).  
-
 \vspace{10mm}
 
 % MUOKKAA TÄHÄN. Jos tarvitset tähän viitteitä, käytä
@@ -66,25 +53,22 @@ saa PDF-tiedoston joko \verb!make tutkimussuunnitelma.pdf! tai
 % sabluuna. Kursivoidut osat \emph{...} ovat kurssin henkilökunnan
 % lisäämiä. 
 
-\textbf{Kandidaatintyön nimi:} Oma aiheeni
+\textbf{Kandidaatintyön nimi:} Juurisyyanalyysin soveltuvuus ohjelmistoprojektien retrospektiiveissä
 
-\textbf{Työn tekijä:} Teemu Teekkari
+\textbf{Työn tekijä:} Juha Viljanen
 
-\textbf{Ohjaaja:} Olli Ohjaaja
+\textbf{Ohjaaja:} Timo Lehtinen
 
 
 \section{Tiivistelmä tutkimuksesta}
 
-Tutkimusaiheen lyhyt kuvaus. Esittele aiheesi tiivistetysti.
+Ketterässä ohjelmistokehityksessä kehitystiimi järjestää säännöllisesti iteraation päätteeksi retrospektiivejä. Näissä käydään läpi iteraation aikana löytyneitä ongelmia, sekä pohditaan tapoja ratkaista ne ja siten parantaa tiimin ohjelmistokehitysprosessia.Juurisyyanalyysi tarjoaa rakenteellisen tavan löytää ongelmien aiheuttajia ja voi siten auttaa ehkäisemään näiden ongelmien esiintymistä jatkossa. 
+
+Tämä työ tutkii juurisyyanalyysin soveltuvuutta menetelmäksi ketterän ohjelmistokehitystiimin retrospektiiviin.
 
 \section{Tavoitteet ja näkökulmat}
 
-Mitä haluat saada selville? Mitkä ovat keskeisiä kysymyksiä? Mistä
-näkökulmasta asiaa tarkastellaan?
-
-Tutkimuskysymystä kannattaa siis rajata ja tarkentaa sekä huomioida
-näkökulman merkitys. Ts. jänikset eläintieteen kannalta ovat eri aihe
-kuin jänikset metsästyksen näkökulmasta.
+Tavoitteena on tutkia, minkälaisia menetelmiä aiemmassa kirjallisuudessa on esitetty juurisyyanalyysiä soveltaviin retrospektiiveihin? Lisäksi haluan selvittää, kokeeko ketterä ohjelmistokehitystiimi juurisyyanalyysin tehokkaaksi välineeksi retrospektiiviinsä.
 
 \section{Tutkimusmateriaali}
 
@@ -95,6 +79,13 @@ Pitää olla siis hieman kuvaa siitä, minkälaisen materiaalin kanssa
 ollaan tekemisissä ja mitä sellaisen käsittelyyn tarvitaan (etenkin
 siis tarvittavan ajan puolesta; ts. kuinka monta tuntia/minuuttia per
 lähde?).
+
+Juurisyyanalyysin käytöstä ongelmanratkaisumenetelmänä erilaisissa retrospektiiveissä löytyy materiaalia. Haasteena on ...
+
+Rajaukset:
+-haetaan materiaalia vain scopuksesta
+-vain 1990 jälkeen tulleet paperit
+-hakusanoina käytetään "retrospective", "postmortem analysis", "post-project review" ja "software engineering"
 
 \section{Tutkimusmenetelmät}
 
@@ -118,6 +109,21 @@ oikeasti, kuinka sinä saat tutkielman tehtyä.
 Ja... raportointi ei ole kirjoittamista vaan jo kirjoitettujen
 muistiinpanojen koostamista yhteneväksi teokseksi.
 
+\subsection{Järjestelmällinen kirjallisuuskatsaus}
+Suoritan kirjallisuustutkimuksen Kitchenhamin määrittelemänä järjestelmällisenä kirjallisuuskatsauksena. Suoritan haun pelkästään Scopus-tiedokannassa. Käyttämäni hakusanat tulevat olemaan "retrospective", "postmortem analysis", "post-project review" ja "software engineering". Näitä haetaan otsikosta ja avainsanoista. Artikkelien tulee olla julkaistu vuodesta 1990 alkaen. Vanhemmat artikkelit jäävät rajaukseni ulkopuolelle.
+
+Löytyneistä luen abstraktin ja tarkistan sisältääkö artikkeli jonkin retrospektiivin (tai vastaavan) menetelmän. Nämä artikkelit kerään taulukkolaskentaohjelmaan tekemääni viitekokoelmaan, jossa on näiden artikkelien tekijät, otsikko, foorumi (lehden nimi, tms.), vuosi, Abstrakti ja merkintä siitä, onko artikkelissa mainittu menetelmä juurisyyanalyysi. Lisäksi merkitsen muistiin muut lähdeviitteeseen tarvittavat tiedot.
+
+Tästä joukosta kandidaatin työhön päätyvät ne artikkelit, jotka sisältävät maininnan juurisyyanalyysistä. Tätä silmäilen artikkelia ja luen siitä abstraktin, sekä tarpeen mukaan tutkimusmenetelmästä, johtopäätökset ja johdantoa. Ne artikkelit, jotka käsittelevät juurisyyanalyysiä retrospektiivin menetelmänä luen tarkemmin. Näistä teen myös artikkelikohtaisia muistiinpanoja.
+
+Systemaattisen kirjallisuustutkimuksen tarkoituksena on tehdä aineistonhakuprosessista tarkastettava ja toistettava.
+
+%\citet[s. 21]{Kitchenham2010} on havainnut asian jos toisenkin. 
+\subsection{Kenttätutkimus}
+Kandidaatin työhön tekemäni kenttätutkimuksen suoritan ohjelmistoyrityksen ketterän kehitystiimin kanssa. Sovin ennalta tiimin kanssa asiasta ja sovimme tiimille sopivan ajan. Tiimi valmistelee yhden tai useamman aiheen (ongelman), joita he haluavat käsitellä juurisyyanalyysi-sessiossa. Minä ohjaan session. Käytämme työkaluna Aalto-yliopistolla kehitettyä ARCA-tool -web-sovellusta mahdollistamaan hajautetun tiimin yhteisen analyysin. Videoin session ruudunkaappaus-sovelluksella. 
+
+Session jälkeen kerään osallistuneilta palautteen ennalta tekemäni palaute-lomakkeen avulla. Lisäksi kerään osallistujilta suullisen palautteen. Kysymykset käsittelevät tekemämme juurisyyanalyysin ja käyttämämme työkalun helppokäyttöisyyttä ja tehokkuutta. Kenttätutkimuksen analysointi tapahtuu tämän aineiston perusteella. Tutkimuksessa käytetty juurisyyanalyysimenetelmä on pelkistetty versio ARCA-menetelmästä.
+
 \section{Haasteet}
 
 Yleensä kaikkiin töihin liittyy kompastuskiviä. Ne on syytä tiedostaa
@@ -127,43 +133,86 @@ taas materiaalia on hukkumiseen asti.  Eli, nämä pitäisi kyseisen
 tutkimuksen osalta kirjata ylös, ja nähdä ne myös mahdollisuuksina
 (positiivisina haasteina) ei ainostaan esteinä.
 
+-materiaalin löytyminen SLR:n avulla.
+
 \section{Resurssit}
 
-Kuka tätä työtä tekee, kuka ohjaa, jne. Paljonko on käyttää
-aikaa. Tarvitaanko muuta? (Onko työssä joku kokeellinen osuus?)
+Kandidaatintyön tekee Juha Viljanen ja sitä ohjaa Timo Lehtinen. Työhön tulen käyttämään suurinpiirtein kandidaatin työlle määritellyn tuntimäärän. Teen kandidaatintyötä muun opiskelun ja osa-aikatyön ohessa.
+Työhön kuuluu myös kokeellinen osuus case-tutkimuksen muodossa ketterän ohjelmistokehitystiimin iteraation retrospektiivissä. Näitä sessioita tulee olemaan 1-2.
 
 \section{Aikataulu}
 
-Laadi tutkimustyölle ja raportoinnille realistinen aikataulu.
-Huolehdi, että suunnitelmasi vastaa kandidaatin tutkielman sekä
-seminaarin aikataulua sekä laajuutta.  \emph{Kurssiesitteessä omalle
-  kirjoitusprosessille on arvioitu noin 6 op eli 160 tuntia eli noin 4
-  viikkoa työtä.}
-
-%\begin{tabular}{|p{30mm}|p{120mm}|}
-%\hline
-%abcd   & qwerty qwerty \\ \hline
-%abcd   & qwerty qwerty \\ \hline
-%abcd   & qwerty qwerty \\ \hline
-%\end{tabular}
+\begin{tabular}{|p{30mm}|p{120mm}|}
+\hline
+\bf{Viikko} & \bf{Työn vaihe} \\ \hline
+6   & Tiedonhaun tehtävä, tutkimussuunnitelma \\ \hline
+7   & Lähteiden keräämistä, V1-palautus \\ \hline
+8  & K2 tapaaminen, korjaukset V1:een ja tutkimussuunnitelmaan, lähteiden keräämistä, V2 kirjoittamista, mahdollinen toinen kenttätutkimus \\ \hline
+9-10 &  Lähteiden keräämistä, V2 kirjoittaminen palautuskuntoon, Kielikeskuksen palautekeskustelu \\ \hline
+11 &  K3 tapaaminen, korjaukset V2:een, V3:n kirjoittamista, opponointi , Kielikeskuksen palautekeskustelu \\ \hline
+12-14 & V3:n kirjoittaminen palautuskuntoon, Kielikeskuksen palautekeskustelu \\ \hline
+15 & K4 tapaaminen, korjaukset V3:een, V4:n kirjoittamista \\ \hline
+16-17 & V4:n kirjoittaminen palautuskuntoon \\ \hline
+18-19 & Kandiesityksen valmistelu, itse esitys, opponointi, opponointiraportin kirjoitus \\ \hline
+20-21 & - \\ \hline
+22 & Kypsyysnäyte \\ \hline
+\end{tabular}
 
 
 \section{Esittäminen}
 
-Laadi lyhyt sisällysluettelo, jossa on hahmoteltuna kandityön pää- ja
-alaluvut. Yleensä perusrunko on
-(1) Johdanto,
-(2) Tausta,
-(3) Sisäluvut,
-(4) Yhteenveto.
+\begin{enumerate}
+	\item Johdanto
+	\item Teoreettinen tausta
+	\begin{enumerate}	
+		\item Ketterä retrospektiivi
+		\item Juurisyyanalyysi
+	\end{enumerate}
+	\item Menetelmät
+	\begin{enumerate}
+		\item Järjestemällinen kirjallisuuskatsaus
+		\item  Kenttätutkimus
+	\end{enumerate}
+	\item Tulokset
+	\begin{enumerate}
+		\item  Kirjallisuuskatsaus
+		\item Kenttätutkimus
+	\end{enumerate}
+	\item Pohdinta
+	\item  Yhteenveto
+\end{enumerate}
 
-Sinun täytyy suunnitella oma raportointisi tähän sopivaksi.
 
-\emph{Tämä perusrunko siis erillisenä dokumenttina (kandidaatintyön
-  luonnos V1) käyttäen esimerkiksi annettua \LaTeX{}-pohjaa.  Mukana
-  tulee olla vähintään yksi viite ja
-  lähdeluettelo. Tutkimussuunnitelmaan ei välttämättä tarvita
-  lähdeluetteloa.}
+% -------------- Lähdeluettelo / reference list -----------------------
+%
+% Lähdeluettelo alkaa aina omalta sivultaan; pakota lähteet alkamaan
+\clearpage
+%
+%
+% Muista, että saat kirjallisuusluettelon vasta
+%  kun olet kääntänyt ja kaulinnut "latex, bibtex, latex, latex"
+%  (ellet käytä Makefilea ja "make")
+
+% Viitetyylitiedosto aaltosci_t.bst; muokattu HY:n tktl-tyylistä.
+\bibliographystyle{aaltosci_t}
+% Katso myös tämän tiedoston yläosan "preamble" ja siellä \bibpunct.
+
+% Muutetaan otsikko "Kirjallisuutta" -> "Lähteet"
+\renewcommand{\refname}{Lähteet}  % article-tyyppisen
+%\renewcommand{\bibname}{Lähteet}  % jos olisi book, report-tyyppinen
+
+% Lisätään sisällysluetteloon
+\addcontentsline{toc}{section}{\refname}  % article
+%\addcontentsline{toc}{chapter}{\bibname}  % book, report
+
+% Määritä kaikki bib-tiedostot
+\bibliography{lahteet}
+%\bibliography{thesis_sources,ietf_sources}
+
+\label{pages:refs}
+\clearpage         % erotetaan mahd. liitteet alkamaan uudelta sivulta
+
+
 
 % ---------------------------------------------------------------------
 %
