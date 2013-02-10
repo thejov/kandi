@@ -23,6 +23,7 @@
 *.nlo
 *.out
 *.pdfsync
+*.pdf
 *.ps
 *.snm
 *.synctex.gz
@@ -30,3 +31,4 @@
 *.vrb
 *.xdy
 *.tdo
+TIK_kand_pohja__latex-pohja_kandityolle_ja_tutkimussuunnitelmalle_2
