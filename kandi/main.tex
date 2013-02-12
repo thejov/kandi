@@ -71,8 +71,6 @@
 % Tästä tulee mm. tietyt otsikkonimet ja kuva- ja taulukkoteksteihin 
 % (Kuva, Figur, Figure), (Taulukko, Tabell, Table) sekä oikea tavutus.
 \selectlanguage{finnish}
-%\selectlanguage{swedish}
-%\selectlanguage{english}
 
 % Sivunumeroinnin kanssa pieniä ristiriitaisuuksia.
 % Toimitaan pääosin lähteen "Kirjoitusopas" luvun 5.2.2 mukaisesti.
@@ -104,89 +102,26 @@
 % Otsikko nimiölehdelle. Yleensä sama kuin seuraavana oleva \TITLE, 
 % mutta jos nimiölehdellä tarvetta "kaksiosaiselle" kaksiriviselle
 \title{Juurisyyanalyysin soveltuvuus ohjelmistoprojektien retrospektiiveissä}
-% 2-osainen otsikko:
-%\title{\LaTeX{}-pohja kandidaatintyölle \\[5mm] Pitkiä rivejä kokeilun vuoksi.}
 
 % Otsikko tiivistelmään. Jos lisäksi engl. tiivistelmä, niin viimeisin:
-\TITLE{\LaTeX{}-pohja kandidaatintyötä varten ohjeiden kera ja varuilta %
-kokeillaan vähän ylipitkää otsikkoa}
-%\TITLE{\LaTeX{} för kandidatseminariet med jättelång rubrik som fortsätter och
-% fortsätter ännu}
-\ENTITLE{\LaTeX{} template for Bachelor thesis with a pretty long title %
-line which continues ynd continues}
-% 2-osainen otsikko korvataan täällä esim. pisteellä:
-%\TITLE{\LaTeX{}-pohja kandidaatintyölle. Pitkiä rivejä kokeilun vuoksi.}
+\TITLE{Juurisyyanalyysin soveltuvuus ohjelmistoprojektien retrospektiiveissä}
 
 % Ohjaajan laitos suomi/ruotsi ja tarvittaessa eng (tiivistelmän kieli/kielet)
-\DEPT{SoberIT}
 % suomi:
-%\DEPT{Tietotekniikan laitos}               % T
-%\DEPT{Tietojenkäsittelytieteen laitos}     % TKT
-%\DEPT{Mediatekniikan laitos}               % ME
-% ruotsi:
-%\DEPT{Institutionen för datateknik}        % T
-%\DEPT{Institutionen för datavetenskap}     % TKT
-%\DEPT{Institutionen för mediateknik}       % ME
-% englanti:
-%\ENDEPT{Department of Computer Science Engineering}     % T
-%\ENDEPT{Department of Information and Computer Science} % TKT
-%\ENDEPT{Department of Media Technology}                 % ME
+\DEPT{Tietotekniikan laitos}               % T
 
 % Vuosi ja päivämäärä, jolloin työ on jätetty tarkistettavaksi.
 \YEAR{2013}
 \DATE{21. tammikuuta 2013}
 %\DATE{31. helmikuuta 2011}
-%\DATE{Den 31 februari 2011}
 \ENDATE{February 31, 2013}
 
 % Kurssin vastuuopettaja ja työsi ohjaaja(t)
 \SUPERVISOR{Ma professori Tomi Janhunen}
 \INSTRUCTOR{DI Timo Lehtinen}
-%\INSTRUCTOR{Ohjaajantitteli Timo Lehtinen, ToinenTitt Matti Meikäläinen}
-% DI       // på svenska DI diplomingenjör
-% TkL      // TkL teknologie licentiat
-% TkT      // TkD teknologie doctor
-% Dosentti Dos. // Doc. Docent
-% Professori Prof. // Prof. Professor
-% 
-% Jos tiivistelmä englanniksi, niin:
-\ENSUPERVISOR{Professor (pro tem) Tomi Janhunen}
-\ENINSTRUCTOR{Your instructor, titleOfInstructor}
-% M.Sc. (Tech)  // M.Sc. (Eng)
-% Lic.Sc. (Tech)
-% D.Sc. (Tech)   // FT filosofian tohtori, PhD Doctor of Philosophy
-% Docent
-% Professor
-
-% Kirjoita tänne HOPS:ssa vahvistettu pääaineesi.
-% Pääainekoodit TIK-opinto-oppaasta.
 
 \PAAAINE{Ohjelmistotuotanto ja -liiketoiminta}
 \CODE{T3003}
-%
-%\PAAAINE{Tietoliikenneohjelmistot}
-%\CODE{T3005}
-%
-%\PAAAINE{WWW-teknologiat} % vuodesta 2010
-%\CODE{IL3012}
-%
-%\PAAAINE{Mediatekniikka} % vuoteen 2010, kts. seur.
-%\CODE{T3004}
-%
-%\PAAAINE{Mediatekniikka} % vuodesta 2010, kts. edell.
-%\CODE{IL3011}
-%
-%\PAAAINE{Tietojenkäsittelytiede} % vuodesta 2010
-%\CODE{IL3010}
-%
-%\PAAAINE{Informaatiotekniikka} % vuoteen 2010
-%\CODE{T3006}
-%
-%\PAAAINE{Tietojenkäsittelyteoria} % vuoteen 2010
-%\CODE{T3002}
-%
-%\PAAAINE{Ohjelmistotekniikka}
-%\CODE{T3001}
 
 % Avainsanat tiivistelmään. Tarvittaessa myös englanniksi:
 
@@ -209,7 +144,7 @@ line which continues ynd continues}
 % VANHA //  sivunumerolla 1. %   Toisin sanoen, viimeisen lähdeluettelosivun 
 % VANHA //  sivunumero EI ole sivujen määrä vaan se pitää laskea tähän käsin
 
-\PAGES{Kirjoita tähän oikea määrä, tässä esimerkissä 23}
+\PAGES{-}
 %\PAGES{23}  % kaikki sivut laskettuna nimiölehdestä lähdeluettelon tai 
              % mahdollisten liitteiden loppuun. Tässä 23 sivua
 
@@ -236,18 +171,6 @@ line which continues ynd continues}
 \label{pages:prelude}
 \clearpage                     % kappale loppuu, loput kelluvat tänne, sivunv.
 %\newpage
-
-% -------------- Symboli- ja lyhenneluettelo -------------------------
-% Lyhenteet, termit ja symbolit.
-% Suositus: Käytä vasta kun paljon symboleja tai lyhenteitä.
-%
-\input{luku_lyhenteet} 
-%\clearpage                     % luku loppuu, loput kelluvat tänne
-\newpage
-
-% -------------- Kuvat ja taulukot ------------------------------------
-% Kirjoissa (väitöskirja) on usein tässä kuvien ja taulukoiden listaus.
-% Suositus: Ei kandityöhön.
 
 % -------------- Alkusanat --------------------------------------------
 % Suositus: ÄLÄ käytä kandidaatintyössä. Jos käytät, niin omalle 
@@ -320,20 +243,6 @@ line which continues ynd continues}
 
 \label{pages:refs}
 \clearpage         % erotetaan mahd. liitteet alkamaan uudelta sivulta
-
-% -------------- Liitteet / Appendices --------------------------------
-%
-% Liitteitä ei yleensä tarvita. Kommentoi tällöin seuraavat
-% rivit.
-
-% Tiivistelmässä joskus matemaattisen kaavan tarkempi johtaminen, 
-% haastattelurunko, kyselypohja, ylimääräisiä kuvia, lyhyitä 
-% ohjelmakoodeja tai datatiedostoja.
-
-\appendix
-\input{luku_liitteet}
-
-\label{pages:appendices}
 
 % ---------------------------------------------------------------------
 
