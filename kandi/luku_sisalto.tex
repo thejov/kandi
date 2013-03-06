@@ -6,7 +6,7 @@ Ohjelmistoprojekteissa tulee väistämättä vastaan ongelmia. Näiden järjeste
 
 Tämä kandidaatintyö käsittelee sitä, miten juurisyyanalyysi soveltuu menetelmäksi ketterän ohjelmistokehitystiimin retrospektiiviin.
 
-Iteraation lopussa pidettävä retrospektiivi on olennainen osa ketterän ohjelmistokehitysprosessin runkoa. Vaikka sen tavoitteet on yleensä määritelty tarkasti kunkin metodologian kuvauksessa, on sen toteutustapa jätetty yleensä tiimin päätettäväksi. Näin on myös Scrum-metodologian kuvauksessa \citep{ScrumGuide2011}. Tämän kandidaatintyön tarkoituksena selvittää juurysyyanalyysin soveltuvuutta ketterän retrospektiivin menetelmäksi. Olennaista on se, minkälainen juurisyyanalyysi-menetelmä siihen soveltuu. Menetelmän tulee olla erittäin kevyt ja yksinkertainen, jotta sen käyttöönotto lyhyehköissä iteraatio-retrospektiiveissä olisi mielekästä.
+Iteraation lopussa pidettävä retrospektiivi on olennainen osa ketterän ohjelmistokehitysprosessin runkoa. Vaikka sen tavoitteet on yleensä määritelty tarkasti kunkin metodologian kuvauksessa, on sen toteutustapa jätetty yleensä tiimin päätettäväksi. Esimerkiksi Scrum-metodologian kuvauksessa on kuvattu retrospektiivien tavoitteet, muttei niiden saavuttamiseen johtavia menetelmiä \citep{ScrumGuide2011}. Tämän kandidaatintyön tarkoituksena selvittää juurysyyanalyysin soveltuvuutta ketterän retrospektiivin menetelmäksi. Olennaista on se, minkälainen juurisyyanalyysi-menetelmä siihen soveltuu. Menetelmän tulee olla erittäin kevyt ja yksinkertainen, jotta sen käyttöönotto lyhyehköissä iteraatio-retrospektiiveissä olisi mielekästä.
 
 Kandidaatintyön tutkimuskysymykset ovat seuraavat:
 \begin{enumerate}
@@ -30,15 +30,31 @@ Kandidaatintyössä esitellään ensin lyhyesti työn ymmärtämiseen tarvittava
 
 \section{Teoreettinen tausta}
 \subsection{Ketterä retrospektiivi}
+
+
 \subsection{Juurisyyanalyysi}
 
-\section{Menetelmät}
-\subsection{Järjestelmällinen kirjallisuuskatsaus}
+\section{Tutkimusmenetelmät}
+\subsection{Systemaattinen kirjallisuuskatsaus}
+Systemaattisessa kirjallisuuskatsauksessa (SLR, Systematic Literature Review) tehdään valitusta aiheesta kattava arviointi, jossa käytetään luotettavaa, tarkkaa ja toistettavisaa olevaa menetelmää. SLR on kirjallisuuskatsauksen muoto, eli siinä käydään läpi aiempia tutkimuksia, jotka ovat olennaisia omien tutkimuskysymysten valossa. Kerätyn kirjallisuuden pohjalta muodostetaan synteesi. \citep{Kitchenham2007}
+
+SLR:n erityispiirteenä on se, että kirjallisuuden etsiminen, valikointi ja valitun kirjallisuuden analysointi pyritään tekemään toistettavasti ja puolueettomasti. Kitchenham perustelee SLR-menetelmää toteamalla, että kirjallisuuskatsaus, joka ei ole SLR:n tapaan perusteellinen ja tasapuolinen ei tarjoa paljoa tieteellistä arvoa. Sen tulokset ovat todennäköisemmin puolueetetomia, eli tutkijan kannasta riippumattomia. \citep{Kitchenham2007}
+
+Systemaattinen kirjallisuuskatsaus koostuu kolmesta päävaiheesta: suunnittelu-, toteutus- ja raportointivaiheista. Suunnitteluvaiheessa tunnistetaan kirjallisuuskatsauksen tarve, määritellään tutkimuskysymykset, sekä protokolla katsauksen suorittamiselle. 
+
+Toteutusvaiheessa tehdään aineistohakuja ja valitaan ennaltamääritellyin kriteerein tutkimukselle oleelliset artikkelit. Artikkelien laatua ja sitä kautta luotettavuutta arvioidaan. Tehdyistä hauista kirjataan kaikki kirjallisuuskatsauksen toistamiseen ja sen laadun arviointiin tarvittava tieto, kuten haussa käytetyt hakukoneet, hakusanat, löydettyjen tulosten määrä ja jopa tuloslista. Valitusta aineistosta kerätään tietoa talteen ja sen merkittävyyttä omalle tutkimukselle arvioidaan ennalta määritellyin kriteerein. Kerätyn ja merkittäväksi valitun tiedon perusteella muodostetaan synteesi. Raportointivaiheessa kirjoitetaan tulokset ylös ja arvioidaan tuloksia.
+
+Tähän kandidaatintyöhön valittiin Kitchenhamin määrittelemä systemaattinen kirjallisuuskatsaus, jotta kerätty aineistolista ja sen pohjalta tehty synteesi olisi tieteellisesti merkittävämpää, sekä mahdollisesti myös muulle tutkimukselle käyttökelpoista.
+
 \subsection{Kenttätutkimus}
+Kenttätutkimus suoritetaan keskikokoisessa ohjelmistoyrityksessä, jonka ketterälle ohjelmistokehitystiimille kandidaatintyön kirjoittaja pitää retrospektiivin. Retrospektiivissä tiimi pohtii edellisessä sprintissä haasteita aiheuttaneita ongelmia höyhenenkevyttä juurisyyanalyysi-menetelmää käyttäen. Retrospektiivin pitämiseen tuo lisämausteen se, että kyseessä on hajautetusta tiimistä, jossa osa työskentelee eri maassa. Retrospektiivin kommunikaatio tapahtuu videoneuvottelutyökalua käyttäen. Juurisyyanalyysissä käytetään Aalto-yliopistolla kehitettyä ARCA-tool -juurysyyanalyysityökalua. Se toimii Internetin ylitse ja mahdollistaa kollaboratiivisen ja reaaliaikaisen juurisyyanalyysin tekemisen siten, että jokainen voi osallistua analyysin tekemiseen omalta työpisteeltään pelkää Internet-selainta käyttäen.
+
+Itse juurisyyanalyysimenetelmäksi on valittu höyhenenkevyt tiimin kanssa valittuun tunnin aikaikkunaan soveltuva menetelmä. Lähtöasetelmana on se, että kullakin tiimin jäsenellä on Internet-selaimessaan auki retrospektiiviä varten luotu uusi analyysi ARCA-tool:issa. Tiimi on etukäteen kerännyt ne ongelmat, joihin analyysissä halutaan pureutua. Fasilitaattorin ohjauksessa tiimin jäsenet keräävät ongelmiin johtaneita syitä. Syiden ja niiden alisyiden kerääminen tehdään iteraatioissa.
 
 \section{Tulokset}
-\subsection{Kirjallisuuskatsaus}
+\subsection{Systemaattinen kirjallisuuskatsaus}
 \subsection{Kenttätutkimus}
+
 
 \section{Pohdinta}
 
