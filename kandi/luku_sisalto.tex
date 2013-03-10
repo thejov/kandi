@@ -16,13 +16,13 @@ Kandidaatintyön tutkimuskysymykset ovat seuraavat:
 
 Kandidaatintyön tavoitteena on selvittää järjestelmällisen kirjallisuuskatsauksen \citep{Kitchenham2010} muodossa vastaus ensimmäiseen tutkimuskysymykseen. Toiseen tutkimuskysymykseen haetaan vastausta kenttätestillä.
 
-Kirjallisuustutkimuksen työmäärän pitämiseksi järkevänä, aineistohaut rajoitetaan Scopus-tiedokannan tieteellisiin artikkeleihin. Käytettävät hakusanat, joita haetaan artikkelien otsikosta ja avainsanoista, ovat "retrospective", "postmortem analysis", "post-project review" ja "software engineering". Artikkelien tulee olla julkaistu aikaisintaan vuonna 1990. Mikäli näillä rajauksilla löytyy liikaa artikkeleita, tarkennetaan hakua. Liian rajaavien termien, kuten "root cause analysis" tai "agile", käyttöä pyritään kuitenkin välttämään. Näitä käyttämällä saattaisi ohittaa kiinnostavia artikkeleita, jotka käsittelevät olennaisia asioita, mutta eri termejä käyttäen. Eri hakusanayhdistelmillä löytyneiden tulosten määrä kirjataan ylös.
+Kirjallisuustutkimuksen työmäärän pitämiseksi järkevänä, aineistohaut rajoitetaan Scopus-tietokannan tieteellisiin artikkeleihin. Käytettävät hakusanat, joita haetaan artikkelien otsikosta ja avainsanoista, ovat "retrospective", "postmortem analysis", "post-project review" ja "software engineering". Artikkelien tulee olla julkaistu aikaisintaan vuonna 1990. Mikäli näillä rajauksilla löytyy liikaa artikkeleita, tarkennetaan hakua. Liian rajaavien termien, kuten "root cause analysis" tai "agile", käyttöä pyritään kuitenkin välttämään. Näitä käyttämällä saattaisi ohittaa kiinnostavia artikkeleita, jotka käsittelevät olennaisia asioita, mutta eri termejä käyttäen. Eri hakusanayhdistelmillä löytyneiden tulosten määrä kirjataan ylös.
 
-Hakutuloksista olennaisia ovat sellaiset, jotka kuvaavat jonkinlaista menetelmää käytettäväksi retrospektiiveihin. Nämä artikkelit kerätään taulukkolaskentaohjelman viitekokoelmaan, jossa ylläpidetään artikkeleista kaikkia lähdeviitteeseen tarvittavia tietoja, sekä merkinnän siitä, onko artikkelissa kuvattu retrospektiivin menetelmä juurisyyanalyysi. Ne artikkelit, jossa menetelmä sisältää juurisyyanalyysin, päätyvät kandidaatin työhön. Systemaattisen kirjallisuustutkimuksen tarkoituksena on tehdä aineistonhakuprosessista tarkastettava ja toistettava.
+Hakutuloksista olennaisia ovat sellaiset, jotka kuvaavat jonkinlaista menetelmää käytettäväksi retrospektiiveihin. Nämä artikkelit kerätään taulukkolaskentaohjelman viitekokoelmaan, jossa ylläpidetään artikkeleista kaikkia lähdeviitteeseen tarvittavia tietoja, sekä merkinnän siitä, onko artikkelissa kuvattu retrospektiivin menetelmä juurisyyanalyysi. Ne artikkelit, jossa menetelmä sisältää juurisyyanalyysin, päätyvät kandidaatin työhön. Systemaattisen kirjallisuustutkimuksen tarkoituksena on tehdä aineistonhakuprosessista tarkastettava ja toistettava \citep{Kitchenham2007}.
 
 Kandidaatintyössä tehdään synteesi kirjallisuuskatsauksessa kerätyssä aineistossa esitetyistä retrospektiivien juurisyyanalyysi-menetelmistä. On mahdollista, että osa aineistosta käsittelee raskaampaa, suuremman mittakaavan retrospektiiviä, joka pidettäisiin esimerkiksi projektin jälkeieen (post project review). Mikäli synteesin kuvaama menetelmä osoittautuu ketterän ohjelmistokehitystiimin retrospektiiviin liian raskaaksi, karsitaan siitä tähän tarkoitukseen ylimitoitetut kohdat pois. Lopputuloksen tulisi olla sellainen, että tiimi voi suorittaa sen ketterälle retrospektiiville varatussa, verrattain lyhyessä ajassa.
 
-Kandidaatin työn kenttätutkimus suoritetaan ohjelmistoyrityksen ketterän kehitystiimin kanssa. Juurisyyanalyysi-sessiosta sovitaan tiimin kanssa etukäteen. Tiimi valmistelee yhden tai useamman aiheen (ongelman), joita he haluavat käsitellä juurisyyanalyysi-sessiossa. Kandidaatintyön tekijä on ohjaamassa sessiota ja työn valvoja seuraa tapahtumia sivusta. Työkaluna käytetään Aalto-yliopistolla kehitettyä ARCA-tool -web-sovellusta mahdollistamaan hajautetun tiimin yhteisen analyysin. Sessio videoidaan ruudunkaappaus-sovelluksella. 
+Kandidaatin työn kenttätutkimus suoritetaan ohjelmistoyrityksen ketterän kehitystiimin kanssa. Juurisyyanalyysi-sessiosta sovitaan tiimin kanssa etukäteen. Tiimi valmistelee yhden tai useamman aiheen (ongelman), joita he haluavat käsitellä juurisyyanalyysi-sessiossa. Kandidaatintyön tekijä on ohjaamassa sessiota ja työn valvoja seuraa tapahtumia sivusta. Työkaluna käytetään Aalto-yliopistolla kehitettyä ARCA-tool -web-sovellusta \citep{ArcaTool} mahdollistamaan hajautetun tiimin yhteisen analyysin. Sessio videoidaan ruudunkaappaus-sovelluksella. 
 
 Juurisyyanalyysi-session jälkeen osallistuneilta kerätään palaute ennalta tehdyn palaute-lomakkeen avulla. Lisäksi kerätään suullinen palautte. Kysymykset käsittelevät tiiimin suorittaman juurisyyanalyysin ja siihen käytetyn työkalun helppokäyttöisyyttä ja tehokkuutta. Kenttätutkimuksen analysointi tapahtuu tämän kerätyn aineiston perusteella. Tutkimuksessa käytetty juurisyyanalyysimenetelmä on pelkistetty versio ARCA-menetelmästä \citep{Lehtinen2011}.
 
@@ -30,29 +30,36 @@ Kandidaatintyössä esitellään ensin lyhyesti työn ymmärtämiseen tarvittava
 
 \section{Teoreettinen tausta}
 \subsection{Ketterä retrospektiivi}
-Ketterissä ohjelmistokehitysmenetelmissä on määritelty, että on säännöllisin väliajoin pidetetävä reflektointi, jossa tiimi pohtii tapoja tulla tehokkaammaksi. Nämä kehitettyjen parannusten perusteella tiimi muuttaa toimintaansa \citep{AgileManifestoPrinciples}. Kevyt retrospektiivi sessio on yksi tapa toteuttaa tätä periaatetta. Projektin lopputuloksen kannalta retrospektiivejä on järkevää pitää lyhyin väliajoin. Tällöin tiimin kohtaamat ongelmat ja niihin liittyvät yksityiskohdat ovat tuoreessa muistissa ja parannusehdotukset voidaan ottaa suoraan käyttöön parantaen siten projektin lopputuloksen laatua. \citep{Cockburn2002}
+Ketterissä ohjelmistokehitysmenetelmissä on määritelty, että säännöllisin väliajoin pidetään reflektointi, jossa tiimi pohtii tapoja tulla tehokkaammaksi. Nämä kehitettyjen parannusten perusteella tiimi muuttaa toimintaansa \citep{AgileManifestoPrinciples}. Kevyt retrospektiivisessio on tapa toteuttaa tätä periaatetta. Projektin lopputuloksen kannalta retrospektiivejä on järkevää pitää lyhyin väliajoin. Tällöin tiimin kohtaamat ongelmat ja niihin liittyvät yksityiskohdat ovat tuoreessa muistissa ja parannusehdotukset voidaan ottaa suoraan käyttöön ja siten pyrkiä parantamaan projektin lopputuloksen laatua. \citep{Cockburn2002}
+
+XP- ja Scrum-metodologiassa retrospektiivejä suositellaan pidettäväksi joka iteraation päätteeks. Niissä tiimi reflektoi sitä, missä he ovat viime iteraation aikana onnistuneet hyvin ja missä on vielä kehitettävää. \citep{Lindstrom2004, ScrumGuide2011} Retrospektiivin avulla tiimi saa palautetta työstään. Retrossa voidaan muun muassa pohtia sitä, miten kurinalaisesti tiimi on noudattanut seuraamansa metodologian käytäntöjä ja voisiko niitä räätälöidä sopimaan paremmin tiimin tarpeisiin. \citep{Lindstrom2004}
 
 \subsection{Juurisyyanalyysi}
-Juurisyyanalyysi on rakenteellinen tapa tutkia ongelmia ja tunnistaa niiden aiheuttajia. Ideana on se, että korjaamalla syyn aiheuttavia ongelmia voidaan ehkäistä saman ongelman syntymistä uudestaan -- tai ainakin vähentää ongelman uudelleenesiintymisen todennäköisyyttä. \citep{Lehtinen2011} Juurisyyanalyysin avulla voidaan tutkia ongelmien lisäksi myös onnistumisten syitä. \citep{Bjornson2009} Juurisyylle on useita määritelmiä. Se voi tarkoittaa mitä tahansa ongelman aiheuttavaa syytä, syyketjun perimmäisintä syytä tai syyksi, johon johtoporras voi vaikuttaa. Juurisyyanalyysin tuloksia voidaan käyttää apuna prosessinkehityksessä. \citep{Lehtinen2011}
+Juurisyyanalyysi on rakenteellinen tapa tutkia ongelmia ja tunnistaa niiden aiheuttajia. Ideana on se, että korjaamalla syyn aiheuttavia ongelmia voidaan ehkäistä saman ongelman syntymistä uudestaan -- tai ainakin vähentää ongelman uudelleenesiintymisen todennäköisyyttä. \citep{Lehtinen2011} Juurisyyanalyysin avulla voidaan tutkia ongelmien lisäksi myös onnistumisten syitä. \citep{Bjornson2009} Juurisyylle on useita määritelmiä. Se voi tarkoittaa mitä tahansa ongelman aiheuttavaa syytä, syyketjun perimmäisintä syytä tai syytä, johon johtoporras voi vaikuttaa. Juurisyyanalyysin tuloksia voidaan käyttää apuna prosessinkehityksessä. \citep{Lehtinen2011}
 
 \section{Tutkimusmenetelmät}
 \subsection{Systemaattinen kirjallisuuskatsaus}
-Systemaattisessa kirjallisuuskatsauksessa (SLR, Systematic Literature Review) tehdään valitusta aiheesta kattava arviointi, jossa käytetään luotettavaa, tarkkaa ja toistettavisaa olevaa menetelmää. SLR on kirjallisuuskatsauksen muoto, eli siinä käydään läpi aiempia tutkimuksia, jotka ovat olennaisia omien tutkimuskysymysten valossa. Kerätyn kirjallisuuden pohjalta muodostetaan synteesi. \citep{Kitchenham2007}
+Systemaattisessa kirjallisuuskatsauksessa (SLR, Systematic Literature Review) tehdään kattava arviointi valitusta aiheesta. Arvioinnissa käytetään luotettavaa, tarkkaa ja toistettavisaa olevaa menetelmää. SLR on kirjallisuuskatsauksen muoto, mikä tarkoittaa sitä, että siinä käydään läpi aiempia tutkimuksia, jotka ovat olennaisia omien tutkimuskysymysten valossa. Kerätyn kirjallisuuden pohjalta muodostetaan synteesi.\citep{Kitchenham2007}
 
-SLR:n erityispiirteenä on se, että kirjallisuuden etsiminen, valikointi ja valitun kirjallisuuden analysointi pyritään tekemään toistettavasti ja puolueettomasti. Kitchenham perustelee SLR-menetelmää toteamalla, että kirjallisuuskatsaus, joka ei ole SLR:n tapaan perusteellinen ja tasapuolinen ei tarjoa paljoa tieteellistä arvoa. Sen tulokset ovat todennäköisemmin puolueetetomia, eli tutkijan kannasta riippumattomia. \citep{Kitchenham2007}
+SLR:n erityispiirteenä on se, että kirjallisuuden etsiminen, valikointi ja valitun kirjallisuuden analysointi pyritään tekemään toistettavasti ja puolueettomasti. Kitchenham perustelee SLR-menetelmän hyötyä toteamalla, että kirjallisuuskatsaus, joka ei ole SLR:n tapaan perusteellinen ja tasapuolinen ei tarjoa paljoa tieteellistä arvoa. Sen tulokset ovat todennäköisemmin puolueettomia, eli tutkijan kannasta riippumattomia. \citep{Kitchenham2007}
 
-Systemaattinen kirjallisuuskatsaus koostuu kolmesta päävaiheesta: suunnittelu-, toteutus- ja raportointivaiheista. Suunnitteluvaiheessa tunnistetaan kirjallisuuskatsauksen tarve, määritellään tutkimuskysymykset, sekä protokolla katsauksen suorittamiselle. 
+Systemaattinen kirjallisuuskatsaus koostuu kolmesta päävaiheesta: suunnittelu-, toteutus- ja raportointivaiheista. Suunnitteluvaiheessa tunnistetaan kirjallisuuskatsauksen tarve, määritellään tutkimuskysymykset, sekä protokolla katsauksen suorittamiselle. \citep{Kitchenham2007}
 
-Toteutusvaiheessa tehdään aineistohakuja ja valitaan ennaltamääritellyin kriteerein tutkimukselle oleelliset artikkelit. Artikkelien laatua ja sitä kautta luotettavuutta arvioidaan. Tehdyistä hauista kirjataan kaikki kirjallisuuskatsauksen toistamiseen ja sen laadun arviointiin tarvittava tieto, kuten haussa käytetyt hakukoneet, hakusanat, löydettyjen tulosten määrä ja jopa tuloslista. Valitusta aineistosta kerätään tietoa talteen ja sen merkittävyyttä omalle tutkimukselle arvioidaan ennalta määritellyin kriteerein. Kerätyn ja merkittäväksi valitun tiedon perusteella muodostetaan synteesi. Raportointivaiheessa kirjoitetaan tulokset ylös ja arvioidaan tuloksia.
+Toteutusvaiheessa tehdään aineistohakuja ja valitaan ennaltamääritellyin kriteerein tutkimukselle olennaiset artikkelit. Artikkelien laatua ja sitä kautta luotettavuutta arvioidaan. Tehdyistä hauista kirjataan kaikki kirjallisuuskatsauksen toistamiseen ja sen laadun arviointiin tarvittava tieto, kuten haussa käytetyt hakukoneet, hakusanat, löydettyjen tulosten määrä ja jopa tuloslista. Valitusta aineistosta kerätään tietoa talteen ja sen merkittävyyttä omalle tutkimukselle arvioidaan ennalta määritellyin kriteerein. Kerätyn ja merkittäväksi valitun tiedon perusteella muodostetaan synteesi. Raportointivaiheessa kirjoitetaan tulokset ylös ja arvioidaan tuloksia. \citep{Kitchenham2007}
 
 Tähän kandidaatintyöhön valittiin Kitchenhamin määrittelemä systemaattinen kirjallisuuskatsaus, jotta kerätty aineistolista ja sen pohjalta tehty synteesi olisi tieteellisesti merkittävämpää, sekä mahdollisesti myös muulle tutkimukselle käyttökelpoista.
 
+Systemaattinen kirjallisuuskatsaus toteutetaan tässä kandidaatintyössä siten, että haetaan Scopus-tietokannasta vuodesta 1990 lähtien julkaistuja tieteellisiä artikkelejä hakusanoilla "retrospective",  "postmortem analysis", "post-project review" ja "software engineering". Näistä hakusanoista kokeillaan erilaisia yhdistelmiä, ja löytyneiden tulosten määrä, kuin myös listat tuloksista otetaan talteen. Näin tehty SLR on helpompi toistaa jatkossa ja sen oikeellisuus on helpompi todentaa.
+
+Tuloksista ensimmäisen tutkimuskysymyksen kannalta olennaiset, eli sellaiset, jotka kuvaavat jonkinlaista retrospektiiveissä käytettävää menetelmää, kerätään talteen taulukkolaskentaohjelmaan. Artikkelien kaikki lähdeviitteeseen tarvittavat tiedot merkitään ylös. Lisäksi merkitään arvio artikkelin luotettavuudesta ja se, perustuuko artikkelin retrospektiivimenetelmä juurisyyanalyysiin.
+
+
 \subsection{Kenttätutkimus}
-Kenttätutkimus suoritetaan keskikokoisessa ohjelmistoyrityksessä, jonka ketterälle ohjelmistokehitystiimille kandidaatintyön kirjoittaja pitää retrospektiivin. Kyseessä on noin kymmenen jäsenen kokoinen eri maiden välillä toimiva hajautettu tiimi. Retrospektiivissä tiimi pohtii edellisessä sprintissä haasteita aiheuttaneita ongelmia höyhenenkevyttä juurisyyanalyysi-menetelmää käyttäen. Retrospektiivin kommunikaatio tapahtuu videoneuvottelutyökalua käyttäen. Juurisyyanalyysissä käytetään Aalto-yliopistolla kehitettyä ARCA-tool -juurysyyanalyysityökalun eri versioita. ARCA-tool on Internetin ylitse toimiva juurisyyanalyysityökalu, joka mahdollistaa kollaboratiivisen ja reaaliaikaisen juurisyyanalyysin tekemisen. Jokainen voi osallistua analyysin tekemiseen omalta työpisteeltään pelkää Internet-selainta käyttäen.
+Kenttätutkimus suoritetaan keskikokoisessa ohjelmistoyrityksessä, jonka ketterälle ohjelmistokehitystiimille kandidaatintyön kirjoittaja pitää retrospektiivin. Kyseessä on noin kymmenen jäsenen kokoinen eri maiden välillä toimiva hajautettu tiimi. Retrospektiivissä tiimi pohtii edellisessä sprintissä haasteita aiheuttaneita ongelmia höyhenenkevyttä juurisyyanalyysi-menetelmää käyttäen. Retrospektiivin kommunikaatio tapahtuu videoneuvottelutyökalua käyttäen. Juurisyyanalyysissä käytetään Aalto-yliopistolla kehitettyä ARCA-tool -juurysyyanalyysityökalun \citep{ArcaTool} eri versioita. ARCA-tool on Internetin ylitse toimiva juurisyyanalyysityökalu, joka mahdollistaa kollaboratiivisen ja reaaliaikaisen juurisyyanalyysin tekemisen. Jokainen voi osallistua analyysin tekemiseen omalta työpisteeltään pelkää Internet-selainta käyttäen.
 
-Itse juurisyyanalyysimenetelmän on täytettävä tietyt kriteerit, jotta se soveltuisi tiimin retrospektiiviin. Ensinnäkin tiimi on asettanut retrospektiivin aikaikkunaksi yhden tunnin. Tiimin pitää siis saada valittua juurisyyanalyysimenetelmää käyttämällä konkreettisia tuloksia tuon tunnin jälkeen. Tavoitteena on ymmärtää tiimin valitsemat ongelmat ja niiden aiheuttajat syvällisemmin, sekä muodostaa konkreettisia toimia tiimin seuraavan sprintin backlogille näiden ongelmien ehkäisemiseksi. Lisäksi menetelmän pitää olla helposti omaksuttava siten, ettei retrospektiiviin osallistuville tarvitse pitää erillistä koulutusta menetelmästä, vaan se voidaan kouluttaa heille muutamalla lauseella ennen aloittamista.
+Itse juurisyyanalyysimenetelmän on täytettävä tietyt kriteerit, jotta se soveltuisi tiimin retrospektiiviin. Ensinnäkin tiimi on asettanut retrospektiivin aikaikkunaksi yhden tunnin. Tiimin pitää siis saada valittua juurisyyanalyysimenetelmää käyttämällä konkreettisia tuloksia tunnin pituisen retrospektiivin jälkeen. Tavoitteena on ymmärtää tiimin valitsemat ongelmat ja niiden aiheuttajat syvällisemmin, sekä muodostaa konkreettisia toimia tiimin seuraavan sprintin backlogille näiden ongelmien ehkäisemiseksi jatkossa. Lisäksi menetelmän pitää olla helposti omaksuttava siten, ettei retrospektiiviin osallistuville tarvitse pitää erillistä koulutusta menetelmästä, vaan se voidaan opettaa heille muutamalla lauseella ennen analyysin aloittamista.
 
-Juurisyyanalyysi-sessiot taltioidaan ruudunkaappaus-sovelluksella, jolloin sisältyy sekä ARCA-tool:in näkymä koko analyysin ajan, sekä kommunikointiin käytetty videoneuvottelukuva. Taltioinnin tarkoituksena on se, ettei kandidaatintyön kirjoittalta jää huomaamatta yksityiskohtia session kulusta, osallistujien tunnetiloista ja reaktioista tai syyverkon muodostumisesta.
+Juurisyyanalyysisessiot taltioidaan ruudunkaappaussovelluksella, jolloin videoon sisältyy sekä ARCA-tool:in näkymä koko analyysin ajan, sekä kommunikointiin käytetty videoneuvottelukuva. Taltioinnin tarkoituksena on se, ettei kandidaatintyön kirjoittalta jää huomaamatta yksityiskohtia session kulusta, osallistujien tunnetiloista ja reaktioista tai syyverkon muodostumisesta.
 
 Sessioiden jälkeen kandidaatintyön tekijä kerää osallistujilta palautteen, joka koostuu sekä kyselylomakkeesta, että vapaammasta suullisesta tai pikaviestimen avulla kerätystä palautteesta. Molemmissa esitetyt kysymykset käsittelevät sitä, miten tehokkaaksi ja helppokäyttöiseksi osallistujat kokivat käytetyn juurisyyanalyysimenetelmän ja ARCA-tool:in verrattuna aiempiin prosessinkehitysmenetelmiinsä. Kyselylomake on Google Forms -työkalulla tehty Internet-lomake, jossa on yhteensä 26 kysymystä. 
 
@@ -73,7 +80,61 @@ Mikäli toinen RCA-sessio saadaan järjestettyä case-yrityksen tiimin kanssa, k
 \section{Tulokset}
 \subsection{Systemaattinen kirjallisuuskatsaus}
 \subsection{Kenttätutkimus}
+\subsubsection{Ensimmäinen case}
+Case-tiimistä Ensimmäiseen retrospektiiviin osallistui yhteensä viisi henkilöä kahdesta eri maasta.
+Session jälkeen kerätty kirjallinen, eli Google Forms -kyselylomake koostui seuraavista, alla listatuista kysymyksistä. Tiimille esitetyt kysymykset olivat englanniksi, mutta ne on tässä käännetty suomeksi. Lisäksi niistä on poistettu kaikki viitteet kohdeyrityksen nimeen. Juurisyistä puhuttaessa tarkoitetaan syvimpiä syitä, joihin tiimi voi itse vaikuttaa, eli niitä syitä, jotka valittiin retrospektiivin päätteeksi ehkäistäviksi.
 
+\begin{enumerate}
+  \item Mikä on tehtäväsi / työnimikkeesi yrityksessä?
+  \item Valitse rooli, joka kuvaa työtehtävääsi parhaiten:
+  \begin{itemize}
+	\item Johtaja
+	\item Tuoteomistaja
+	\item Scrum Master
+	\item Ohjelmoija
+	\item Muu, mikä?
+  \end{itemize}
+  \item Vastaa asteikolla yhdestä viiteen seuraaviin kysymyksiin ( 1 = erittäin vähäinen / huonoin, 5 = erittäin merkittävä / paras )
+   \begin{itemize}
+	\item Työ, jonka yrityksenne on käyttänyt valittujen kohdeongelmien tai vastaavien ehkäisemiseen aikaisemmin?
+	\item Valitun kohdeongelman sisäinen vaikutus yritykseenne?
+	\item Syiden keräämisen helppous?
+	\item Juurisyiden tunnistamisen helppous?
+	\item Havaittujen syiden oikeellisuus?
+	\item Löydettyjen syiden ratkaisemisen vaikutus?
+	\item Oma kontribuutioni juurisyyanalyysisessiossa oli?
+	\item Juurisyyanalyysisession avoimuus oli?
+   \end{itemize}
+  \item Vastaa asteikolla yhdestä viiteen seuraaviin kysymyksiin ( 1 = ehdottomasti ei, 5 = ehdottomasti kyllä )
+  \begin{itemize}
+	\item Verrattuna tiiminne nykyisiin prosessinkehitysmenetelmiin, oliko käytetty RCA-menetelmä mielestäsi kustannustehokas?
+	\item Verrattuna tiiminne nykyisiin prosessinkehitysmenetelmiin, oliko käytetyn RCA-menetelmän käyttäminen mielestäsi helppoa?
+	\item Verrattuna tiiminne aiempiin tapoihin tunistaa ongelmien takana piileviä syitä, oliko käytetty RCA-menetelmä mielestäsi hyödyllinen?
+	\item Verrattuna tiiminne post it -lappujen avulla tehtyyn juurisyyanalyysiin, oliko ARCA-tool:in käyttäminen mielestäsi kustannustehokasta?
+	\item Verrattuna tiiminne post it -lappujen avulla tehtyyn juurisyyanalyysiin, oliko ARCA-tool mielestäsi helppokäyttöinen?
+	\item Verrattuna tiiminne aiempiin prosessinkehitysmenetelmiin, oliko ARCA-tool mielestäsi hyödyllinen?
+	\item Onko ARCA-tool helppokäyttöinen?
+	\item Onko ARCA-tool:in käyytö helppo oppia?
+	\item Auttoiko ARCA-tool löytämään ongelmien aiheuttajia?
+	\item Olisimmeko löytäneet samoja ongelmien aiheuttajia myös ilman ARCA-tool:ia?
+	\item Oliko löydettyjen syiden organisointi ARCA-tool:illä vaikeaa?
+	\item Helppous löytää syitä, jotka johtavat valittuun kohdeongelmaan oli...
+	\item Ratkaistaksenne kohdeongelman, oliko ongelmaan johtavien syiden tunnistaminen hyödyllistä?
+	\item Oliko tapa, jota käytettiin kohdeongelman aihettavien syiden tunnistamiseen, hyödyllinen verrattuna yrityksenne aiempiin käytäntöihin?
+	\item Oliko helppoa tunnistaa kohdeongelman aiheuttavia syitä?
+	\item Oliko ARCA-tool:in käyttäminen prosessinkehityksen kohteiden tunnistamiseen kustannustehokasta verrattuna yrityksenne aiempiin käytäntöihin?
+  \end{itemize}
+\end{enumerate}
+
+Tämän jälkeen kerätty suullinen palaute kerättiin seuraavaksi listattujen kysymysten avulla. Tiimiläisille esitettyjen kysymysten kieli vaihteli suomen ja englannin välillä riippuen haastateltavan kielitaidosta.
+\begin{enumerate}
+	\item Verrattuna tiiminne aiempiin prosessinkehitysmenetelmiin (esimerkiksi retrospektiiveissä), oliko käytetty RCA-menetelmä mielestäsi kustannustehokas? Miksi/Miksi ei?
+	\item Verrattuna tiiminne aiempiin prosessinkehitysmenetelmiin (esimerkiksi retrospektiiveissä), oliko käytetty RCA-menetelmä mielestäsi mielestä helppo? Miksi/Miksi ei?
+	\item Verrattuna siihen, että juurisyyanalyysiä tehdään manuaalisesti, kirjoittamalla käsin paperille (post-iteille) oliko Internetin yli toimiva ARCA-tool mielestäsi kustannustehokas? Miksi/Miksi ei?
+	\item Verrattuna siihen, että juurisyyanalyysiä tehdään manuaalisesti, kirjoittamalla käsin paperille (post-iteille) oliko Internetin yli toimiva ARCA-tool mielestäsi helppokäyttöinen? Miksi/Miksi ei?
+	\item Tuntuiko ARCA-toolin avulla tehty juurisyyanalyysisessio toimivalta suhteessa yrityksenne aikaisempiin tapoihin tunnistaa ongelman aiheuttajia?
+	\item Jos sinulla on vielä kommentteja, parannusideoita, hyviä ja huonoja juttuja pidetystä sessiosta, juurisyyanalyysistä tai ARCA-tool:ista, niin kuulisin niistä mielelläni.
+\end{enumerate}
 
 \section{Pohdinta}
 
