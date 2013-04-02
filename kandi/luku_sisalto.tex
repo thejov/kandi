@@ -55,7 +55,7 @@ Tuloksista ensimmäisen tutkimuskysymyksen kannalta olennaiset, eli sellaiset, j
 
 
 \subsection{Kenttätutkimus}
-Kenttätutkimus suoritetaan keskikokoisessa ohjelmistoyrityksessä, jonka ketterälle ohjelmistokehitystiimille kandidaatintyön kirjoittaja pitää retrospektiivin. Kyseessä on noin kymmenen jäsenen kokoinen eri maiden välillä toimiva hajautettu tiimi. Retrospektiivissä tiimi pohtii edellisessä sprintissä haasteita aiheuttaneita ongelmia höyhenenkevyttä juurisyyanalyysi-menetelmää käyttäen. Retrospektiivin kommunikaatio tapahtuu videoneuvottelutyökalua käyttäen. Juurisyyanalyysissä käytetään Aalto-yliopistolla kehitettyä ARCA-tool -juurysyyanalyysityökalun \citep{ArcaTool} eri versioita. ARCA-tool on Internetin ylitse toimiva juurisyyanalyysityökalu, joka mahdollistaa kollaboratiivisen ja reaaliaikaisen juurisyyanalyysin tekemisen. Jokainen voi osallistua analyysin tekemiseen omalta työpisteeltään pelkää Internet-selainta käyttäen.
+Kenttätutkimus suoritetaan keskikokoisessa ohjelmistoyrityksessä, jonka ketterälle ohjelmistokehitystiimin retrospektiiviä kandidaatintyön kirjoittaja seuraa. Kyseessä on noin kymmenen jäsenen kokoinen eri maiden välillä toimiva hajautettu tiimi. Retrospektiivissä tiimi pohtii edellisessä sprintissä haasteita aiheuttaneita ongelmia höyhenenkevyttä juurisyyanalyysi-menetelmää käyttäen. Retrospektiivin kommunikaatio tapahtuu videoneuvottelutyökalua käyttäen. Juurisyyanalyysissä käytetään Aalto-yliopistolla kehitettyä ARCA-tool -juurysyyanalyysityökalun \citep{ArcaTool} eri versioita. ARCA-tool on Internetin ylitse toimiva juurisyyanalyysityökalu, joka mahdollistaa kollaboratiivisen ja reaaliaikaisen juurisyyanalyysin tekemisen. Jokainen voi osallistua analyysin tekemiseen omalta työpisteeltään pelkää Internet-selainta käyttäen.
 
 Itse juurisyyanalyysimenetelmän on täytettävä tietyt kriteerit, jotta se soveltuisi tiimin retrospektiiviin. Ensinnäkin tiimi on asettanut retrospektiivin aikaikkunaksi yhden tunnin. Tiimin pitää siis saada valittua juurisyyanalyysimenetelmää käyttämällä konkreettisia tuloksia tunnin pituisen retrospektiivin jälkeen. Tavoitteena on ymmärtää tiimin valitsemat ongelmat ja niiden aiheuttajat syvällisemmin, sekä muodostaa konkreettisia toimia tiimin seuraavan sprintin backlogille näiden ongelmien ehkäisemiseksi jatkossa. Lisäksi menetelmän pitää olla helposti omaksuttava siten, ettei retrospektiiviin osallistuville tarvitse pitää erillistä koulutusta menetelmästä, vaan se voidaan opettaa heille muutamalla lauseella ennen analyysin aloittamista.
 
@@ -79,6 +79,18 @@ Mikäli toinen RCA-sessio saadaan järjestettyä case-yrityksen tiimin kanssa, k
 
 \section{Tulokset}
 \subsection{Systemaattinen kirjallisuuskatsaus}
+Kandidaatintyön kirjoittaja aloitti systemaattisen kirjallisuuskatsauksen kokeilemalla erilaisia yhdistelmiä määritellyistä hakusanoista ja hakemalla niitä eri tavoin artikkeleista. Tavoitteena oli löytää sellainen yhdistelmä, jolla löytyisi rittävä määrä artikkeleita, jotta kirjallisuuskatsauksen otos ei olisi liian suppea ja saattaisi tutkimuksen luotettavuuden sen takia kyseenalaiseksi. Kuitenkin artikkelien määrän tulee olla järkevästi käsiteltävissä kandidaatintyön määrittämän työmäärän puitteissa. Kandidaatintyön tekijä sopi yhdessä työn ohjaajan kanssa sopivan otoskoon olevan noin 100 artikkelia.
+
+Alkuperäinen suunnitelma ol käyttää pelkästään hakusanoja "retrospective",  "postmortem analysis", "post-project review" ja "software engineering". Kuitenkin, koska näillä hakusanoilla olennaisten hakutulosten lukumäärä osoittautui liian pieneksi, otettiin hakusanoiksi mukaan juurisyyanalyysiä kuvaavat hakusanat: "root cause analysis", "rca", "defect cause analysis" ja "dca". Nyt etsimme siis mainintaa juurisyyanalyysin käytöstä retrospektiivin menetelmänä sekä retrospektiiviä että juurisyyanalyysiä käsittelevistä artikkeleista. Siten lähestymme kandidaatintyön aihetta kahdelta suunnalta.
+
+Hakusana "software engineering" osoittautui niin yleinen ja lähinnä aihealuetta kuvaavaksi, etteivät artikkelit yleensä maininneet sitä otsikossaan, abstraktissa tai artikkelin avainsanoissa. Siksi haemme kyseistä hakusanaa kaikista mahdollisista hakukentistä, eikä pelkästään edellämainituista kolmesta. Lisäksi käytämme Scopuksen omaa aihealuerajausta ja haemme ainoastaan artikkeleja tietotekniikan aihealueelta.
+
+Lopulliseksi hakusanaksi muodostui siis:\\
+\textit{ALL("software engineering") AND TITLE-ABS-KEY("retrospective" OR "postmortem analysis" OR "pma" OR "post-mortem" OR "post mortem analysis" OR "post-project review" OR "post project review" OR "root cause analysis" OR"rca" OR "defect cause analysis" OR "dca") AND DOCTYPE(ar) AND SUBJAREA(comp) AND PUBYEAR > 1989}\\
+Näillä hakusanoilla löytyi yhteensä 108 tulosta.
+
+Kirjallisuuskatsauksessa käytettyjen hakusanojen evoluutio erilaisine kokeiluineen ja niiden toimivuuden arvioinnin kera on annettu kandidaatin työn liitteenä.
+
 \subsection{Kenttätutkimus}
 \subsubsection{Ensimmäinen case}
 Case-tiimistä Ensimmäiseen retrospektiiviin osallistui yhteensä viisi henkilöä kahdesta eri maasta.
