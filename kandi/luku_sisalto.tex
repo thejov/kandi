@@ -79,6 +79,7 @@ Mikäli toinen RCA-sessio saadaan järjestettyä case-yrityksen tiimin kanssa, k
 
 \section{Tulokset}
 \subsection{Systemaattinen kirjallisuuskatsaus}
+\subsubsection{Käytettävät hakusanat}
 Kandidaatintyön kirjoittaja aloitti systemaattisen kirjallisuuskatsauksen kokeilemalla erilaisia yhdistelmiä määritellyistä hakusanoista ja hakemalla niitä eri tavoin artikkeleista. Tavoitteena oli löytää sellainen yhdistelmä, jolla löytyisi rittävä määrä artikkeleita, jotta kirjallisuuskatsauksen otos ei olisi liian suppea ja saattaisi tutkimuksen luotettavuuden sen takia kyseenalaiseksi. Kuitenkin artikkelien määrän tulee olla järkevästi käsiteltävissä kandidaatintyön määrittämän työmäärän puitteissa. Kandidaatintyön tekijä sopi yhdessä työn ohjaajan kanssa sopivan otoskoon olevan noin 100 artikkelia.
 
 Alkuperäinen suunnitelma ol käyttää pelkästään hakusanoja "retrospective",  "postmortem analysis", "post-project review" ja "software engineering". Kuitenkin, koska näillä hakusanoilla olennaisten hakutulosten lukumäärä osoittautui liian pieneksi, otettiin hakusanoiksi mukaan juurisyyanalyysiä kuvaavat hakusanat: "root cause analysis", "rca", "defect cause analysis" ja "dca". Nyt etsimme siis mainintaa juurisyyanalyysin käytöstä retrospektiivin menetelmänä sekä retrospektiiviä että juurisyyanalyysiä käsittelevistä artikkeleista. Siten lähestymme kandidaatintyön aihetta kahdelta suunnalta.
@@ -90,6 +91,31 @@ Lopulliseksi hakusanaksi muodostui siis:\\
 Näillä hakusanoilla löytyi yhteensä 108 tulosta.
 
 Kirjallisuuskatsauksessa käytettyjen hakusanojen evoluutio erilaisine kokeiluineen ja niiden toimivuuden arvioinnin kera on annettu kandidaatin työn liitteenä.
+
+\subsubsection{Tulosten arviointi}
+Haun tulokset tallennettiin taulukkolaskentaohjelmaan. Tuloksia arvioitiin eri tavoin käyttämällä artikkelin otsikon, abstraktin ja avainsanojen antamia tietoja.
+\clearpage
+
+\subsubsection{Tulosten rajaus}
+Taulukossa 1 on esitetty perusteet, joiden mukaan tuloksia on karsittu pois. Karsinta on tehty otsikon, abstraktin ja artikkelin avainsanojen antamien tietojen perusteella.
+\begin{table}
+    \begin{tabular}{|p{12cm}|p{2cm}|}
+        \hline
+        \textbf{Karsintaehto} & \textbf{Tulosten määrä} \\ \hline
+        Ei rajausta                                                                                                                                               & 108            \\ \hline
+        Ei ollut enää Scopus:issa saatavilla arviointihetkellä (Tuloksia käytiin läpi useampana päivänä. Osa artikkeleista ei enää löytynyt myöhemmillä hauilla.) & 106            \\ \hline
+        Ei sisältänyt retroa eikä RCA:ta                                                                                                                          & 43             \\ \hline
+        Ei sisältänyt retroa ja RCA:n sisältyminen on epävarmaa                                                                                                   & 41             \\ \hline
+        Sisältää RCA:n, mutta ei sisällä retroa.                                                                                                                  & 32             \\ \hline
+        Esitetty retrospektiivi ei ole yrityksen työntekijöiden (esim kehitystiimin) välinen sessio (vaan esim tutkijoiden jälkeenpäin suorittama)                & 23             \\ \hline
+        On epävarmaa, onko esitetty retrospektiivi yrityksen työntekijöiden (esim kehitystiimin) välinen sessio (eikä esim tutkijoiden jälkeenpäin suorittama)    & 20             \\
+        \hline
+    \end{tabular}
+    \caption{Systemaattisen kirjallisuuskatsauksen tulosten karsinta}
+    \label{tab:karsintaehdot_taulukko}
+\end{table}
+
+Arvioitavista 108:sta artikkelista viimeisen karsinnan perusteella luettavaksi jäi 20 artikkelia, jotka olivat kandidaatin työn kannalta potentiaalisesti olennaisia. Artikkeleja lukiessa niiden tietoja päivitettiin. Jotkin artikkelit putosivat näiden päivitysten myötä pois rajausjoukosta, mikäli artikkelia tarkemmin lukiessa kävi ilmi, ettei se tarjonnutkaan työn kannalta tärkeää tietoa, vaikka abstraktin perusteella näin olisi voinut luulla. Olennaisilta vaikuttavista artikkeleista tehtiin tarkemmat muistiinpanot jatkoanalyysiä varten.
 
 \subsection{Kenttätutkimus}
 \subsubsection{Ensimmäinen case}
