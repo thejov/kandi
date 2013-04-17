@@ -66,7 +66,12 @@ Haun tulokset tallennettiin taulukkolaskentaohjelmaan. Tuloksia arvioitiin eri t
 \clearpage
 
 \subsection{Tulosten rajaus}
-Taulukossa 1 on esitetty perusteet, joiden mukaan tuloksia on karsittu pois. Karsinta on tehty otsikon, abstraktin ja artikkelin avainsanojen antamien tietojen perusteella.
+Taulukossa \ref{tab:karsintaehdot_taulukko} on esitetty perusteet, joiden mukaan tuloksia on karsittu pois. Karsinta on tehty otsikon, abstraktin ja artikkelin avainsanojen antamien tietojen perusteella. Ensimmäinen haku Scopus-hakukoneessa tehtiin 26. maaliskuuta 2013, jolloin artikkeleja löytyi 108. Seuraavana päivänä artikkeleja löytyi enää 106. Kaksi hausta pudonnutta artikkelia olivat \citep{bolosky2007farsite} ja \citep{dreiseitl2005nomographic}. Nämä artikkelit jäivät kirjallisuuskatsauksen ulkopuolelle.
+
+Seuraavassa rajauksessa karsiutui pois 63 artikkelia, jotka eivät luettujen kuvausten perusteella tuntuneet sisältävän retrospektiivi-tapahtumaa, eikä juurisyyanalyysiä. Pois pudonneita artikkeleja olivat muun muassa \citep{yang2012personalized}, \citep{ji2010constructions}, \citep{helms2008retrospective} ja \citep{richardson2006developing}. Yleistä näille artikkeleille oli se, että niissä ilmaantui jokin hakusanoista, mutta eri merkityksessä. Hakusanojen lyhenteet saattoivat tarkoittaa artikkelissa jotain aivan muuta. Esimerkiksi DCA saattoi tulla sanoista "Difference Covering Array" \citep{ji2010constructions}. Retrospektillä viitattiin usein tutkijoiden suorittamaan katsaukseen esimerkiksi UI kuvauskieliin ja niiden kehitykseen \citep{helms2008retrospective}, eikä retrospektiiviin tapahtumana, joka järjestetään yrityksen prosessin kehittämiseksi.
+
+Kolmas rajaus koski niitä kahta artikkelia, jotka eivät sisältäneet retrospektiiviä ja joissa juurisyyanalyysin sisältyminen oli epävarmaa. Artikkelit olivat \citep{anquetil2007software} ja \citep{wang2004strider}.
+
 \begin{table}
     \begin{tabular}{|p{0.5cm}|p{11.5cm}|p{2cm}|}
         \hline
@@ -85,16 +90,38 @@ Taulukossa 1 on esitetty perusteet, joiden mukaan tuloksia on karsittu pois. Kar
     \label{tab:karsintaehdot_taulukko}
 \end{table}
 
-Arvioitavista 108:sta artikkelista viimeisen karsinnan perusteella luettavaksi jäi 20 artikkelia, jotka olivat kandidaatin työn kannalta potentiaalisesti olennaisia. Artikkeleja lukiessa niiden tietoja päivitettiin. Kymmenen artikkelia putosi näiden päivitysten myötä pois rajausjoukosta, kun artikkelia tarkemmin lukiessa kävi ilmi, ettei se tarjonnutkaan työn kannalta tärkeää tietoa, vaikka abstraktin perusteella näin olisi voinut luulla. Olennaisilta vaikuttavista artikkeleista tehtiin tarkemmat muistiinpanot jatkoanalyysiä varten.
+Arvioitavista 108:sta artikkelista jäi karsinnan perusteella luettavaksi 20 artikkelia, jotka olivat kandidaatin työn kannalta potentiaalisesti olennaisia. Artikkeleja lukiessa niiden tietoja päivitettiin taulukossa. Kymmenen artikkelia putosi näiden päivitysten myötä pois rajausjoukosta, kun artikkelia tarkemmin lukiessa kävi ilmi, ettei se tarjonnutkaan työn kannalta tärkeää tietoa, vaikka abstraktin perusteella näin olisi voinut luulla. Olennaisilta vaikuttavista artikkeleista tehtiin tarkemmat muistiinpanot jatkoanalyysiä varten.
 
 \section{Systemaattinen kirjallisuuskatsauksen tulokset}
+Systemaattisen kirjallisuuskatsauksen myötä valikoituneet artikkelit on julkaistu välillä 1998-2012. Tarkemman artikkelien julkaisuvuosijakauman näet taulukosta \ref{tab:julkaisuvuodet}.
+\begin{table}
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Julkaisuvuosi} & \textbf{lkm} \\ \hline
+	2012	& 1 \\ \hline
+	2011	& 1 \\ \hline
+	2009	& 1 \\ \hline
+	2006	& 1 \\ \hline
+	2004	& 2 \\ \hline
+	2003	& 2 \\ \hline
+	2002	& 1 \\ \hline
+	1998	& 1 \\ \hline
+    \end{tabular}
+    \caption{Valittujen artikkelien julkaisuvuodet}
+    \label{tab:julkaisuvuodet}
+\end{table}
 
-
+Artikkelit on julkaistu neljässä eri lehdessä, jotka ovat IEEE Software, Information and Software Technology, International Journal of Software Engineering and Knowledge Engineering, sekä Lecture Notes in Computer Science. Sen, miten artikkelit ovat jakautuneet näiden lehtien kesken näet kuvasta \ref{artikkeli_lehdet_pie}.
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=200mm]{artikkelien_lehdet.png}
+\caption{Lehdet, joissa valitut artikkelit on julkaistu.}
+\label{artikkeli_lehdet_pie}
+\end{figure}
 
 \begin{center}
 \begin{longtable}{|p{3cm}|p{4cm}|p{4cm}|p{4cm}|}
-\caption{Artikkelien sisältämien retrospektiivimenetelmien vaiheet}\\
-\hline
+\caption{Artikkelien sisältämien retrospektiivimenetelmien vaiheet}\label{retrovaiheet_taulukko}\\ \hline
   & \textbf{Syötteen kehittäminen} & \textbf{Kausaalianalyysi} & \textbf{Parannusideoiden kehittäminen} \\
 \hline
 \endfirsthead
@@ -124,12 +151,11 @@ Arvioitavista 108:sta artikkelista viimeisen karsinnan perusteella luettavaksi j
 \end{center}
 
 
-
-
-	
-	
-	
-
 \section{Pohdinta}
+\subsection{Retrospektiivien vaiheet}
+Taulukossa \ref{retrovaiheet_taulukko} on kuvattu systemaattisessa kirjallisuuskatsauksessa löydetyt retrospektiivimenetelmät, jotka sisältävät juurisyyanalyysin yhtenä osana menetelmää.
+Menetelmät voidaan jakaa kolmeen vaiheeseen: Syötteen kehittämiseen, kausaalianalyysiin ja parannusideoiden kehittämiseen. Jako on samankaltainen, kuin mitä Lehtinen on käyttänyt artikkelissaan \citep{Lehtinen2011}.
+
+Artikkeleissa kuvatuissa menetelmissä kahdeksan kymmenestä suosittelee kausaalianalyysiin Ishikawa diagrammia (tunnetaan myös fishbone diagrammina) \citep{kalinowski2012evidence}, \citep{de2004learning}, \citep{staalhane2004root}, \citep{dingsoyr2003extending}, \citep{birk2002postmortem}, \citep{card1998learning}. Kahdella artikkelilla fishbone diagrammi oli kuvattu toisena menetelmänä jonkin muun rinnalla \citep{Bjornson2009}, \citep{staalhane2003post}.
 
 \section{Yhteenveto}
