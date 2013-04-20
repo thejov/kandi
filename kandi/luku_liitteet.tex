@@ -1,33 +1,67 @@
-\section{Esimerkkiliite}
-\label{sec:app1}
 
-Jos työhön kuuluu suurikokoisia (yli puoli sivua) kuvia, taulukoita
-tai karttoja tms., jotka eivät kokonsa puolesta sovi tekstin joukkoon,
-ne laitetaan liitteisiin. Liitteet numeroidaan. Jokaiseen liitteeseen
-tulee viitata tekstissä, eikä liitteisiin ole tarkoitus laittaa ``mitä
-tahansa'', vaan vain työlle oikeasti tarpeellista
-materiaalia. Liitteisiin voidaan sijoittaa esim. malli
-kyselylomakkeesta, jolla tutkimushaastattelu toteutettiin,
-pohjapiirustuksia, taulukoita, kaavioita, kuvia tms.
+\section{Systemaattisen kirjallisuuskatsauksen hakutermien evoluutio}
+\label{sec:hakutermi_evoluutio}
 
-\textbf{TIK.kand suositus: Vältä liitteitä.} Jos iso kuva, mieti onko
-sen koko pienettävissä (täytyy olla tulkittavissa) normaalin tekstin
-yhteyteen. Joskus liitteeksi lisätään matemaattisen kaavan tarkempi
-johtaminen, haastattelurunko, kyselypohja, ylimääräisiä kuvia, lyhyitä
-ohjelmakoodeja tai datatiedostoja.
 
-Työtä varten mahdollisesti tehtyjä ohjelmakoodeja ei tyypillisesti
-lisätä tänne, ellei siihen ole joku erityinen syy. (Kukaan ei ala
-kirjoittaa tai tarkistamaan koko koodia paperilta vaan pyytää sitä
-sinulta, jos on kiinnostunut.)
+\begin{center}
+\begin{longtable}{|p{1cm}|p{6cm}|p{2cm}|p{7cm}|}
+\caption{Systemaattisen kirjallisuuskatsauksen hakutermien evoluutio}\label{haku_evoluutio_taulukko}\\ \hline
 
-%\subsection{Esimerkkiliitteen otsikko 1}
-%\label{sec:app1_1}
-%
-%Kerätty data-aineisto.
-%
-% -------------------------------------------------------------- %
-%
+\textbf{\#} & \textbf{Hakutermi} & \textbf{Tulosten määrä} & \textbf{Arvio} \\
+\endfirsthead
+\multicolumn{4}{c}%
+{\tablename\ \thetable\ -- \textit{Jatkoa edelliseltä sivulta}} \\
+\hline
+ \textbf{\#} & \textbf{Hakutermi} & \textbf{Tulosten määrä} & \textbf{Arvio} \\
+\hline
+\endhead
+\hline \multicolumn{4}{r}{\textit{Jatkuu seuraavalla sivulla}} \\
+\endfoot
+\hline
+\endlastfoot
+\hline
+ 1 & TITLE-ABS-KEY("retrospective" AND "software engineering") & 103 & \begin{itemize} \item kaikkia hakusanoja ja rajauksia ei käytetty \item paljon epäolennaisia hakutuloksia esimerkiksi lääketieteen alalta \end{itemize} \\
+\hline
+ 2 & TITLE-ABS-KEY("retrospective" AND "software engineering") AND DOCTYPE(ar) AND PUBYEAR > 1989 & 25 & \begin{itemize} \item kaikkia hakusanoja ei käytetty \item rajaukset ok  \item liian vähän tuloksia \end{itemize}\\
+\hline
+ 3 & TITLE-ABS-KEY("postmortem analysis" AND "software engineering") AND DOCTYPE(ar) AND PUBYEAR > 1989 & 4 & \begin{itemize} \item kaikkia hakusanoja ei käytetty\item liian vähän tuloksia \end{itemize} \\
+\hline
+ 4 & TITLE-ABS-KEY("post project review" AND "software engineering") & 0 & ~ \\
+\hline
+ 5 & TITLE-ABS-KEY("post-project review" AND "software engineering") & 0 & ~ \\
+\hline
+ 6 & TITLE-ABS-KEY(("retrospective" OR "postmortem analysis" OR "post-project review") AND "software engineering") & 114 & \begin{itemize} \item kaikkia rajauksia ei käytetty\item paljon epäolennaisia hakutuloksia esimerkiksi lääketieteen alalta \end{itemize} \\
+\hline
+ 7 & TITLE-ABS-KEY(("retrospective" OR "postmortem analysis" OR "post-project review") AND "software engineering") AND DOCTYPE(ar) AND PUBYEAR > 1989 & 28 & \begin{itemize} \item kaikki hakusanat ja sovitut rajaukset käytetty\item liian vähän tuloksia \end{itemize} \\
+\hline
+ 8 & TITLE-ABS-KEY("retrospective" AND "software") AND DOCTYPE(ar) AND SUBJAREA(comp OR engi OR busi) AND PUBYEAR > 1989 & 133 & \begin{itemize} \item tiukennettu rajausta kattamaan pelkästään tietotekniikan, insinööritieteet ja kauppatieteet\item muutettu hakusana “software engineering” yleisemmäksi “software”, jotta tuloksia saataisiin lisää\item iso osa tuloksista oli tutkimuksen kannalta epäolennaisia \end{itemize} \\
+\hline
+ 9 & TITLE-ABS-KEY(("retrospective" OR "process improvement") AND "software") AND DOCTYPE(ar) AND SUBJAREA(comp OR engi OR busi) AND PUBYEAR > 1989 & 852 & \begin{itemize} \item kokeiltiin lisätä hakusana “process improvement”, joka löytyi mm. Lehtisen ja Bjornsonin RCA-aiheisista artikkeleista\item liikaa ja epäolennaisia tuloksia \end{itemize} \\
+\hline
+ 10 & TITLE-ABS-KEY(("retrospective" OR "process improvement") AND "software engineering") AND DOCTYPE(ar) AND SUBJAREA(comp OR engi OR busi) AND PUBYEAR > 1989 & 390 & \begin{itemize} \item tarkennettiin hakusanaa “software” takaisin “software engineering” hakusanaksi\item kokeiltiin hakusanaa “process improvement”, joka löytyi mm. Lehtisen ja Bjornsonin RCA-aiheisista artikkeleista\item liikaa ja epäolennaisia tuloksia \end{itemize} \\
+\hline
+ 11 & TITLE-ABS-KEY(("retrospective" OR "postmortem analysis" OR "post-project review" OR "process improvement") AND "software engineering") AND DOCTYPE(ar) AND SUBJAREA(comp OR engi OR busi) AND PUBYEAR > 1989 & 393 & \begin{itemize} \item lisätty muut retrospektiivin kuvaamiseksi käytetyt termit hakusanoiksi\item edelleen liikaa hakutuloksia \end{itemize} \\
+\hline
+ 12 & TITLE-ABS-KEY(("retrospective" OR "postmortem analysis" OR "post-project review" OR "process improvement") AND "software engineering") AND DOCTYPE(ar) AND SUBJAREA(comp) AND PUBYEAR > 1989 & 326 & \begin{itemize} \item tarkennettu aihealueen rajausta pelkään tietotekniikkaan\item liikaa hakutuloksia \end{itemize} \\
+\hline
+ 13 & TITLE-ABS-KEY(("retrospective" OR "postmortem analysis" OR "post-project review" OR "process improvement") AND "software engineering") AND DOCTYPE(ar) AND SUBJAREA(comp) AND PUBYEAR > 1999 & 233 & \begin{itemize} \item tiukennettu aikarajausta vuoteen 2000\item liikaa hakutuloksia \end{itemize} \\
+\hline
+ 14 & ALL("software engineering") AND TITLE-ABS-KEY("retrospective" OR "postmortem analysis" OR "post-project review") AND DOCTYPE(ar) AND SUBJAREA(comp) AND PUBYEAR > 1989 & 58 & \begin{itemize} \item laajennettiin hakua: hakusanaa “software engineering” ei enää haeta pelkästään otsikosta, abstraktista ja artikkelin avainsanoista, vaan kaikista mahdollisista kentistä.\item laajennettiin aikarajaa takaisin vuoteen 1990\item tulokset olennaisen näköisiä \item lupaavaa, mutta edelleen liian vähän tuloksia \end{itemize} \\
+\hline
+ 15 & ALL("software engineering") AND TITLE-ABS-KEY("retrospective" OR "postmortem analysis" OR "pma" OR "post-mortem" OR "post mortem analysis" OR "post-project review" OR "post project review") AND DOCTYPE(ar) ANDSUBJAREA(comp) AND PUBYEAR > 1989 & 78 & \begin{itemize} \item tuloksia saatiin lisää sallimalla postmortem-analyysin eri kirjoitusasuja\item edelleen liian vähän tuloksia \end{itemize} \\
+\hline
+ 16 & TITLE-ABS-KEY("retrospective" OR "postmortem analysis" OR "pma" OR "post-mortem" OR "post mortem analysis" OR "post-project review" OR "post project review") AND DOCTYPE(ar) AND SUBJAREA(comp) AND PUBYEAR > 1989 & 945 & \begin{itemize} \item kokeiltiin poistaa hakusana “software engineering”, mikäli se olisi rajoittanut tuloksia liikaa\item liikaa tuloksia \end{itemize} \\
+\hline
+ 17 & ALL("agile") AND TITLE-ABS-KEY("retrospective" OR "postmortem analysis" OR "pma" OR "post-mortem" OR "post mortem analysis" OR "post-project review" OR "post project review") AND DOCTYPE(ar) AND SUBJAREA(comp) AND PUBYEAR > 1989 & 20 & \begin{itemize} \item korvattiin hakusana “software engineering” hakusanalla “agile”\item liian vähän tuloksia \end{itemize} \\
+\hline
+ 18 & ALL("software development") AND TITLE-ABS-KEY("retrospective" OR "postmortem analysis" OR "pma" OR "post-mortem" OR "post mortem analysis" OR "post-project review" OR "post project review") AND DOCTYPE(ar) AND SUBJAREA(comp) AND PUBYEAR > 1989 & 51 & \begin{itemize} \item korvattiin hakusana “software engineering” hakusanalla “software development”\item liian vähän tuloksia \end{itemize} \\
+\hline
+ 19 & ALL("software engineering") AND TITLE-ABS-KEY("retrospective" OR "postmortem analysis" OR "pma" OR "post-mortem" OR "post mortem analysis" OR "post-project review" OR "post project review" OR "root cause analysis" OR"rca" OR "defect cause analysis" OR "dca") AND DOCTYPE(ar) AND SUBJAREA(comp) AND PUBYEAR > 1989 & 108 & \begin{itemize} \item otimme mukaan juurisyyanalyysiin liittyviä hakusanoja\item tähän asti: haemme retrospektiivillä ja etsimme sieltä retro-menetelmiä, joissa on rca. nyt: haemme lisäksi juurisyyanalyysillä ja etsimme tästä hakujoukosta tapauksia, joissa rca:ta käytetään retron menetelmänä.\item kokeilemme siis lähestyä asiaa kahdelta suunnalta, retron suunnalta ja rca:n suunnalta\item muuten sama, kuin Haku 13, mutta RCA lisätty\item tuloksia sopivasti\item tulokset vaikuttavat hyviltä\item ohjaajan suosittelemat RCA-artikkelien kirjoittavat löytyivät (esim Bjornson, Card, …)\item valittiin lopulliseksi tulosjoukoksi \end{itemize} \\
+\hline
+\end{longtable}
+\end{center}
+
+
 %\newpage
 %\section{Toinen esimerkkiliite}
 %\label{sec:app2}
