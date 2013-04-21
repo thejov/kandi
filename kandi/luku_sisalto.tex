@@ -13,6 +13,9 @@ Kandidaatintyön työmäärän pitämiseksi järkevänä, on systemsaattisessa k
 Tämä kandidaatintyö on jaettu seuraaviin osiin. Kappaleessa 2 esitellään teoreettinen tausta, eli esitellään ja määrittellään kirjallisuuden avulla termit "ketterä retrospektiivi" ja "juurisyyanalyysi". Tämän jälkeen kuvataan työssä käytetty systemaatinen kirjallisuuskatsaus menetelmä. Kappaleessa 4 tuodaan julki tulokset ja kappaleessa 5 tulosten johtopäätösket. Kandidaatintyön viimeinen kappale on yhteenveto.
 
 \section{Teoreettinen tausta}
+
+\subsection{Retrospektiivi}
+
 \subsection{Ketterä retrospektiivi}
 Ketterissä ohjelmistokehitysmenetelmissä on määritelty, että säännöllisin väliajoin pidetään reflektointi, jossa tiimi pohtii tapoja tulla tehokkaammaksi. Nämä kehitettyjen parannusten perusteella tiimi muuttaa toimintaansa \citep{AgileManifestoPrinciples}. Kevyt retrospektiivisessio on tapa toteuttaa tätä periaatetta. Projektin lopputuloksen kannalta retrospektiivejä on järkevää pitää lyhyin väliajoin. Tällöin tiimin kohtaamat ongelmat ja niihin liittyvät yksityiskohdat ovat tuoreessa muistissa ja parannusehdotukset voidaan ottaa suoraan käyttöön ja siten pyrkiä parantamaan projektin lopputuloksen laatua. \citep{Cockburn2002}
 
@@ -104,7 +107,7 @@ Olennaisilta vaikuttavista artikkeleista tehtiin tarkemmat muistiinpanot jatkoan
 \end{table}
 
 \section{Systemaattinen kirjallisuuskatsauksen tulokset}
-Systemaattisen kirjallisuuskatsauksen myötä valikoituneet artikkelit on julkaistu välillä 1998-2012. Tarkemman artikkelien julkaisuvuosijakauman näet taulukosta \ref{tab:julkaisuvuodet}.
+Systemaattisessa kirjallisuuskatsauksessa kandidaatintyöhön karsiutui kymmenen artikkelia. Niiden julkaisuvuodet ovat välillä 1998-2012. Tarkemman artikkelien julkaisuvuosijakauman näet taulukosta \ref{tab:julkaisuvuodet}.
 \begin{table}
     \begin{tabular}{|c|c|}
         \hline
@@ -129,6 +132,10 @@ Artikkelit on julkaistu neljässä eri lehdessä, jotka ovat IEEE Software, Info
 \caption{Lehdet, joissa valitut artikkelit on julkaistu.}
 \label{artikkeli_lehdet_pie}
 \end{figure}
+
+Valituissa artikkeleissa on kuvattu jokin retrospektiivissä käytettävä menetelmä, joka sisältää juurisyyanalyysin käytön. Jotkin artikkeleista sisälsivät useamman menetelmän kuvauksen. Joissain tapauksissa toinen kuvattu menetelmä ei sisältänyt juurisyyanalyysiä \citep{staalhane2004root}, \citep{dingsoyr2003extending}. Nämä menetelmät on jätetty huomioimatta tässä kandidaatintyössä.
+
+Artikkeleissa kuvatut menetelmät on jaettavissa seuraaviin yhteisiin vaiheisiin: syötteen kehittäminen, kausaalianalyysi ja parannusideoiden kehittäminen. Jako on samankaltainen, kuin mitä Lehtinen on käyttänyt artikkelissaan \citep{Lehtinen2011}. Syötteen kehittämisvaiheessa kerätään ne aiheet, joita juurisyyanalyysissä halutaan analysoida syvemmin. Kausaalianalyysivaiheessa suoritetaan varsinainen juurisyyanalyysi. Parannusideoiden kehittämisvaiheessa kehitetään kehitysideoita valituille juurisyille. Ainoastaan neljässä menetelmässä kuvatuista 12:sta menetelmästä sisältää tämän viimeisen vaiheen. Menetelmien vaiheet on kuvattu taulukossa \ref{retrovaiheet_taulukko} ja tarkemmin pohdinta-kappaleessa.
 
 \begin{center}
 \begin{longtable}{|p{3cm}|p{4cm}|p{4cm}|p{4cm}|}
@@ -161,13 +168,48 @@ Artikkelit on julkaistu neljässä eri lehdessä, jotka ovat IEEE Software, Info
 \end{longtable}
 \end{center}
 
+Timo: pitäiskö \citep{Lehtinen2011} artikkelista ottaa myös muut alussa lyhyesti kuvatut RCA-menetelmät tähän mukaan? rooney, ammerman, etc.? vai riittääkö ARCA-menetelmä? ehkä vois ajatella, että paperi esittelee lähinnä ARCA:n ja muut on vaan taustana mukana? eli siksi ei? :)
+
 
 \section{Pohdinta}
 \subsection{Retrospektiivien vaiheet}
-Taulukossa \ref{retrovaiheet_taulukko} on kuvattu systemaattisessa kirjallisuuskatsauksessa löydetyt retrospektiivimenetelmät, jotka sisältävät juurisyyanalyysin yhtenä osana menetelmää.
-Menetelmät voidaan jakaa kolmeen vaiheeseen: Syötteen kehittämiseen, kausaalianalyysiin ja parannusideoiden kehittämiseen. Jako on samankaltainen, kuin mitä Lehtinen on käyttänyt artikkelissaan \citep{Lehtinen2011}.
+Se, että artkkelien retrospektiivien menetelmien vaihejako on luonnollista tehdä niin samankaltaiseksi, kuin mitä Lehtinen on käyttänyt artikkelissaan, jossa on vertaillut eri juurisyyanalyysimenetelmiä keskenään \citep{Lehtinen2011} tuntuu mielenkiintoiselta. Voidaan nähdä, että silloin, kun juurisyyanalyysiä käytetään osana retrospektiivin menetelmää, kyseinen menetelmä ei kokonaisuudessakaan eroa juurisyyanalyysin käytöstä muussa kontekstissa. Molemmat sisältävät samanlaiset vaiheet.
 
-Artikkeleissa kuvatuissa menetelmissä kahdeksan kymmenestä suosittelee kausaalianalyysiin Ishikawa diagrammia (tunnetaan myös fishbone diagrammina) \citep{kalinowski2012evidence}, \citep{de2004learning}, \citep{staalhane2004root}, \citep{dingsoyr2003extending}, \citep{birk2002postmortem}, \citep{card1998learning}. Kahdella artikkelilla fishbone diagrammi oli kuvattu toisena menetelmänä jonkin muun rinnalla \citep{Bjornson2009}, \citep{staalhane2003post}.
+Retrospektiivi käsitteenä tarkoittaa vain katsomista taakse, eli jonkin menneen tapahtuman arviointia. Ketterät menetelmätkään eivät anna sille suoraan menetelmää, vaan määrittelevät ainoastaan sen tavoitteet, joita ovat yleensä konkreettiset ehdotukset, jolla voidaan parantaa retrospektiiviin osallistuvan ryhmän työprosessia. Halutaan siis välttyä samoilta ongelmilta ja toistaa onnistumisia, joita on kohdattu. On siis vaikea tehdä eroa juurisyyanalyysiä käyttävän retrospektiivin ja muussa yhteydessä prosessinkehitystä varten pidettävän ongelmanratkaisu-juurisyyanalyysin välille.
+
+\subsubsection{Syötteen kehittäminen}
+Syötteen kehittämisvaiheessa kerätään aiheita, jotka ovat olleet retrospektiivissä käsiteltävän työrupeaman (iteraatio, projekti) kannalta merkityksellisiä. Näistä aiheista valitaan tärkeimmät, joita analysoidaan tarkemmin seuraavassa kausaalianalyysivaiheessa. Syötteen kehittämisvaihe jakautuu usein varsinaiseen aiheiden keräämiseen, niiden ryhmittelyyn, sekä priorisointiin.
+
+Käisteltäviä aiheita voidaan kerätä haastatteluilla \citep{birk2002postmortem}, ....
+
+
+\subsubsection{Kausaalianalyysi}
+Kausaalianalyysivaiheessa tehdään varsinainen juurisyyanalyysi, eli analysoidaan, mistä valittu ongelma tai onnistuminen johtuu ja pyritään keksimään sille selittäviä syitä. Artikkeleissa kuvatuissa menetelmissä kahdeksan kymmenestä suosittelee kausaalianalyysiin Ishikawa diagrammia (tunnetaan myös fishbone diagrammina) \citep{kalinowski2012evidence}, \citep{de2004learning}, \citep{staalhane2004root}, \citep{dingsoyr2003extending}, \citep{birk2002postmortem}, \citep{card1998learning}. Kahdella artikkelilla fishbone diagrammi oli kuvattu toisena menetelmänä jonkin muun rinnalla \citep{Bjornson2009}, \citep{staalhane2003post}.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=150mm]{Ishikawa esimerkki.png}
+\caption{Esimerkki Ishikawan kalanruotodiagrammista}
+\label{ishikawa_ex}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=150mm]{suunnattu verkko esimerkki relaatioilla.JPG}
+\caption{Esimerkki suunnatusta verkosta tai kausaalisesta kartasta (causal map)}
+\label{verkko_ex}
+\end{figure}
+
+
+\subsubsection{Parannusideoiden kehittäminen}
+
+
+
+
+
+joka voidaan käsittää ongelmanratkaisuna, tai onnistumisten 
+ vaikka Lehtinen ei puhukaan suoraan artikkelissaan retrospektiiveistä
+
 
 
 kamaa johdannosta, sopiiko tänne?\\
