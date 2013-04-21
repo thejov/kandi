@@ -61,18 +61,29 @@ Lopulliseksi hakutermiksi muodostui seuraava:\\
 \textit{ALL("software engineering") AND TITLE-ABS-KEY("retrospective" OR "postmortem analysis" OR "pma" OR "post-mortem" OR "post mortem analysis" OR "post-project review" OR "post project review" OR "root cause analysis" OR"rca" OR "defect cause analysis" OR "dca") AND DOCTYPE(ar) AND SUBJAREA(comp) AND PUBYEAR > 1989}\\
 Näillä hakusanoilla löytyi yhteensä 108 tulosta.
 
-Kirjallisuuskatsauksessa käytettyjen hakusanojen evoluutio erilaisine kokeiluineen ja niiden toimivuuden arvioinnin kera on annettu kandidaatin työn liitteenä (tähän liitenro).
+Kirjallisuuskatsauksessa käytettyjen hakusanojen evoluutio erilaisine kokeiluineen ja niiden toimivuuden arvioinnin kera on kuvattu kandidaatin työn liitteessä \ref{sec:hakutermi_evoluutio}.
 
 \subsection{Tulosten arviointi}
-Haun tulokset tallennettiin taulukkolaskentaohjelmaan. Tuloksia arvioitiin eri tavoin käyttämällä artikkelin otsikon, abstraktin ja avainsanojen antamia tietoja.
-\clearpage
+Haun tulokset tallennettiin taulukkolaskentaohjelmaan. Kaikki 108:n artikkelin abstraktit luettiin. Tuloksia arvioitiin eri tavoin käyttämällä artikkelin otsikon, abstraktin ja avainsanojen antamia tietoja. Artikkeleista merkittiin ylös sisältävätkö ne retrospektiivin kuvauksen, juurisyyanalyysin, jonkin retrospektiivissä käytettävän menetelmän, ja sisältääkö kuvattu retrospektiivin menetelmä juurisyyanalyysin. Lisäksi merkittiin ylös, kuvataanko artikkelissa ketteriä menetelmiä ja nimenomaan ketterää retrospektiiviä. Artikkeleista kirjoitettiin taulukkolaskentaohjelmaan myös lyhyet muistiinpanot.
+
+Tulosten rajausvaiheessa artikkeleista merkittiin vielä kuvaavatko ne prosessinkehitystä ja onko kuvattu retrospektiivi kollaboratiivinen sessio yrityksen työntekijöiden (esim kehitystiimin) välinen sessio (eikä esim tutkijoiden jälkeenpäin suorittama). Näillä lisämerkinnöillä helpotettiin artikkelien rajaamista. Nämä merkinnät tehtiin pääosin taulukkolaskentaohjelmaan tehtyjen muistiinpanojen perusteella. Epäselvissä tapauksissa abstrakti luettiin uudestaan, tai  kohtaan merkittiin kysymysmerkki, mikäli asia ei selvinnyt siitä.
+
+Jokaiseen ylläkuvatuista kysymyksistä (merkitty sarakkeina taulukkolaskentaohjelmassa) merkittiin "kyllä" tai "ei". Epäselvissä tapauksissa merkittiin kysymysmerkki, "ehkä", tai kohta saatettiin jättää tyhjäksi. Oli myös tapauksia, joissa artikkeli ei täysin täyttänyt kohdan kriteerejä, esimerkiksi sisälsi jonkin retrospektiivin tapaisen lähestymistavan, jota ei kuitenkaan voinut aivan mieltä retrospektiiviksi. Tällöin kohtaan merkittiin "sinne päin".
 
 \subsection{Tulosten rajaus}
-Taulukossa \ref{tab:karsintaehdot_taulukko} on esitetty perusteet, joiden mukaan tuloksia on karsittu pois. Karsinta on tehty otsikon, abstraktin ja artikkelin avainsanojen antamien tietojen perusteella. Ensimmäinen haku Scopus-hakukoneessa tehtiin 26. maaliskuuta 2013, jolloin artikkeleja löytyi 108. Seuraavana päivänä artikkeleja löytyi enää 106. Kaksi hausta pudonnutta artikkelia olivat \citep{bolosky2007farsite} ja \citep{dreiseitl2005nomographic}. Nämä artikkelit jäivät kirjallisuuskatsauksen ulkopuolelle.
+Taulukossa \ref{tab:karsintaehdot_taulukko} on esitetty perusteet, joiden mukaan tuloksia on karsittu pois. Karsinta on tehty edellä kuvattujen arviointien perusteella. Ensimmäinen haku Scopus-hakukoneessa tehtiin 26. maaliskuuta 2013, jolloin artikkeleja löytyi 108. Seuraavana päivänä artikkeleja löytyi enää 106. Kaksi hausta pudonnutta artikkelia olivat \citep{bolosky2007farsite} ja \citep{dreiseitl2005nomographic}. Nämä artikkelit jäivät kirjallisuuskatsauksen ulkopuolelle.
 
 Seuraavassa rajauksessa karsiutui pois 63 artikkelia, jotka eivät luettujen kuvausten perusteella tuntuneet sisältävän retrospektiivi-tapahtumaa, eikä juurisyyanalyysiä. Pois pudonneita artikkeleja olivat muun muassa \citep{yang2012personalized}, \citep{ji2010constructions}, \citep{helms2008retrospective} ja \citep{richardson2006developing}. Yleistä näille artikkeleille oli se, että niissä ilmaantui jokin hakusanoista, mutta eri merkityksessä. Hakusanojen lyhenteet saattoivat tarkoittaa artikkelissa jotain aivan muuta. Esimerkiksi DCA saattoi tulla sanoista "Difference Covering Array" \citep{ji2010constructions}. Retrospektillä viitattiin usein tutkijoiden suorittamaan katsaukseen esimerkiksi UI kuvauskieliin ja niiden kehitykseen \citep{helms2008retrospective}, eikä retrospektiiviin tapahtumana, joka järjestetään yrityksen prosessin kehittämiseksi.
 
 Kolmas rajaus koski niitä kahta artikkelia, jotka eivät sisältäneet retrospektiiviä ja joissa juurisyyanalyysin sisältyminen oli epävarmaa. Artikkelit olivat \citep{anquetil2007software} ja \citep{wang2004strider}.
+
+Seuraavaksi rajattiin pois yhdeksän artikkelia, joissa kuvattiin juurisyyanalyysiä, mutta ei retrospektiiviä. Näissä saattoi esimerkiksi olla juurisyyanalyysi mainittuna artikkelin avainsanoissa, mutta kontekstista ei kuitenkaan ole tunnistettavissa retrospektiiviä \citep{yu1998software}. Toisaalta artikkeli saattoi kuvata tiedon visualisointinäyttöjä, joilla tiedosta voidaan esittää muun muassa juurisyyanalyysiesitys \citep{hao2008density}.
+
+Viides rajaus karsi taas yhdeksän artikkelia, joissa esitetty retrospektiivi ei ole yrityksen työntekijöiden välinen sessio, vaan esimerkiksi tutkijoiden jälkeenpäin suorittama katsaus, kuten esimerkiksi oli artikkeleissa \citep{wolforth2010generalizable}, \citep{ardimento2004multiview}. Kolmessa artikkelissa oli abstraktin tulkinnan perusteella epävarmaa, täyttyikö edellämainittu ehto. Nämä artikkelit jäivät kuudennessa rajauksessa pois. Niitä olivat esimerkiksi seuraavat \citep{xu2012enabling}, \citep{grady1996software}. 
+
+Arvioitavista 108:sta artikkelista jäi kuuden karsinnan perusteella luettavaksi 20 artikkelia, jotka olivat kandidaatin työn kannalta potentiaalisesti olennaisia. Artikkeleja lukiessa niiden tietoja päivitettiin taulukossa. Kymmenen artikkelia putosi näiden päivitysten myötä pois rajausjoukosta, kun artikkelia tarkemmin lukiessa kävi ilmi, ettei se tarjonnutkaan työn kannalta tärkeää tietoa, vaikka abstraktin perusteella näin olisi voinut luulla. Poisjäänyt artikkeli saattoi olla sellainen, joka kuvasi retrospektiiviä, mutta josta ei abstraktin perusteella selvinnyt, kuvaako se myös sitä, miten retrospektiivi voidaan suorittaa, esimerksi \citep{glass2002loyal} ja \citep{drury2012obstacles}.
+
+Olennaisilta vaikuttavista artikkeleista tehtiin tarkemmat muistiinpanot jatkoanalyysiä varten.
 
 \begin{table}
     \begin{tabular}{|p{0.5cm}|p{11.5cm}|p{2cm}|}
@@ -91,8 +102,6 @@ Kolmas rajaus koski niitä kahta artikkelia, jotka eivät sisältäneet retrospe
     \caption{Systemaattisen kirjallisuuskatsauksen tulosten karsinta}
     \label{tab:karsintaehdot_taulukko}
 \end{table}
-
-Arvioitavista 108:sta artikkelista jäi karsinnan perusteella luettavaksi 20 artikkelia, jotka olivat kandidaatin työn kannalta potentiaalisesti olennaisia. Artikkeleja lukiessa niiden tietoja päivitettiin taulukossa. Kymmenen artikkelia putosi näiden päivitysten myötä pois rajausjoukosta, kun artikkelia tarkemmin lukiessa kävi ilmi, ettei se tarjonnutkaan työn kannalta tärkeää tietoa, vaikka abstraktin perusteella näin olisi voinut luulla. Olennaisilta vaikuttavista artikkeleista tehtiin tarkemmat muistiinpanot jatkoanalyysiä varten.
 
 \section{Systemaattinen kirjallisuuskatsauksen tulokset}
 Systemaattisen kirjallisuuskatsauksen myötä valikoituneet artikkelit on julkaistu välillä 1998-2012. Tarkemman artikkelien julkaisuvuosijakauman näet taulukosta \ref{tab:julkaisuvuodet}.
@@ -161,8 +170,16 @@ Menetelmät voidaan jakaa kolmeen vaiheeseen: Syötteen kehittämiseen, kausaali
 Artikkeleissa kuvatuissa menetelmissä kahdeksan kymmenestä suosittelee kausaalianalyysiin Ishikawa diagrammia (tunnetaan myös fishbone diagrammina) \citep{kalinowski2012evidence}, \citep{de2004learning}, \citep{staalhane2004root}, \citep{dingsoyr2003extending}, \citep{birk2002postmortem}, \citep{card1998learning}. Kahdella artikkelilla fishbone diagrammi oli kuvattu toisena menetelmänä jonkin muun rinnalla \citep{Bjornson2009}, \citep{staalhane2003post}.
 
 
-
 kamaa johdannosta, sopiiko tänne?\\
 \textit{Kandidaatintyössä tehdään synteesi kirjallisuuskatsauksessa kerätyssä aineistossa esitetyistä retrospektiivien juurisyyanalyysi-menetelmistä. On mahdollista, että osa aineistosta käsittelee raskaampaa, suuremman mittakaavan retrospektiiviä, joka pidettäisiin esimerkiksi projektin jälkeieen (post project review). Mikäli synteesin kuvaama menetelmä osoittautuu ketterän ohjelmistokehitystiimin retrospektiiviin liian raskaaksi, karsitaan siitä tähän tarkoitukseen ylimitoitetut kohdat pois. Lopputuloksen tulisi olla sellainen, että tiimi voi suorittaa sen ketterälle retrospektiiville varatussa, verrattain lyhyessä ajassa.}
+
+
+
+\subsection{Kandidaatintyön validiteetti ja sen uhkat}
+Systemaattisen kirjallisuuskatsauksen validiteettiin vaikuttaa luonnollisesti se, että sen on suurimmalta osin suorittanut yksi henkilö (kandidaatintyön kirjoittaja) oman arviokykynsä mukaan. Kandidaatityön ohjaaja on auttanut kandidaatintyön tekijää esimerkiksi hakusanojen valinnassa, mutta suorittava työ, kuten artikkeline arviointi ja rajaus on ollut kandidaatintyön tekijän vastuulla. On mahdollista, että joitain olennaisia artikkeleja karsiutui väärin perustein pois, koska abstraktia oli tulkittiin väärin. On myös todennäköistä, ettei valittuhakutermimme saavuttanut kaikkia olennaisia artikkeleja, mikäli ne eivät sisältäneet käytettyjä hakusanoja.
+
+Silti on perusteltua pitää suoritettua systemaattista kirjallisuuskatsausta huomattavasti luotettavampana ja tieteellisempänä tutkimusmenetelmänä, kuin tyypillinen sattumanvaraisten, erilaisten hakusanojen kokeilu eri hakukoneissa ja niiden hakutuloksista mielivaltaisin perustein valittujen artikkelien lukeminen. Tarkat ja hyvin dokumentoidut artikkelien valintakriteerit ja muut systemaattisen kirjallisuuskatsauksen eri vaiheet tekevät tutkimuksesta helposti toistettavan ja tarkistettavan. Tämä parantaa tehdyn tutkimuksen validiteettia huomattavsti.
+
+Lisäksi aineistohaun rajaaminen ennalta karsittuun joukkoon (Scopus-hakukone) ja sieltä pelkkien tieteellisten artikkelien, jotka käyvät julkaisuvaiheessa tiukan karsintaprosessin, valinta parantaa käsitellyn aineiston luotettavuutta.
 
 \section{Yhteenveto}
