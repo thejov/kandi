@@ -14,8 +14,6 @@ Tämä kandidaatintyö on jaettu seuraaviin osiin. Kappaleessa 2 esitellään te
 
 \section{Teoreettinen tausta}
 
-\subsection{Retrospektiivi}
-
 \subsection{Ketterä retrospektiivi}
 Ketterissä ohjelmistokehitysmenetelmissä on määritelty, että säännöllisin väliajoin pidetään reflektointi, jossa tiimi pohtii tapoja tulla tehokkaammaksi. Nämä kehitettyjen parannusten perusteella tiimi muuttaa toimintaansa \citep{AgileManifestoPrinciples}. Kevyt retrospektiivisessio on tapa toteuttaa tätä periaatetta. Projektin lopputuloksen kannalta retrospektiivejä on järkevää pitää lyhyin väliajoin. Tällöin tiimin kohtaamat ongelmat ja niihin liittyvät yksityiskohdat ovat tuoreessa muistissa ja parannusehdotukset voidaan ottaa suoraan käyttöön ja siten pyrkiä parantamaan projektin lopputuloksen laatua. \citep{Cockburn2002}
 
@@ -172,6 +170,14 @@ Timo: pitäiskö \citep{Lehtinen2011} artikkelista ottaa myös muut alussa lyhye
 
 
 \section{Pohdinta}
+
+\subsection{Retrospektiivin eri nimitykset}
+Vaikka retrospektiiveistä käyetään kirjallisuudessa lukuisia eri nimityksiä, käsittelemme niitä tässä kandidaatintyössä samalla tavalla. Pohjimmiltaan retrospektiivi \citep{AgileRetros2006}, post-mortem analyysi \citep{staalhane2003post}, postmortem analyysi \citep{de2004learning}, postmortem review \citep{dingsoyr2003extending}, process review \citep{karlsson2006case}, project review \citep{karlsson2006case}, retrospective analysis \citep{karlsson2006case}, project retrospective \citep{karlsson2006case} ja retrospective review \citep{karlsson2006case} voidaan nähdä tarkoittavan samaa asiaa.
+
+Retrospektiivi voi olla yleinen koko analysoitavan työrupeaman kattava sessio \citep{}. Sille voidaan kuitenkin myös antaa jokin tietty fokus \citep{}. Fokusoituja retrospektiivejä ovat muun muassa Post-release Analysis of Requirements SElection Quality \citep{karlsson2006case} ja Defect Causal Analysis \citep{card1998learning} ja artikkelissa \citep{de2004learning} kuvattu Postmortem analyysi.
+
+Artikkeleissa kuvatut retrospektiivit ovat eri tasoilta (lähinän projekti. myös heneerisiä, ei tarkemmin kuvattu, milloin).
+
 \subsection{Retrospektiivien vaiheet}
 Se, että artkkelien retrospektiivien menetelmien vaihejako on luonnollista tehdä niin samankaltaiseksi, kuin mitä Lehtinen on käyttänyt artikkelissaan, jossa on vertaillut eri juurisyyanalyysimenetelmiä keskenään \citep{Lehtinen2011} tuntuu mielenkiintoiselta. Voidaan nähdä, että silloin, kun juurisyyanalyysiä käytetään osana retrospektiivin menetelmää, kyseinen menetelmä ei kokonaisuudessakaan eroa juurisyyanalyysin käytöstä muussa kontekstissa. Molemmat sisältävät samanlaiset vaiheet.
 
@@ -182,20 +188,40 @@ Syötteen kehittämisvaiheessa kerätään aiheita, jotka ovat olleet retrospekt
 
 Käisteltäviä aiheita voidaan kerätä haastatteluilla \citep{birk2002postmortem}, ....
 
+Birk et al:
+semistrukturoitu haastattelu
+ryhmäkeskustelu (fasilitoitu tai ei)
+KJ-sessiot
+
+Stålhane 2004:
+pareto analyysi defekteistä
+
+stålhane et al 2003
+KJ, priorisointi
+
+
 
 \subsubsection{Kausaalianalyysi}
-Kausaalianalyysivaiheessa tehdään varsinainen juurisyyanalyysi, eli analysoidaan, mistä valittu ongelma tai onnistuminen johtuu ja pyritään keksimään sille selittäviä syitä. Artikkeleissa kuvatuissa menetelmissä kahdeksan kymmenestä suosittelee kausaalianalyysiin Ishikawa diagrammia (tunnetaan myös fishbone diagrammina) \citep{kalinowski2012evidence}, \citep{de2004learning}, \citep{staalhane2004root}, \citep{dingsoyr2003extending}, \citep{birk2002postmortem}, \citep{card1998learning}. Kahdella artikkelilla fishbone diagrammi oli kuvattu toisena menetelmänä jonkin muun rinnalla \citep{Bjornson2009}, \citep{staalhane2003post}.
+Kausaalianalyysivaiheessa tehdään varsinainen juurisyyanalyysi, eli analysoidaan, mistä valittu ongelma tai onnistuminen johtuu ja pyritään keksimään sille selittäviä syitä. 
+
+Vaikka Ishikawan kalanruotodiagrammi on kirjallisuudessa paljon käytetty syy-seuraus-suhteiden visualisointitapa \citep{kalinowski2012evidence}, \citep{Bjornson2009}, \citep{de2004learning}, \citep{staalhane2004root}, \citep{dingsoyr2003extending}, \citep{staalhane2003post}, \citep{birk2002postmortem}, \citep{card1998learning}, on kausaalinen kartta persutellusti osoitettu uudemmassa tutkimuksessa tehokkaammaksi visualisointitavaksi \citep{Bjornson2009}, \citep{Lehtinen2011}. 
+
+Artikkeleissa kuvatuissa menetelmissä kahdeksan kymmenestä suosittelee kausaalianalyysiin Ishikawa diagrammia (tunnetaan myös fishbone diagrammina) \citep{kalinowski2012evidence}, \citep{de2004learning}, \citep{staalhane2004root}, \citep{dingsoyr2003extending}, \citep{birk2002postmortem}, \citep{card1998learning}. Kahdella artikkelilla fishbone diagrammi oli kuvattu toisena menetelmänä jonkin muun rinnalla \citep{Bjornson2009}, \citep{staalhane2003post}. Kuvassa \ref{ishikawa_ex} on esimerkki Ishikawan kalanruotodiagrammista.
+
+Bj{\o}rnson on tutkimuksessaan vertaillut Ishikawan kalanruotodiagrammin käyttöä kausaaliseen karttaan \citep{Bjornson2009}. On havaittu, että kausaalianalyysivaiheessa, joka koostuu ryhmäkeskustelun lomassa muodostetusta kalanruotodiagrammista, ryhmän aktiivisuus väheni KJ-session muodossa järjestetyn syötteen keräämisvaiheeseen verrattuna \citep{Bjornson2009}, \citep{staalhane2003post}. Bj{\o}rnson kokeili KJ-session tyylistä jokaista ryhmän jäsentä osallistavaa toimintatapaa myös juurisyyanalyysivaiheessa  ja sai rohkaisevia tuloksia sen toimivuudesta \citep{Bjornson2009}. Tähän tarkoitukseen hän tarvitsi kuitenkin kalanruotodiagrammia vapaamuotoisempaa diagrammityyppiä ja päätyi kausaalisen kartan käyttöön. Kuvassa \ref{verkko_ex} on esimerkki kausaalisesta kartasta.
+
+Myös Lehtinen käyttää ARCA-menetelmässään kausaalista karttaa, jota hän kutsuu suunnatuksi verkoksi \citep{Lehtinen2011}. Hän perustelee valintaa sillä, että toisin, kuin kalanruotodiagrammissa, tai muissa syy-seuraus-esitystavoissa, suunnatussa verkossa samaa syytä ei tarvitse piirtää kuin kerran, vaikka se selittäisi useampaa muuta syytä samaan aikaan \citep{Lehtinen2011}. Muun muassa kalanruotodiagrammissa useamman syyn selittävät alisyyt pitää duplikoida jokaiseen syyhyn erikseen \citep{Lehtinen2011}.
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=150mm]{Ishikawa esimerkki.png}
+\includegraphics[width=150mm]{ishikawa_esimerkki.png}
 \caption{Esimerkki Ishikawan kalanruotodiagrammista}
 \label{ishikawa_ex}
 \end{figure}
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=150mm]{suunnattu verkko esimerkki relaatioilla.JPG}
+\includegraphics[width=150mm]{suunnattu_verkko_esimerkki_relaatioilla.jpg}
 \caption{Esimerkki suunnatusta verkosta tai kausaalisesta kartasta (causal map)}
 \label{verkko_ex}
 \end{figure}
