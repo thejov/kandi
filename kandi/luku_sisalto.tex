@@ -23,13 +23,6 @@ Juurisyyanalyysi on rakenteellinen tapa tutkia ongelmia ja tunnistaa niiden aihe
 
 \section{Systemaattinen kirjallisuuskatsaus tutkimusmenetelmänä}
 
-
-kamaa johdannosta, katso sopiiko tänne:\\
-\textit{Hakutuloksista olennaisia ovat sellaiset, jotka kuvaavat jonkinlaista menetelmää käytettäväksi retrospektiiveihin. Nämä artikkelit kerätään taulukkolaskentaohjelman viitekokoelmaan, jossa ylläpidetään artikkeleista kaikkia lähdeviitteeseen tarvittavia tietoja, sekä merkinnän siitä, onko artikkelissa kuvattu retrospektiivin menetelmä juurisyyanalyysi. Ne artikkelit, jossa menetelmä sisältää juurisyyanalyysin, päätyvät kandidaatin työhön. Systemaattisen kirjallisuustutkimuksen tarkoituksena on tehdä aineistonhakuprosessista tarkastettava ja toistettava \citep{Kitchenham2007}.}
-
-
-
-
 \subsection{Taustaa}
 Systemaattisessa kirjallisuuskatsauksessa (SLR, Systematic Literature Review) tehdään kattava arviointi valitusta aiheesta. Arvioinnissa käytetään luotettavaa, tarkkaa ja toistettavisaa olevaa menetelmää. SLR on kirjallisuuskatsauksen muoto, mikä tarkoittaa sitä, että siinä käydään läpi aiempia tutkimuksia, jotka ovat olennaisia työssä esitettävien tutkimuskysymysten kannalta. Kerätyn kirjallisuuden pohjalta muodostetaan synteesi, eli kerätään, yhdistetään ja tehdään yhteenveto kerätystä aineistosta. \citep{Kitchenham2007}
 
@@ -60,7 +53,7 @@ Alkuperäinen suunnitelma oli etsiä mainintaa juurisyyanalyysin käytöstä ret
 Hakusana "software engineering" osoittautui niin yleiseksi ja lähinnä aihealuetta kuvaavaksi, etteivät artikkelit yleensä maininneet sitä otsikossaan, abstraktissa tai artikkelin avainsanoissa. Siksi haemme kyseistä hakusanaa kaikista mahdollisista hakukentistä, eikä pelkästään edellämainituista kolmesta. Lisäksi käytämme Scopuksen omaa aihealuerajausta ja haemme ainoastaan artikkeleja tietotekniikan aihealueelta.
 
 Lopulliseksi hakutermiksi muodostui seuraava:\\
-\textit{ALL("software engineering") AND TITLE-ABS-KEY("retrospective" OR "postmortem analysis" OR "pma" OR "post-mortem" OR "post mortem analysis" OR "post-project review" OR "post project review" OR "root cause analysis" OR"rca" OR "defect cause analysis" OR "dca") AND DOCTYPE(ar) AND SUBJAREA(comp) AND PUBYEAR > 1989}\\
+\textit{ALL("software engineering") AND TITLE-ABS-KEY("retrospective" OR "postmortem analysis" OR "pma" OR "post-mortem" OR "post mortem analysis" OR "post-project review" OR "post project review" OR "root cause analysis" OR "rca" OR "defect cause analysis" OR "dca") AND DOCTYPE(ar) AND SUBJAREA(comp) AND PUBYEAR > 1989}\\
 Näillä hakusanoilla löytyi yhteensä 108 tulosta.
 
 Kirjallisuuskatsauksessa käytettyjen hakusanojen evoluutio erilaisine kokeiluineen ja niiden toimivuuden arvioinnin kera on kuvattu kandidaatin työn liitteessä \ref{sec:hakutermi_evoluutio}.
@@ -162,8 +155,8 @@ Artikkeleissa kuvatut menetelmät on jaettavissa seuraaviin yhteisiin vaiheisiin
 	\textbf{\citep{karlsson2006case}} & Kerätään sopiva datajoukko, uudelleenarvioidaan se ja visualisoidaan saatu data & 1) Keskustellaan visualisoidussa datassa ilmenevien ongelmien syistä. Fasilitaattori kirjoittaa keskustelusta muistiinpanoja. 2) Muistiinpanojen pohjalta luodaan taulukko, jolla löydetään eri datapisteille yhteisiä kategorioita (juurisyitä). & Kehitysideoiden kerääminen ja priorisointi \\ \hline
 	\textbf{\citep{de2004learning}} & Kyselylomake 2) KJ-sessio / Semistrukturoitu haastattelu & Fishbone (ryhmäkeskustelu) & - \\ \hline
 	\textbf{\citep{staalhane2004root}} & Pareto-analyysi defekteistä & 1) Fishbone (ryhmäkeskustelu) 2) Pisteytyksen avulla tunnistetaan olennaisimmat syyt (juurisyyt) & 1) Valituille syille brainstormataan kehitysideoita, jotka kootaan taulukkoon. Näistä äänestetään olennaisimmat, eli ne, jotka voitaisiin ottaa työn alle. \\ \hline
-	\textbf{\citep{staalhane2003post} menetelmä 1} & 1) Projektipäälliköltä taustatietoa projektista 2) KJ-sessio ja sen tulosten priorisointi & Fishbone & - \\ \hline
-	\textbf{\citep{staalhane2003post} menetelmä 2} & 1) Dokumenteista projektin taustatietoja 2) Strukturoitu haastattelu & Syy-seuraus-suhteita tunnistetaan haastattelun aikana (fasilitaattorilla vastuu) & - \\ \hline
+	\textbf{\citep{staalhane2003post} menetelmä 1} & 1) Projektipäälliköltä taustatietoa projektista 2) KJ-sessio ja sen tulosten priorisointi & Fishbone & Osallistujat keksivät parannusideoita Fishbone-diagrammin perusteella. Tämän jälkeen kokous. Lopulta saadaan muodostetaan lista konkreettisista parannusideoista. \\ \hline
+	\textbf{\citep{staalhane2003post} menetelmä 2} & 1) Dokumenteista projektin taustatietoja 2) Strukturoitu haastattelu & Syy-seuraus-suhteita tunnistetaan haastattelun aikana (fasilitaattorilla vastuu) & Osallistujat keksivät parannusideoita lukemansa retrospektiivi-raportin perusteella. \\ \hline
 	\textbf{\citep{dingsoyr2003extending}} & KJ-sessio & Fishbone &  \\ \hline
 	\textbf{\citep{birk2002postmortem}} & 1) Fasilitaattori tutustuu projektiin 2) Asetetaan tavoite 3) Datankeruu ja luokittelu (KJ-sessio,  semistrukturoitu haastattelu tai fasilitoitu ryhmäkeskustelu) 4) Datan priorisointi & Fishbone (ryhmäkeskustelu) & - \\ \hline
 	\textbf{\citep{card1998learning}} & 1) Valitaan sopiva datajoukko, luokitellaan ja priorisoidaan se (Pareto-chart) & Selvitetään ongelmien juurisyitä keskustelemalla ja tutkitaan löytyykö useammalla ongelmalla samoja syitä. Jos ongelman juurisyy ei löydy triviaalisti, käytetään Fishbone:a (ryhmäkeskusteluineen) apuna. & Fasilitoidun ryhmäkeskustelun avulla löydetään konkreettisia kehitysideoita. Näistä keskitytään niihin, joilla todennäköisimmiin on merkittävä vaikutus ongelmiin. \\ \hline
@@ -301,11 +294,7 @@ Kausaalianalyysivaiheessa tehdään varsinainen juurisyyanalyysi, eli analysoida
 
 Vaikka Ishikawan kalanruotodiagrammi \citep{ishikawa1990introduction} on kirjallisuudessa paljon käytetty syy-seuraus-suhteiden visualisointitapa \citep{kalinowski2012evidence}, \citep{Bjornson2009}, \citep{de2004learning}, \citep{staalhane2004root}, \citep{dingsoyr2003extending}, \citep{staalhane2003post}, \citep{birk2002postmortem}, \citep{card1998learning}, on kausaalinen kartta persutellusti osoitettu uudemmassa tutkimuksessa tehokkaammaksi visualisointitavaksi \citep{Bjornson2009}, \citep{Lehtinen2011}. 
 
-Artikkeleissa kuvatuissa menetelmissä kahdeksan kymmenestä suosittelee kausaalianalyysiin Ishikawa diagrammia (tunnetaan myös kalanruoto, eli fishbone diagrammina) \citep{kalinowski2012evidence}, \citep{de2004learning}, \citep{staalhane2004root}, \citep{dingsoyr2003extending}, \citep{birk2002postmortem}, \citep{card1998learning}. Kahdella artikkelilla fishbone diagrammi oli kuvattu toisena menetelmänä jonkin muun rinnalla \citep{Bjornson2009}, \citep{staalhane2003post}. Kuvassa \ref{ishikawa_ex} on esimerkki Ishikawan kalanruotodiagrammista.
-
-Bj{\o}rnson on tutkimuksessaan vertaillut Ishikawan kalanruotodiagrammin käyttöä kausaaliseen karttaan \citep{Bjornson2009}. On havaittu, että kausaalianalyysivaiheessa, joka koostuu ryhmäkeskustelun lomassa muodostetusta kalanruotodiagrammista, ryhmän aktiivisuus väheni KJ-session muodossa järjestetyn syötteen keräämisvaiheeseen verrattuna \citep{Bjornson2009}, \citep{staalhane2003post}. Bj{\o}rnson kokeili KJ-session tyylistä jokaista ryhmän jäsentä osallistavaa toimintatapaa myös juurisyyanalyysivaiheessa  ja sai rohkaisevia tuloksia sen toimivuudesta \citep{Bjornson2009}. Tähän tarkoitukseen hän tarvitsi kuitenkin kalanruotodiagrammia vapaamuotoisempaa diagrammityyppiä ja päätyi kausaalisen kartan käyttöön. Kuvassa \ref{verkko_ex} on esimerkki kausaalisesta kartasta.
-
-Myös Lehtinen käyttää ARCA-menetelmässään kausaalista karttaa, jota hän kutsuu suunnatuksi verkoksi \citep{Lehtinen2011}. Hän perustelee valintaa sillä, että toisin, kuin kalanruotodiagrammissa, tai muissa syy-seuraus-esitystavoissa, suunnatussa verkossa samaa syytä ei tarvitse piirtää kuin kerran, vaikka se selittäisi useampaa muuta syytä samaan aikaan \citep{Lehtinen2011}. Muun muassa kalanruotodiagrammissa useamman syyn selittävät alisyyt pitää duplikoida jokaiseen syyhyn erikseen \citep{Lehtinen2011}.
+Artikkeleissa kuvatuissa menetelmissä kahdeksan kymmenestä suosittelee kausaalianalyysiin Ishikawa diagrammin (tunnetaan myös kalanruoto, eli fishbone diagrammina) käyttöä \citep{kalinowski2012evidence}, \citep{de2004learning}, \citep{staalhane2004root}, \citep{dingsoyr2003extending}, \citep{birk2002postmortem}, \citep{card1998learning}. Kahdella artikkelilla kalanruotofiagrammi diagrammi oli kuvattu toisena menetelmänä jonkin muun rinnalla \citep{Bjornson2009}, \citep{staalhane2003post}. Kuvassa \ref{ishikawa_ex} on esimerkki kalanruotodiagrammista.
 
 \begin{figure}[ht!]
 \centering
@@ -314,6 +303,10 @@ Myös Lehtinen käyttää ARCA-menetelmässään kausaalista karttaa, jota hän 
 \label{ishikawa_ex}
 \end{figure}
 
+Kalanruotodiagrammia käytetään syy-seuraus-suhteiden visualisointiin. Ne piirretään yleensä kollaboratiivisesti retrospektiivin osallistujien kanssa löytämään syitä postiviivisille ja negatiivisille tapahtumille \citep{birk2002postmortem}. Valkotaululle kirjoitetaan analysoitavan tapahtuman nimi ja piirretään siihen osoittava suuri nuoli \citep{Bjornson2009}. Tapahtuman syyt visualisoidaan pienemmillä nuolilla, jotka osoittavat kohti suurta nuolta \citep{Bjornson2009}. Mahdolliset alisyyt piirretään pienempinä nuolina, jotka osoittavat kohti aiheuttamaansa seurausta \citep{Bjornson2009}. Näin muodostuu kalanruotoa muistuttava kuva \citep{birk2002postmortem}.
+
+Bj{\o}rnson on tutkimuksessaan vertaillut Ishikawan kalanruotodiagrammin käyttöä kausaaliseen karttaan \citep{Bjornson2009}. On havaittu, että kausaalianalyysivaiheessa, joka koostuu ryhmäkeskustelun lomassa muodostetusta kalanruotodiagrammista, ryhmän aktiivisuus väheni KJ-session muodossa järjestetyn syötteen keräämisvaiheeseen verrattuna \citep{Bjornson2009}, \citep{staalhane2003post}. Bj{\o}rnson kokeili KJ-session tyylistä jokaista ryhmän jäsentä osallistavaa toimintatapaa myös juurisyyanalyysivaiheessa  ja sai rohkaisevia tuloksia sen toimivuudesta \citep{Bjornson2009}. Tähän tarkoitukseen hän tarvitsi kuitenkin kalanruotodiagrammia vapaamuotoisempaa diagrammityyppiä ja päätyi kausaalisen kartan käyttöön. Kuvassa \ref{verkko_ex} on esimerkki kausaalisesta kartasta.
+
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=150mm]{suunnattu_verkko_esimerkki_relaatioilla.jpg}
@@ -321,14 +314,27 @@ Myös Lehtinen käyttää ARCA-menetelmässään kausaalista karttaa, jota hän 
 \label{verkko_ex}
 \end{figure}
 
+Myös Lehtinen käyttää ARCA-menetelmässään kausaalista karttaa, jota hän kutsuu suunnatuksi verkoksi \citep{Lehtinen2011}. Hän perustelee valintaa sillä, että toisin, kuin kalanruotodiagrammissa, tai muissa syy-seuraus-esitystavoissa, suunnatussa verkossa samaa syytä ei tarvitse piirtää kuin kerran, vaikka se selittäisi useampaa muuta syytä samaan aikaan \citep{Lehtinen2011}. Muun muassa kalanruotodiagrammissa useamman syyn selittävät alisyyt pitää duplikoida jokaiseen syyhyn erikseen \citep{Lehtinen2011}. 
+
+Syyverkon Lehtinen muodostaa kahdessa eri vaiheessa: anonyymi syiden kerääminen ja kasuaalianalyysi workshop. Anonyymissä syiden keräämisessä osallistujia pyydetään lähettämään sähköpostitse ainakin viisi syytä, jotka johtavat aiemmin valittuun kohdeongelmaan. Fasilitaattori muodostaa näistä omatoimisesti suuntatun verkon, jota täydennetään kausaalianalyysi workshop:issa. Workshop:issa Lehtinen käyttää Bj{\o}rnson:in tapaan KJ-sessio tyylistä osallistavaa lähestymistapaa syyverkon täydentämiseen. \citep{Lehtinen2011}
+
+Syy-seuraus-suhteiden visualisoinnin jälkeen ainoastaan artikkelit \citep{card1998learning}, \citep{staalhane2004root}, \citep{karlsson2006case}, \citep{Lehtinen2011} valitsevat kerättyjen syiden joukosta olennaisimmat juurisyyt, joihin aikovat kehittää parannusideoita. Muissa artikkeleissa retrospektiivi loppuu syy-seuraus-esityksen muodostamiseen.
 
 \subsubsection{Parannusideoiden kehittäminen}
 
+Viisi artikkelien kuvaamaa retrospektiivimenetelmää kahdestatoista kuvaa retrospektiivin päätteeksi pidettävän parannusideoiden kehittämisen \citep{card1998learning}, \citep{staalhane2003post}, \citep{staalhane2004root}, \citep{karlsson2006case}, \citep{Lehtinen2011}. Näistä artikkelit \citep{card1998learning}, \citep{staalhane2004root}, \citep{karlsson2006case}, \citep{Lehtinen2011} kehittävät parannusideoita edellisessä vaiheessa valituille tärkeimmille juurisyille. Artikkelissa \citep{staalhane2003post} parannusideoita keksitään yleisesti kausaalianalyysin perusteella.
+
+Parannusideoiden kehittämisessä voidaan käyttää apuna fasilitoitua ryhmäkeskustelua \citep{card1998learning}, \citep{karlsson2006case}, brainstorming:ia \citep{staalhane2004root}, tai brainwriting:ia yhtdistettynä skeptiseen ja optimistiseen perspektiiviin \citep{Lehtinen2011}. Näistä kaikki menetelmät käyttävät lopuksi priorisointia tärkeimpien parannusideoiden valitsemiseksi. 
+
+Artikkeli \citep{staalhane2003post} luottaa parannusideoiden kehittämisessä väljempään lähestymistapaan. Siinä ensimmäisessä menetelmässä osallistujilta pyydetään keksimään parannusideoita kalanruotodiagrammia tarkastellessaan. Koko retrospektiiviä käsittelevän kokouksen jälkeen muodostuu lista konkreettisista parannusideoista. Toisessa menetelmässä osallistujat keksivät parannusideat retrospektiivistä kirjoitetun raportin perusteella. \citep{staalhane2003post}
+
+// pitäiskö brainstormaus selittää?
+
+Brainwriting toteutetaan siten, että jokainen osallistuja työstää vuorollaan yhdelle valittulle juurisyylle parannusideaa ja kirjoittaa sen paperille. Tietyn ajan jälkeen jokainen antaa paperinsa vierustoverilleen. Jokainen osallistuja kontribuoi vuorollaan jokaisen juurisyyn parannusidoiden kehittämiseen. Paperit kierrätetään vielä kerran siten, että jokainen osallistuja pisteyttää kaikki kehitetyt parannusideat. Lopuksi eniten pisteitä saaneet ideat valitaan. \citep{Lehtinen2011}.
 
 
-
-
-
+\subsubsection{Synteesi}
+ehtiikö tän tekemään?
 
 kamaa johdannosta, sopiiko tänne?\\
 \textit{Kandidaatintyössä tehdään synteesi kirjallisuuskatsauksessa kerätyssä aineistossa esitetyistä retrospektiivien juurisyyanalyysi-menetelmistä. On mahdollista, että osa aineistosta käsittelee raskaampaa, suuremman mittakaavan retrospektiiviä, joka pidettäisiin esimerkiksi projektin jälkeieen (post project review). Mikäli synteesin kuvaama menetelmä osoittautuu ketterän ohjelmistokehitystiimin retrospektiiviin liian raskaaksi, karsitaan siitä tähän tarkoitukseen ylimitoitetut kohdat pois. Lopputuloksen tulisi olla sellainen, että tiimi voi suorittaa sen ketterälle retrospektiiville varatussa, verrattain lyhyessä ajassa.}
