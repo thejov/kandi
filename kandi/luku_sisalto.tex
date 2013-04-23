@@ -2,38 +2,36 @@
 
 \section{Johdanto}
 
-Ohjelmistoprojekteissa tulee väistämättä vastaan ongelmia. Näiden järjestelmällinen analysointi ja ehkäiseminen jatkuvana osana kehitysprosessia parantaa ohjelmistoprojektin mahdollisuuksia onnistua. Ketterässä ohjelmistokehityksessä kehitystiimi järjestää säännöllisesti reflektion, jossa tiimi tarkastelee työtapojaan ja tiimityöskentelyään, sekä pohtii tapoja, joilla voi sopeuttaa niitä päästäkseen parempiin tuloksiin \citep{AgileRetros2006}. Tiimi pyrkii tutkimaan konkreettisia ongelmia ja löytämään niihin konkreettisia ratkaisuja \citep{AgileRetros2006}. Juurisyyanalyysi tarjoaa rakenteellisen tavan löytää ongelmien aiheuttajia ja voi siten auttaa ehkäisemään näiden ongelmien esiintymistä jatkossa \citep{Lehtinen2011}. Siksi se sopii hyvin käytettäväksi ongelmanratkaisumenetelmäksi retrospektiiveihin (tähän viite esim ESEM paperiin). Juurisyyanalyysiä voi kuitenkin tehdä lukuisalla eri tavalla \citep{Lehtinen2011}.
+Ohjelmistoprojekteissa tulee väistämättä vastaan ongelmia. Näiden järjestelmällinen analysointi ja ehkäiseminen jatkuvana osana kehitysprosessia parantaa ohjelmistoprojektin mahdollisuuksia onnistua. Ketterässä ohjelmistokehityksessä kehitystiimi järjestää säännöllisesti reflektion, jossa tiimi tarkastelee työtapojaan ja tiimityöskentelyään, sekä pohtii tapoja, joilla voi sopeuttaa niitä päästäkseen parempiin tuloksiin \citep{AgileRetros2006}. Kehitystiimi pyrkii tutkimaan konkreettisia ongelmia ja löytämään niihin konkreettisia ratkaisuja \citep{AgileRetros2006}. Juurisyyanalyysi (RCA, Root Cause Analysis) tarjoaa rakenteellisen tavan löytää ongelmien aiheuttajia ja voi siten auttaa ehkäisemään näiden ongelmien esiintymistä jatkossa \citep{Lehtinen2011}. Rakenteellinen tapa tunnistaa ongelmien aiheuttajia sopii hyvin retrospektiivin ongelmanratkaisuun (tähän viite esim ESEM paperiin). Juurisyyanalyysiä voi kuitenkin tehdä lukuisalla eri tavalla \citep{Lehtinen2011}. TODO: millä eri tavoin voi tehdä?
 
-Vaikka iteraation lopussa pidettävä retrospektiivi on olennainen osa ketterän ohjelmistokehitysprosessin runkoa, ei sen toteutustapavasta ole yhteistä käytäntöä. Retrospektiivin järjestäminen on määritelty ketterien menetelmien yleisissä periaatteissa \citep{AgileManifestoPrinciples}. Retrospektiivin tavoitteet saattavat olla määritelty tarkasti metodologian kuvauksessa, mutta sen toteutustapa on usein jätetty yleensä tiimin päätettäväksi. Esimerkiksi Scrum-metodologian kuvauksessa on kuvattu retrospektiivien tavoitteet, muttei niiden saavuttamiseen johtavia menetelmiä \citep{ScrumGuide2011}.
+Vaikka iteraation lopussa pidettävä retrospektiivi on olennainen osa ketterän ohjelmistokehitysprosessin runkoa, ei sen toteutustapavasta ole yhteistä käytäntöä. Retrospektiivin järjestäminen on määritelty ketterien menetelmien yleisissä periaatteissa \citep{AgileManifestoPrinciples}. Retrospektiivin tavoitteet saattavat olla määritelty tarkasti noudatettavan ketterän ohjelmistokehitysmetodologian kuvauksessa, mutta sen toteutustapa on usein jätetty yleensä tiimin päätettäväksi. Esimerkiksi Scrum-metodologian kuvauksessa on kuvattu retrospektiivien tavoitteet, muttei niiden saavuttamiseen johtavia menetelmiä \citep{ScrumGuide2011}.
 
-Tässä kandidaatintyössä tutkitaan systemaattisen kirjallisuuskatsauksen \citep{Kitchenham2010} muodossa, minkälaisia menetelmiä aiemmassa kirjallisuudessa on esitetty juurisyyanalyysiä soveltaviin retrospektiiveihin. Työssä pohditaan myös, minkälainen menetelmä voisi sopia ketterän ohjelmistokehitystiimin retrospektiiviin.  Menetelmän tulee olla erittäin kevyt ja yksinkertainen, jotta sen käyttöönotto lyhyehköissä iteraatio-retrospektiiveissä olisi mielekästä. Esimerkiksi extreme programming -metodologiaan on suositeltu lyhyitä ja tehokkaita retrospektiivejä, jotka eivät vaadi kovin suurta panosta tiimiltä, mutta tuottavat siitä huolimatta välittömiä ja näkyviä tuloksia \citep{myllyaho2004review}.
+Tässä kandidaatintyössä tutkitaan systemaattisen kirjallisuuskatsauksen \citep{Kitchenham2010} avulla, minkälaisia menetelmiä aiemmassa kirjallisuudessa on esitetty juurisyyanalyysiä soveltaviin retrospektiiveihin. Työssä pohditaan myös, minkälainen menetelmä voisi sopia ketterän ohjelmistokehitystiimin retrospektiiviin.  Menetelmän tulee olla kevyt ja yksinkertainen toteuttaa, jotta sen käyttöönotto lyhyehköissä iteraatio-retrospektiiveissä olisi mielekästä. Esimerkiksi extreme programming -metodologiaan on suositeltu lyhyitä ja tehokkaita retrospektiivejä, jotka eivät vaadi kovin suurta panosta tiimiltä, mutta tuottavat siitä huolimatta välittömiä ja näkyviä tuloksia \citep{myllyaho2004review}. Aineistohaut rajoitettiin Scopus-tietokannan tieteellisiin artikkeleihin.
 
-Kandidaatintyön työmäärän pitämiseksi järkevänä, on systemsaattisessa kirjallisuuskatsauksessa käsiteltävän kirjallisuuden joukkoa rajattu eri tavoin. Aineistohaut rajoitetaan Scopus-tietokannan tieteellisiin artikkeleihin. Käytettävät hakusanat on määritelty yhdessä kandidaatintyön ohjaajan kanssa. Muut rajaukset esitellään kandidaatintyön menetelmät-osiossa.
-
-Tämä kandidaatintyö on jaettu seuraaviin osiin. Kappaleessa 2 esitellään teoreettinen tausta, eli esitellään ja määrittellään kirjallisuuden avulla termit "ketterä retrospektiivi" ja "juurisyyanalyysi". Tämän jälkeen kuvataan työssä käytetty systemaatinen kirjallisuuskatsaus menetelmä. Kappaleessa 4 tuodaan julki tulokset ja kappaleessa 5 tulosten johtopäätösket. Kandidaatintyön viimeinen kappale on yhteenveto.
+Tämä kandidaatintyö on jaettu seuraaviin osiin. Kappaleessa 2 esitellään teoreettinen tausta, joka sisältää määritelmät ketterälle retrospektiiville ja juurisyyanalyysille. Kappaleessa 3 kuvataan työssä käytetyt tutkimusmenetelmät. Kappaleessa 4 tuodaan julki tulokset ja kappaleessa 5 tulosten johtopäätösket ja niihin liittyvät validiteettiuhat. Kandidaatintyön viimeinen kappale on yhteenveto.
 
 \section{Teoreettinen tausta}
 
 \subsection{Ketterä retrospektiivi}
-Ketterissä ohjelmistokehitysmenetelmissä on määritelty, että säännöllisin väliajoin pidetään reflektointi, jossa tiimi pohtii tapoja tulla tehokkaammaksi. Nämä kehitettyjen parannusten perusteella tiimi muuttaa toimintaansa \citep{AgileManifestoPrinciples}. Kevyt retrospektiivisessio on tapa toteuttaa tätä periaatetta. Projektin lopputuloksen kannalta retrospektiivejä on järkevää pitää lyhyin väliajoin. Tällöin tiimin kohtaamat ongelmat ja niihin liittyvät yksityiskohdat ovat tuoreessa muistissa ja parannusehdotukset voidaan ottaa suoraan käyttöön ja siten pyrkiä parantamaan projektin lopputuloksen laatua. \citep{Cockburn2002}
+Tässä työssä retrospektiivillä tarkoitetaan... TODO!
+Ketterissä ohjelmistokehitysmenetelmissä on määritelty, että säännöllisin väliajoin pidetään reflektointi, jossa kehitystiimi pohtii tapoja tulla tehokkaammaksi. Kehitettyjen parannusehdotusten perusteella tiimi muuttaa toimintaansa \citep{AgileManifestoPrinciples}. Kevyt retrospektiivisessio on tapa toteuttaa tätä reflektointia \citep{Cockburn2002}i. Projektin lopputuloksen kannalta retrospektiivejä on järkevää pitää lyhyin väliajoin \citep{Cockburn2002}. Tällöin tiimin kohtaamat ongelmat ja niihin liittyvät yksityiskohdat ovat tuoreessa muistissa ja parannusehdotukset voidaan ottaa suoraan käyttöön ja siten pyrkiä parantamaan projektin lopputuloksen laatua \citep{Cockburn2002}.
 
-XP- ja Scrum-metodologiassa retrospektiivejä suositellaan pidettäväksi joka iteraation päätteeks. Niissä tiimi reflektoi sitä, missä he ovat viime iteraation aikana onnistuneet hyvin ja missä on vielä kehitettävää. \citep{Lindstrom2004, ScrumGuide2011} Retrospektiivin avulla tiimi saa palautetta työstään. Retrossa voidaan muun muassa pohtia sitä, miten kurinalaisesti tiimi on noudattanut seuraamansa metodologian käytäntöjä ja voisiko niitä räätälöidä sopimaan paremmin tiimin tarpeisiin. \citep{Lindstrom2004}
+XP- ja Scrum-metodologiassa retrospektiivejä suositellaan pidettäväksi joka iteraation päätteeksi \citep{Lindstrom2004, ScrumGuide2011}. Iteraatiolla tarkoitetaan ketterissä ohjelmistokehitysmenetelmissä suosittuja lyhyitä kehityssyklejä, joihin ohjelmointityö on jaettu \citep{beck1999embracing}. Iteraation voi mieltää pieneksi, enintään kuukauden pituiseksi projektiksi \citep{ScrumGuide2011}  Iteraatioretrospektiiveissä kehitystiimi reflektoi sitä, missä he ovat viime iteraation aikana onnistuneet hyvin ja missä on vielä kehitettävää \citep{Lindstrom2004, ScrumGuide2011}. Retrospektiivin avulla tiimi saa palautetta työstään \citep{Lindstrom2004}. Retrospektiivissä voidaan muun muassa pohtia sitä, miten kurinalaisesti kehitystiimi on noudattanut työkäytäntöjä ja voisiko niitä räätälöidä sopimaan paremmin tiimin tarpeisiin \citep{Lindstrom2004}.
 
 \subsection{Juurisyyanalyysi}
-Juurisyyanalyysi on rakenteellinen tapa tutkia ongelmia ja tunnistaa niiden aiheuttajia. Ideana on se, että korjaamalla syyn aiheuttavia ongelmia voidaan ehkäistä saman ongelman syntymistä uudestaan -- tai ainakin vähentää ongelman uudelleenesiintymisen todennäköisyyttä. \citep{Lehtinen2011} Juurisyyanalyysin avulla voidaan tutkia ongelmien lisäksi myös onnistumisten syitä. \citep{Bjornson2009} Juurisyylle on useita määritelmiä. Se voi tarkoittaa mitä tahansa ongelman aiheuttavaa syytä, syyketjun perimmäisintä syytä tai syytä, johon johtoporras voi vaikuttaa. Juurisyyanalyysin tuloksia voidaan käyttää apuna prosessinkehityksessä. \citep{Lehtinen2011}
+Juurisyyanalyysi on rakenteellinen tapa tutkia ongelmia ja tunnistaa niiden aiheuttajia \citep{Lehtinen2011}. Juurisyyanalyysi pohjautuu teoriaan, jonka mukaan ongelman uudelleenesiintyminen voidaan välttää kontrolloimalla sen aiheuttajia \citep{Lehtinen2011}. Juurisyyanalyysin avulla voidaan tutkia ongelmien lisäksi myös onnistumisten syitä. \citep{Bjornson2009} Juurisyylle on useita määritelmiä \citep{Lehtinen2011}. Se voi tarkoittaa mitä tahansa ongelman aiheuttavaa syytä, syyketjun perimmäisintä syytä tai syytä, johon johto voi vaikuttaa \citep{Lehtinen2011}. Juurisyyanalyysin tuloksia voidaan käyttää apuna prosessinkehityksessä. \citep{Lehtinen2011}
 
 \section{Systemaattinen kirjallisuuskatsaus tutkimusmenetelmänä}
 
 
 kamaa johdannosta, katso sopiiko tänne:\\
-\textit{Käytettävät hakusanat, joita haetaan artikkelien otsikosta ja avainsanoista, ovat "retrospective", "postmortem analysis", "post-project review" ja "software engineering". Artikkelien tulee olla julkaistu aikaisintaan vuonna 1990. Mikäli näillä rajauksilla löytyy liikaa artikkeleita, tarkennetaan hakua. Liian rajaavien termien, kuten "root cause analysis" tai "agile", käyttöä pyritään kuitenkin välttämään. Näitä käyttämällä saattaisi ohittaa kiinnostavia artikkeleita, jotka käsittelevät olennaisia asioita, mutta eri termejä käyttäen. Eri hakusanayhdistelmillä löytyneiden tulosten määrä kirjataan ylös.
-Hakutuloksista olennaisia ovat sellaiset, jotka kuvaavat jonkinlaista menetelmää käytettäväksi retrospektiiveihin. Nämä artikkelit kerätään taulukkolaskentaohjelman viitekokoelmaan, jossa ylläpidetään artikkeleista kaikkia lähdeviitteeseen tarvittavia tietoja, sekä merkinnän siitä, onko artikkelissa kuvattu retrospektiivin menetelmä juurisyyanalyysi. Ne artikkelit, jossa menetelmä sisältää juurisyyanalyysin, päätyvät kandidaatin työhön. Systemaattisen kirjallisuustutkimuksen tarkoituksena on tehdä aineistonhakuprosessista tarkastettava ja toistettava \citep{Kitchenham2007}.}
+\textit{Hakutuloksista olennaisia ovat sellaiset, jotka kuvaavat jonkinlaista menetelmää käytettäväksi retrospektiiveihin. Nämä artikkelit kerätään taulukkolaskentaohjelman viitekokoelmaan, jossa ylläpidetään artikkeleista kaikkia lähdeviitteeseen tarvittavia tietoja, sekä merkinnän siitä, onko artikkelissa kuvattu retrospektiivin menetelmä juurisyyanalyysi. Ne artikkelit, jossa menetelmä sisältää juurisyyanalyysin, päätyvät kandidaatin työhön. Systemaattisen kirjallisuustutkimuksen tarkoituksena on tehdä aineistonhakuprosessista tarkastettava ja toistettava \citep{Kitchenham2007}.}
 
 
 
 
 \subsection{Taustaa}
-Systemaattisessa kirjallisuuskatsauksessa (SLR, Systematic Literature Review) tehdään kattava arviointi valitusta aiheesta. Arvioinnissa käytetään luotettavaa, tarkkaa ja toistettavisaa olevaa menetelmää. SLR on kirjallisuuskatsauksen muoto, mikä tarkoittaa sitä, että siinä käydään läpi aiempia tutkimuksia, jotka ovat olennaisia omien tutkimuskysymysten valossa. Kerätyn kirjallisuuden pohjalta muodostetaan synteesi.\citep{Kitchenham2007}
+Systemaattisessa kirjallisuuskatsauksessa (SLR, Systematic Literature Review) tehdään kattava arviointi valitusta aiheesta. Arvioinnissa käytetään luotettavaa, tarkkaa ja toistettavisaa olevaa menetelmää. SLR on kirjallisuuskatsauksen muoto, mikä tarkoittaa sitä, että siinä käydään läpi aiempia tutkimuksia, jotka ovat olennaisia työssä esitettävien tutkimuskysymysten kannalta. Kerätyn kirjallisuuden pohjalta muodostetaan synteesi, eli kerätään, yhdistetään ja tehdään yhteenveto kerätystä aineistosta. \citep{Kitchenham2007}
 
 SLR:n erityispiirteenä on se, että kirjallisuuden etsiminen, valikointi ja valitun kirjallisuuden analysointi pyritään tekemään toistettavasti ja puolueettomasti. Kitchenham perustelee SLR-menetelmän hyötyä toteamalla, että kirjallisuuskatsaus, joka ei ole SLR:n tapaan perusteellinen ja tasapuolinen ei tarjoa paljoa tieteellistä arvoa. Systemaattisen kirjallisuuskatsauksen tulokset ovat todennäköisemmin puolueettomia, eli tutkijan kannasta riippumattomia. \citep{Kitchenham2007}
 
@@ -44,14 +42,17 @@ Toteutusvaiheessa tehdään aineistohakuja ja valitaan ennaltamääritellyin kri
 Tähän kandidaatintyöhön valittiin Kitchenhamin määrittelemä systemaattinen kirjallisuuskatsaus, jotta kerätty aineistolista ja sen pohjalta saadut tulokset olisivat tieteellisesti merkittävämpiä, sekä mahdollisesti myös muulle tutkimukselle käyttökelpoisia.
 
 \subsection{Rajaukset}
+Haettavan aineiston olennaisin rajaus on määrittää, minkälainen sisältö on tämän työn kannalta merkittävää. Aineiston tulisi vastata työn tutkimuskysymykseen, eli siihen, minkälaisia menetelmiä aiemmassa kirjallisuudessa on esitetty juurisyyanalyysiä soveltaviin retrospektiiveihin.
+
 Ennen kirjallisuuskatsauksen aloittamista kandidaatintyön ohjaajan kanssa sovittiin seuraavat rajaukset. Aineistohaut suoritettaisiin pelkästään Scopus-tietokantaan. Haku rajataan pelkkiin tieteellisiin artikkeleihin. Haetut artikkelit eivät saa olla julkaistu ennen vuotta 1990. Myös käytettävät hakusanat sovittiin alustavati kattamaan sanat "retrospective",  "postmortem analysis", "post-project review" ja "software engineering". Näistä hakusanoista tulisi kokeilla erilaisia yhdistelmiä.
 
-Rajaukset tehtiin, jotta kandidaatintyön työmäärä pysyisi järkevänä. Seuraavaksi käydään läpi yksittäisten rajausten perustelut. Scopus-tietokanta valittiin kandidaatintyön ohjaajan suosituksesta. Haku rajattiin tieteelliset artikkelit valittiin, koska ne tieteellisten julkaisujen tiukasta artikkelien karsintaprosessista johtuen todennäköisimmin sisältäisivät tieteellisesti merkittävää tietoa. Vuosi 1990 valittiin, koska niihin aikoihin julkaistiin ensimmäiset artikkelit juurisyyanalyysistä (tähän viite). Hakusanat valitiin sisältämään eri nimityksiä retrospektiiveille, joita on retrospektiivin lisäksi muun muassa "post-mortem analysis" ja "post project review". Nämä ovat yleensä projektitasolla järjestettyjä retrospektiivejä. Ohjelmistotuotanto ("software engineering") valittiin hakusanaksi rajaamaan haku kattamaan ainoastaan ohjelmistotuotannon alan retrospektiivit.
+Rajaukset tehtiin, jotta kandidaatintyön työmäärä pysyisi järkevänä. Seuraavaksi käydään läpi yksittäisten rajausten perustelut. Scopus-tietokanta valittiin kandidaatintyön ohjaajan suosituksesta. Haku rajattiin tieteellisiin artikkeleihin, jotta työn tulokset pohjautuisivat objektiiviseen tutkimustietoon. Vuosi 1990 valittiin, koska samana vuonna on julkaistu teos \citep{ishikawa1990introduction}, jokna myötä RCA on alkanut vakiintua. Hakusanat valitiin sisältämään eri nimityksiä retrospektiiveille, joita on retrospektiivin lisäksi muun muassa "post-mortem analysis" ja "post project review". Nämä ovat yleensä projektitasolla järjestettyjä retrospektiivejä. Ohjelmistotuotanto ("software engineering") valittiin hakusanaksi rajaamaan haku kattamaan ainoastaan ohjelmistotuotannon alan retrospektiivit.
 
-Ajatuksena oli tehdä haku retrospektiivin näkökulmasta ja löytää sieltä viitteitä juurisyyanalyysin käytöstä. Kirjallisuuskatsauksessa olisi siis tarkoituksena hakea retrospektiiveihin liittyviä artikkeleita, löytämään niistä retrospektiiveihin käytetty menetelmä ja tarkistamaan, sisältääkö kuvattu menetelmä juurisyyanalyysin.
+Ajatuksena oli tehdä haku retrospektiivin näkökulmasta ja löytää sieltä viitteitä juurisyyanalyysin käytöstä. Näin ollen "juurisyyanalyysi" ei kuulunut hakusanoihin, vaan sitä etsittäisiin löydetystä aineistosta. Kirjallisuuskatsauksen tavoitteena oli käsitellä retrospektiiveihin liittyvät tieteelliset artikkelit, joissa esitellään juurisyyanalyysiä soveltavat retrospektiivimenetelmät 1990 luvulta lähtien.
 
 \subsection{Hakutermin muodostuminen}
-Kandidaatintyön kirjoittaja aloitti systemaattisen kirjallisuuskatsauksen kokeilemalla erilaisia yhdistelmiä määritellyistä hakusanoista ja hakemalla niitä eri tavoin artikkeleista. Tavoitteena oli löytää sellainen yhdistelmä, jolla löytyisi rittävä määrä artikkeleita, jotta kirjallisuuskatsauksen otos ei olisi liian suppea ja saattaisi tutkimuksen luotettavuuden sen takia kyseenalaiseksi. Kuitenkin artikkelien määrän tulee olla järkevästi käsiteltävissä kandidaatintyön määrittämän työmäärän puitteissa. Kandidaatintyön tekijä sopi yhdessä työn ohjaajan kanssa sopivan otoskoon olevan noin 100 artikkelia.
+TODO: tähän jäin timon korjauksissa
+Kandidaatintyön kirjoittaja aloitti systemaattisen kirjallisuuskatsauksen kokeilemalla erilaisia yhdistelmiä määritellyistä hakusanoista ja hakemalla niitä eri tavoin artikkeleista. Tavoitteena oli löytää sellainen yhdistelmä, jolla löytyisi riittävä määrä artikkeleita, jotta kirjallisuuskatsauksen otos ei olisi liian suppea ja saattaisi tutkimuksen luotettavuuden sen takia kyseenalaiseksi. Kuitenkin artikkelien määrän tulee olla järkevästi käsiteltävissä kandidaatintyön määrittämän työmäärän puitteissa. Kandidaatintyön tekijä sopi yhdessä työn ohjaajan kanssa sopivan otoskoon olevan noin 100 artikkelia.
 
 Alkuperäinen suunnitelma ol käyttää pelkästään hakusanoja "retrospective",  "postmortem analysis", "post-project review" ja "software engineering". Kuitenkin, koska näillä hakusanoilla olennaisten hakutulosten lukumäärä osoittautui liian pieneksi, otettiin hakusanoiksi mukaan juurisyyanalyysiä kuvaavat hakusanat: "root cause analysis", "rca", "defect cause analysis" ja "dca". 
 Alkuperäinen suunnitelma oli etsiä mainintaa juurisyyanalyysin käytöstä retrospektiivin menetelmänä retrospektiiviä kuvaavista artikkeleista. Valittujen uusien hakusanojen myötä haemme nyt lisäksi retrospektiiviä että juurisyyanalyysiä käsittelevistä artikkeleista. Siten lähestymme kandidaatintyön aihetta ikään kahdelta suunnalta: erikseen retrospektiivin ja juurisyyanalyysin näkökulmista.
@@ -92,9 +93,9 @@ Olennaisilta vaikuttavista artikkeleista tehtiin tarkemmat muistiinpanot jatkoan
         \textbf{\#} & \textbf{Karsintaehto} & \textbf{Tulosten määrä} \\ \hline
         0 & Ei rajausta                                                                                                                                               & 108            \\ \hline
         1 & Ei ollut enää Scopus:issa saatavilla arviointihetkellä (Tuloksia käytiin läpi useampana päivänä. Osa artikkeleista ei enää löytynyt myöhemmillä hauilla.) & 106            \\ \hline
-        2 & Ei sisältänyt retroa eikä RCA:ta                                                                                                                          & 43             \\ \hline
-        3 & Ei sisältänyt retroa ja RCA:n sisältyminen on epävarmaa                                                                                                   & 41             \\ \hline
-        4 & Sisältää RCA:n, mutta ei sisällä retroa.                                                                                                                  & 32             \\ \hline
+        2 & Ei sisältänyt retrospektiviä eikä RCA:ta                                                                                                                          & 43             \\ \hline
+        3 & Ei sisältänyt retrospektiviä ja RCA:n sisältyminen on epävarmaa                                                                                                   & 41             \\ \hline
+        4 & Sisältää RCA:n, mutta ei sisällä retrospektiviä.                                                                                                                  & 32             \\ \hline
         5 & Esitetty retrospektiivi ei ole yrityksen työntekijöiden (esim kehitystiimin) välinen sessio (vaan esim tutkijoiden jälkeenpäin suorittama)                & 23             \\ \hline
         6 & On epävarmaa, onko esitetty retrospektiivi yrityksen työntekijöiden (esim kehitystiimin) välinen sessio (eikä esim tutkijoiden jälkeenpäin suorittama)    & 20             \\
         \hline
@@ -103,6 +104,9 @@ Olennaisilta vaikuttavista artikkeleista tehtiin tarkemmat muistiinpanot jatkoan
     \caption{Systemaattisen kirjallisuuskatsauksen tulosten karsinta}
     \label{tab:karsintaehdot_taulukko}
 \end{table}
+
+\subsection Tulosten analysointi
+TODO
 
 \section{Systemaattinen kirjallisuuskatsauksen tulokset}
 Systemaattisessa kirjallisuuskatsauksessa kandidaatintyöhön karsiutui kymmenen artikkelia. Niiden julkaisuvuodet ovat välillä 1998-2012. Tarkemman artikkelien julkaisuvuosijakauman näet taulukosta \ref{tab:julkaisuvuodet}.
@@ -151,32 +155,32 @@ Artikkeleissa kuvatut menetelmät on jaettavissa seuraaviin yhteisiin vaiheisiin
 \endfoot
 \hline
 \endlastfoot
-	\textbf{\citep{kalinowski2012evidence}} & 1) Ennen tapaamista kerätään sopiva datajoukko 2) Luokitellaan data 3) Pareto-chart:it mainitaan hyvänä tapana datan pääluokkien tunnistamiseen & Syy-seuraus-diagrammin, tarkemmin Fishbonen, piirtäminen mainitaan hyväksi todetuksi tavaksi tunnistaa systemaattisten ongelmien syitä. & - \\ \hline
+	\textbf{\citep{kalinowski2012evidence}} & Valitaan sopiva datajoukko, luokitellaan ja priorisoidaan se (Pareto-chart) & Syy-seuraus-diagrammin, tarkemmin Fishbonen, piirtäminen mainitaan hyväksi todetuksi tavaksi tunnistaa systemaattisten ongelmien syitä. & - \\ \hline
 	\textbf{\citep{Lehtinen2011}} & Fokus-ryhmän tapaaminen & 1) Kerätään syitä anonyymisti sähköpostitse. 2) Muodostetaan kerätyistä syistä suunntattu verkko 3) Brainwriting, brainstorming kokouksessa. Muodostetaan suunnattu verkko. 4) Tunnistetaan juurisyyt säköpostikyselyn avulla & Workshop, jossa parannusideoita kerätään brainwritingia yhdistettynä skeptiseen ja optimistiseen perspektiiviin. \\ \hline
 	\textbf{\citep{Bjornson2009} menetelmä 1} & KJ-sessio & Fishbone (ryhmäkeskustelu) & - \\ \hline
 	\textbf{\citep{Bjornson2009} menetelmä 2} & KJ-sessio & Kausaalikartan muodostaminen KJ-sessiossa & - \\ \hline
-	\textbf{\citep{karlsson2006case}} & 1) Kerätään sopiva datajoukko (valitulle ohjelmistojulkaisulle toteutettuja vaatimuksia) 2) Uudelleenarvioidaan datajoukko 3) Visualisoidaan saatu data & 1) Keskustellaan visualisoidussa datassa ilmenevien ongelmien syistä. Fasilitaattori kirjoittaa keskustelusta muistiinpanoja. 2) Muistiinpanojen pohjalta luodaan taulukko, jolla löydetään eri datapisteille yhteisiä kategorioita (juurisyitä). & Kehitysideoiden kerääminen ja priorisointi \\ \hline
-	\textbf{\citep{de2004learning}} & 1) Osallistujat täyttävät etukäteen kyselyn, joka toimii joko muistin virkistyksenä tai retrospektiivin fokuksen löytämisessä 2) KJ-sessio / Strukturoitu haastattelu & Fishbone (ryhmäkeskustelu) & - \\ \hline
-	\textbf{\citep{staalhane2004root}} & Tehdään Pareto-analyysi defekteistä & 1) Fishbone (ryhmäkeskustelu) 2) Pisteytyksen avulla tunnistetaan olennaisimmat syyt (juurisyyt) & 1) Valituille syille brainstormataan kehitysideoita, jotka kootaan taulukkoon. Näistä äänestetään olennaisimmat, eli ne, jotka voitaisiin ottaa työn alle. \\ \hline
-	\textbf{\citep{staalhane2003post} menetelmä 1} & 1) Fasilitaattori kerää etukäteen projektipäälliköltä taustatietoa projektista 2) KJ-sessio 3) KJ-session tulosten priorisointi & Fishbone & - \\ \hline
-	\textbf{\citep{staalhane2003post} menetelmä 2} & 1) Fasilitaattori kerää etukäteen dokumenteista projektin taustatietoja 2) Strukturoitu haastattelu (valkotaulu ja fläppitaulu dokumentointina ja muistin tukena keskustelun ajan) & Syy-seuraus-suhteita tunnistetaan haastattelun aikana (fasilitaattorilla vastuu) & - \\ \hline
+	\textbf{\citep{karlsson2006case}} & Kerätään sopiva datajoukko, uudelleenarvioidaan se ja visualisoidaan saatu data & 1) Keskustellaan visualisoidussa datassa ilmenevien ongelmien syistä. Fasilitaattori kirjoittaa keskustelusta muistiinpanoja. 2) Muistiinpanojen pohjalta luodaan taulukko, jolla löydetään eri datapisteille yhteisiä kategorioita (juurisyitä). & Kehitysideoiden kerääminen ja priorisointi \\ \hline
+	\textbf{\citep{de2004learning}} & Kyselylomake 2) KJ-sessio / Semistrukturoitu haastattelu & Fishbone (ryhmäkeskustelu) & - \\ \hline
+	\textbf{\citep{staalhane2004root}} & Pareto-analyysi defekteistä & 1) Fishbone (ryhmäkeskustelu) 2) Pisteytyksen avulla tunnistetaan olennaisimmat syyt (juurisyyt) & 1) Valituille syille brainstormataan kehitysideoita, jotka kootaan taulukkoon. Näistä äänestetään olennaisimmat, eli ne, jotka voitaisiin ottaa työn alle. \\ \hline
+	\textbf{\citep{staalhane2003post} menetelmä 1} & 1) Projektipäälliköltä taustatietoa projektista 2) KJ-sessio ja sen tulosten priorisointi & Fishbone & - \\ \hline
+	\textbf{\citep{staalhane2003post} menetelmä 2} & 1) Dokumenteista projektin taustatietoja 2) Strukturoitu haastattelu & Syy-seuraus-suhteita tunnistetaan haastattelun aikana (fasilitaattorilla vastuu) & - \\ \hline
 	\textbf{\citep{dingsoyr2003extending}} & KJ-sessio & Fishbone &  \\ \hline
-	\textbf{\citep{birk2002postmortem}} & 1) Fasilitaattori tutustuu projektiin, käy mm. kaikki dokumentit läpi. 2) Asetetaan retrospektiiville tavoite 3) Kerätään positiivisia ja negatiivisia kokemuksia KJ-sessioilla,  semistrukturoiduilla haastatteluilla tai fasilitoiduilla ryhmäkeskusteluilla. & Fishbone (ryhmäkeskustelu) & - \\ \hline
-	\textbf{\citep{card1998learning}} & 1) Valitaan sopiva datajoukko (voidaan tehdä etukäteen) 2) Luokitellaan datajoukko (voidaan tehdä etukäteen) 3) Tunnistetaan olennaisimmat datapisteet Parerto-chart:in avulla & Selvitetään ongelmien juurisyitä keskustelemalla ja tutkitaan löytyykö useammalla ongelmalla samoja syitä. Jos ongelman juurisyy ei löydy triviaalisti, käytetään Fishbone:a (ryhmäkeskusteluineen) apuna. & Fasilitoidun ryhmäkeskustelun avulla löydetään konkreettisia kehitysideoita. Näistä keskitytään niihin, joilla todennäköisimmiin on merkittävä vaikutus ongelmiin. \\ \hline
+	\textbf{\citep{birk2002postmortem}} & 1) Fasilitaattori tutustuu projektiin 2) Asetetaan tavoite 3) Datankeruu ja luokittelu (KJ-sessio,  semistrukturoitu haastattelu tai fasilitoitu ryhmäkeskustelu) 4) Datan priorisointi & Fishbone (ryhmäkeskustelu) & - \\ \hline
+	\textbf{\citep{card1998learning}} & 1) Valitaan sopiva datajoukko, luokitellaan ja priorisoidaan se (Pareto-chart) & Selvitetään ongelmien juurisyitä keskustelemalla ja tutkitaan löytyykö useammalla ongelmalla samoja syitä. Jos ongelman juurisyy ei löydy triviaalisti, käytetään Fishbone:a (ryhmäkeskusteluineen) apuna. & Fasilitoidun ryhmäkeskustelun avulla löydetään konkreettisia kehitysideoita. Näistä keskitytään niihin, joilla todennäköisimmiin on merkittävä vaikutus ongelmiin. \\ \hline
 \end{longtable}
 \end{center}
-
-Timo: pitäiskö \citep{Lehtinen2011} artikkelista ottaa myös muut alussa lyhyesti kuvatut RCA-menetelmät tähän mukaan? rooney, ammerman, etc.? vai riittääkö ARCA-menetelmä? ehkä vois ajatella, että paperi esittelee lähinnä ARCA:n ja muut on vaan taustana mukana? eli siksi ei? :)
-
 
 \section{Pohdinta}
 
 \subsection{Retrospektiivin eri nimitykset}
 Vaikka retrospektiiveistä käyetään kirjallisuudessa lukuisia eri nimityksiä, käsittelemme niitä tässä kandidaatintyössä samalla tavalla. Pohjimmiltaan retrospektiivi \citep{AgileRetros2006}, post-mortem analyysi \citep{staalhane2003post}, postmortem analyysi \citep{de2004learning}, postmortem review \citep{dingsoyr2003extending}, process review \citep{karlsson2006case}, project review \citep{karlsson2006case}, retrospective analysis \citep{karlsson2006case}, project retrospective \citep{karlsson2006case} ja retrospective review \citep{karlsson2006case} voidaan nähdä tarkoittavan samaa asiaa.
 
-Retrospektiivi voi olla yleinen koko analysoitavan työrupeaman kattava sessio \citep{}. Sille voidaan kuitenkin myös antaa jokin tietty fokus \citep{}. Fokusoituja retrospektiivejä ovat muun muassa Post-release Analysis of Requirements SElection Quality \citep{karlsson2006case} ja Defect Causal Analysis \citep{card1998learning} ja artikkelissa \citep{de2004learning} kuvattu Postmortem analyysi.
+Retrospektiivi voi olla yleinen koko analysoitavan työrupeaman kattava sessio tai sille voidaan antaa jokin tietty fokus \citep{staalhane2003post}. Fokusoituja retrospektiivejä ovat muun muassa Post-release Analysis of Requirements SElection Quality \citep{karlsson2006case} ja Defect Causal Analysis \citep{card1998learning} ja artikkelissa \citep{de2004learning} kuvattu Postmortem analyysi.
 
-Artikkeleissa kuvatut retrospektiivit ovat eri tasoilta (lähinän projekti. myös heneerisiä, ei tarkemmin kuvattu, milloin).
+Kuusi artikkelin kuvaamaa menetelmää kahdestatoista pohjautuu artikkelissa \citep{birk2002postmortem} kuvattuun retrospektiivi-menetelmään. Menetelmä ... TODO
+
+
+Artikkeleissa kuvatut retrospektiivit ovat eri tasoilta (lähinä projekti. myös geneerisiä tai ei tarkemmin kuvattu, milloin). TODO
 
 \subsection{Retrospektiivien vaiheet}
 Se, että artkkelien retrospektiivien menetelmien vaihejako on luonnollista tehdä niin samankaltaiseksi, kuin mitä Lehtinen on käyttänyt artikkelissaan, jossa on vertaillut eri juurisyyanalyysimenetelmiä keskenään \citep{Lehtinen2011} tuntuu mielenkiintoiselta. Voidaan nähdä, että silloin, kun juurisyyanalyysiä käytetään osana retrospektiivin menetelmää, kyseinen menetelmä ei kokonaisuudessakaan eroa juurisyyanalyysin käytöstä muussa kontekstissa. Molemmat sisältävät samanlaiset vaiheet.
@@ -184,29 +188,120 @@ Se, että artkkelien retrospektiivien menetelmien vaihejako on luonnollista tehd
 Retrospektiivi käsitteenä tarkoittaa vain katsomista taakse, eli jonkin menneen tapahtuman arviointia. Ketterät menetelmätkään eivät anna sille suoraan menetelmää, vaan määrittelevät ainoastaan sen tavoitteet, joita ovat yleensä konkreettiset ehdotukset, jolla voidaan parantaa retrospektiiviin osallistuvan ryhmän työprosessia. Halutaan siis välttyä samoilta ongelmilta ja toistaa onnistumisia, joita on kohdattu. On siis vaikea tehdä eroa juurisyyanalyysiä käyttävän retrospektiivin ja muussa yhteydessä prosessinkehitystä varten pidettävän ongelmanratkaisu-juurisyyanalyysin välille.
 
 \subsubsection{Syötteen kehittäminen}
-Syötteen kehittämisvaiheessa kerätään aiheita, jotka ovat olleet retrospektiivissä käsiteltävän työrupeaman (iteraatio, projekti) kannalta merkityksellisiä. Näistä aiheista valitaan tärkeimmät, joita analysoidaan tarkemmin seuraavassa kausaalianalyysivaiheessa. Syötteen kehittämisvaihe jakautuu usein varsinaiseen aiheiden keräämiseen, niiden ryhmittelyyn, sekä priorisointiin.
+Syötteen kehittämisvaiheessa kerätään aiheita, jotka ovat olleet retrospektiivissä käsiteltävän työrupeaman (iteraatio, projekti) kannalta merkityksellisiä. Näistä aiheista valitaan tärkeimmät, joita analysoidaan tarkemmin seuraavassa kausaalianalyysivaiheessa. Artikkelien syötteen kehittämisvaihe voidaan jakaa varsinaiseen aiheiden keräämiseen, niiden ryhmittelyyn, sekä priorisointiin.
 
-Käisteltäviä aiheita voidaan kerätä haastatteluilla \citep{birk2002postmortem}, ....
+Kuusi artikkelien kuvaamaa menetelmää \citep{birk2002postmortem}, \citep{dingsoyr2003extending}, \citep{staalhane2003post}, \citep{de2004learning}, \citep{Bjornson2009} kahdestatoista suosittelee syötteen kehittämisvaiheeseen japanilaisen etnologin, Jiro Kawakita:n mukaan nimettyä fokusoitua brainstormausmenetelmää: KJ-menetelmää \citep{dingsoyr2003extending}. Jotkin artikkeleista suosittelevat KJ-menetelmää yhtenä vaihtoehtona muiden joukossa \citep{birk2002postmortem}, \citep{staalhane2003post}, \citep{de2004learning}. Artikkeleista \citep{birk2002postmortem} on ottanut ensimmäisenä suositellut menetelmää käytettäväksi retrospektiivin syötteen kehittämiseen.
 
-Birk et al:
-semistrukturoitu haastattelu
-ryhmäkeskustelu (fasilitoitu tai ei)
-KJ-sessiot
+KJ-menetelmässä jokainen osallistuja saa tietyn määrän post-it -lappuja. Jokainen kirjoittaa niille sovitun määrän hyviä ja huonoja kokemuksia analysoitavasta työrupeamasta. Jokainen esittää kirjoittamansa asiat rymhälle ja asettaa laput valkotaululle. Osallistujat ryhmittelevät laput niiden aiheen mukaan ja keskustelevat niistä. \citep{birk2002postmortem}
 
-Stålhane 2004:
-pareto analyysi defekteistä
+Kaksi artikkelia kuvaa semistrukturoituja haastatteluja \citep{birk2002postmortem}, \citep{de2004learning} ja yksi strukturoituja haastatteluja \citep{staalhane2003post}. Semistrukturoidussa haastattelussa fasilitaattori valmistelee listan kysymyksiä, jotka käsittelevät retrospektiivin aihetta \citep{birk2002postmortem}. Vaikkei tekniikkaa sen tarkemmin esitellä, vaikuttaisi siltä, että niiden avulla haastattelut osallistujien kanssa pyritään ohjaamaan oikeaan suuntaan. Strukturoidussa haastattelussa suoritetaan kausaalianalyysi samalla, joten siinä kysymyksillä pyritään ohjaamaan haastattelut pohtimaan retrospektiivissä analysoitavan ongelman aiheuttajia \citep{staalhane2003post}.
 
-stålhane et al 2003
-KJ, priorisointi
+Artikkelien \citep{kalinowski2012evidence}, \citep{card1998learning} kuvaamassa Defect Causal Anlaysis -menetelmässä (DCA) valitaan virheraporttitietokannasta mahdollisimman kuvaava osajoukko. Tämä osajoukko luokitellaan virhetyypin mukaan. Pääluokkien löytämiseen suositellaan Pareto-taulukon käyttämistä. TODO, lyhyesti mikä parto-chart on.
 
+Moni artikkeleista suosittelee kerätyn datan priorisointia \citep{card1998learning}, \citep{birk2002postmortem}, \citep{staalhane2003post}, \citep{staalhane2004root}, \citep{karlsson2006case}. Priorisoinnin avulla voidaan valita tärkeimmät aiheet, joita käsitellään kausaalianalyysivaiheessa.
+
+
+\begin{comment}
+Kalinowski
+1) Ennen tapaamista
+kerätään sopiva datajoukko
+2) Luokitellaan
+data 3) Pareto-chart:it
+mainitaan hyvänä tapana
+datan pääluokkien
+tunnistamiseen
+
+Lehtinen
+Fokus-ryhmän tapaaminen
+
+björnson 1\&2:
+KJ
+
+karlsson
+1) Kerätään sopiva
+datajoukko (valitulle
+ohjelmistojulkaisulle
+toteutettuja
+vaatimuksia) 2) Uudelleenarvioidaan
+datajoukko 3) Visualisoidaan
+saatu
+data
+
+de sousa
+1) Osallistujat täytt
+ävät etukäteen kyselyn,
+joka toimii joko
+muistin virkistyksen
+ä tai retrospektiivin
+fokuksen löytämisessä
+2) KJ-sessio / Strukturoitu
+haastattelu
+
+stålhane 2004
+Tehdään Paretoanalyysi
+defekteistä
+
+
+(Stalhane
+et al., 2003)
+menetelmä 1
+1) Fasilitaattori ker
+ää etukäteen projektip
+äälliköltä taustatietoa
+projektista 2) KJsessio
+3) KJ-session
+tulosten priorisointi
+Fishbone -
+
+(Stalhane
+et al., 2003)
+menetelmä 2
+1) Fasilitaattori kerää
+etukäteen dokumenteista
+projektin
+taustatietoja 2)
+Strukturoitu haastattelu
+(valkotaulu ja fläppitaulu dokumentointina
+ja muistin
+tukena keskustelun
+ajan)
+
+dinsöyr ja hanssen 2003
+KJ sessio
+
+birk et al
+1) Fasilitaattori tutustuu
+projektiin,
+käy mm. kaikki dokumentit
+läpi. 2)
+Asetetaan retrospektiiville
+tavoite 3)
+Kerätään positiivisia
+ja negatiivisia kokemuksia
+KJ-sessioilla,
+semistrukturoiduilla
+haastatteluilla tai
+fasilitoiduilla ryhmäkeskusteluilla.
+
+card 1998
+1) Valitaan sopiva
+datajoukko (voidaan
+tehdä etukäteen) 2)
+Luokitellaan datajoukko
+(voidaan tehdä
+etukäteen) 3) Tunnistetaan
+olennaisimmat
+datapisteet Parertochart:
+in avulla
+\end{comment}
 
 
 \subsubsection{Kausaalianalyysi}
 Kausaalianalyysivaiheessa tehdään varsinainen juurisyyanalyysi, eli analysoidaan, mistä valittu ongelma tai onnistuminen johtuu ja pyritään keksimään sille selittäviä syitä. 
 
-Vaikka Ishikawan kalanruotodiagrammi on kirjallisuudessa paljon käytetty syy-seuraus-suhteiden visualisointitapa \citep{kalinowski2012evidence}, \citep{Bjornson2009}, \citep{de2004learning}, \citep{staalhane2004root}, \citep{dingsoyr2003extending}, \citep{staalhane2003post}, \citep{birk2002postmortem}, \citep{card1998learning}, on kausaalinen kartta persutellusti osoitettu uudemmassa tutkimuksessa tehokkaammaksi visualisointitavaksi \citep{Bjornson2009}, \citep{Lehtinen2011}. 
+Vaikka Ishikawan kalanruotodiagrammi \citep{ishikawa1990introduction} on kirjallisuudessa paljon käytetty syy-seuraus-suhteiden visualisointitapa \citep{kalinowski2012evidence}, \citep{Bjornson2009}, \citep{de2004learning}, \citep{staalhane2004root}, \citep{dingsoyr2003extending}, \citep{staalhane2003post}, \citep{birk2002postmortem}, \citep{card1998learning}, on kausaalinen kartta persutellusti osoitettu uudemmassa tutkimuksessa tehokkaammaksi visualisointitavaksi \citep{Bjornson2009}, \citep{Lehtinen2011}. 
 
-Artikkeleissa kuvatuissa menetelmissä kahdeksan kymmenestä suosittelee kausaalianalyysiin Ishikawa diagrammia (tunnetaan myös fishbone diagrammina) \citep{kalinowski2012evidence}, \citep{de2004learning}, \citep{staalhane2004root}, \citep{dingsoyr2003extending}, \citep{birk2002postmortem}, \citep{card1998learning}. Kahdella artikkelilla fishbone diagrammi oli kuvattu toisena menetelmänä jonkin muun rinnalla \citep{Bjornson2009}, \citep{staalhane2003post}. Kuvassa \ref{ishikawa_ex} on esimerkki Ishikawan kalanruotodiagrammista.
+Artikkeleissa kuvatuissa menetelmissä kahdeksan kymmenestä suosittelee kausaalianalyysiin Ishikawa diagrammia (tunnetaan myös kalanruoto, eli fishbone diagrammina) \citep{kalinowski2012evidence}, \citep{de2004learning}, \citep{staalhane2004root}, \citep{dingsoyr2003extending}, \citep{birk2002postmortem}, \citep{card1998learning}. Kahdella artikkelilla fishbone diagrammi oli kuvattu toisena menetelmänä jonkin muun rinnalla \citep{Bjornson2009}, \citep{staalhane2003post}. Kuvassa \ref{ishikawa_ex} on esimerkki Ishikawan kalanruotodiagrammista.
 
 Bj{\o}rnson on tutkimuksessaan vertaillut Ishikawan kalanruotodiagrammin käyttöä kausaaliseen karttaan \citep{Bjornson2009}. On havaittu, että kausaalianalyysivaiheessa, joka koostuu ryhmäkeskustelun lomassa muodostetusta kalanruotodiagrammista, ryhmän aktiivisuus väheni KJ-session muodossa järjestetyn syötteen keräämisvaiheeseen verrattuna \citep{Bjornson2009}, \citep{staalhane2003post}. Bj{\o}rnson kokeili KJ-session tyylistä jokaista ryhmän jäsentä osallistavaa toimintatapaa myös juurisyyanalyysivaiheessa  ja sai rohkaisevia tuloksia sen toimivuudesta \citep{Bjornson2009}. Tähän tarkoitukseen hän tarvitsi kuitenkin kalanruotodiagrammia vapaamuotoisempaa diagrammityyppiä ja päätyi kausaalisen kartan käyttöön. Kuvassa \ref{verkko_ex} on esimerkki kausaalisesta kartasta.
 
@@ -232,9 +327,6 @@ Myös Lehtinen käyttää ARCA-menetelmässään kausaalista karttaa, jota hän 
 
 
 
-
-joka voidaan käsittää ongelmanratkaisuna, tai onnistumisten 
- vaikka Lehtinen ei puhukaan suoraan artikkelissaan retrospektiiveistä
 
 
 
