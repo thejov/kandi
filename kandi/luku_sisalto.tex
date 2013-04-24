@@ -196,9 +196,15 @@ KJ-menetelmässä jokainen osallistuja saa tietyn määrän post-it -lappuja. Jo
 
 Kaksi artikkelia kuvaa semistrukturoituja haastatteluja \citep{birk2002postmortem}, \citep{de2004learning} ja yksi strukturoituja haastatteluja \citep{staalhane2003post}. Semistrukturoidussa haastattelussa fasilitaattori valmistelee listan kysymyksiä, jotka käsittelevät retrospektiivin aihetta \citep{birk2002postmortem}. Vaikkei tekniikkaa sen tarkemmin esitellä, vaikuttaisi siltä, että niiden avulla haastattelut osallistujien kanssa pyritään ohjaamaan oikeaan suuntaan. Strukturoidussa haastattelussa suoritetaan kausaalianalyysi samalla, joten siinä kysymyksillä pyritään ohjaamaan haastattelut pohtimaan retrospektiivissä analysoitavan ongelman aiheuttajia \citep{staalhane2003post}.
 
-Artikkelien \citep{kalinowski2012evidence}, \citep{card1998learning} kuvaamassa Defect Causal Anlaysis -menetelmässä (DCA) valitaan virheraporttitietokannasta mahdollisimman kuvaava osajoukko. Tämä osajoukko luokitellaan virhetyypin mukaan. Pääluokkien löytämiseen suositellaan Pareto-taulukon käyttämistä. TODO, lyhyesti mikä parto-chart on.
+Artikkelien \citep{kalinowski2012evidence}, \citep{card1998learning} kuvaamassa Defect Causal Anlaysis -menetelmässä (DCA) valitaan virheraporttitietokannasta mahdollisimman kuvaava osajoukko. Tämä osajoukko luokitellaan virhetyypin mukaan. Pääluokkien löytämiseen suositellaan Pareto-taulukon käyttämistä \citep{kalinowski2012evidence}, \citep{card1998learning}. Pareto-taulukon avulla visualisoidaan ongelmien määrä ongelmatyypeittäin rymiteltynä \citep{card1998learning}.
 
-Moni artikkeleista suosittelee kerätyn datan priorisointia \citep{card1998learning}, \citep{birk2002postmortem}, \citep{staalhane2003post}, \citep{staalhane2004root}, \citep{karlsson2006case}. Priorisoinnin avulla voidaan valita tärkeimmät aiheet, joita käsitellään kausaalianalyysivaiheessa.
+Moni artikkeleista suosittelee kerätyn datan priorisointia \citep{card1998learning}, \citep{birk2002postmortem}, \citep{staalhane2003post}, \citep{staalhane2004root}, \citep{karlsson2006case}. Priorisoinnin avulla voidaan valita tärkeimmät aiheet, joita käsitellään kausaalianalyysivaiheessa. DCA-menetelmää kuvaavat artikkelit \citep{kalinowski2012evidence}, \citep{card1998learning} käyttävät priorisoinnissa apuna Pareto-taulukkoa.
+
+Artikkeli \citep{staalhane2004root} suosittelee Pareto-analyysin käyttämistä priorisointiin. Pareto-analyysi perustuu Pareto-periaatteeseen, jonka mukaan ilmiöissä usein noin 70 prosenttia seurauksista johtuu 30 prosentista syitä \citep{staalhane2004root}. 
+
+Myös ryhmäkeskustelussa ilmenneiden prioriteettien perusteella voidaan muodostaa priorisoitu lista ongelmia \citep{staalhane2003post}. Artikkeli \citep{birk2002postmortem} ei ota kantaa siihen, miten priorisointi tapahtuu.
+
+Artikkelissa \citep{Lehtinen2011} pidetyssä fokus-ryhmän tapaamisessa tehdään priorisointia, vaikkei sitä eksplisiittisesti mainitakaan. Kuvatussa fokus-ryhmän tapaamisessa valitaan yksi ongelma, jota otetaan käsiteltäväksi kausaalianalyysiin \citep{Lehtinen2011}.
 
 
 \begin{comment}
@@ -339,17 +345,20 @@ Parannusideoiden kehittämisessä voidaan käyttää apuna fasilitoitua ryhmäke
 
 Artikkeli \citep{staalhane2003post} luottaa parannusideoiden kehittämisessä väljempään lähestymistapaan. Siinä ensimmäisessä menetelmässä osallistujilta pyydetään keksimään parannusideoita kalanruotodiagrammia tarkastellessaan. Koko retrospektiiviä käsittelevän kokouksen jälkeen muodostuu lista konkreettisista parannusideoista. Toisessa menetelmässä osallistujat keksivät parannusideat retrospektiivistä kirjoitetun raportin perusteella. \citep{staalhane2003post}
 
-// pitäiskö brainstormaus selittää?
-
 Brainwriting toteutetaan siten, että jokainen osallistuja työstää vuorollaan yhdelle valittulle juurisyylle parannusideaa ja kirjoittaa sen paperille. Tietyn ajan jälkeen jokainen antaa paperinsa vierustoverilleen. Jokainen osallistuja kontribuoi vuorollaan jokaisen juurisyyn parannusidoiden kehittämiseen. Paperit kierrätetään vielä kerran siten, että jokainen osallistuja pisteyttää kaikki kehitetyt parannusideat. Lopuksi eniten pisteitä saaneet ideat valitaan. \citep{Lehtinen2011}.
 
 \subsubsection{Synteesi}
-Kuusi artikkelin kuvaamaa menetelmää kahdestatoista pohjautuu artikkelissa \citep{birk2002postmortem} kuvattuun retrospektiivi-menetelmään. Menetelmä ... TODO
+Vaikka kuusi artikkelin kuvaamaa menetelmää kahdestatoista pohjautuu artikkelissa \citep{birk2002postmortem} kuvattuun retrospektiivi-menetelmään on kandidaatintyön tekijän mielestä järkevää painottaa silti uudempaa tutkimusta, joka on osoitettu tätä menetelmää tuloksellisemmaksi. Uudemmalla tutkimuksella tarkoitetaan lähinnä artikkeleja \citep{Lehtinen2011} ja \citep{Bjornson2009}, sillä \citep{kalinowski2012evidence} voidaan mieltää mentelmän kuvauksen osalta ympäripyöreämmäksi verioksi aiemmasta DCA-menetelmää käsittelevästä artikkelista \citep{card1998learning}.
 
-ehtiikö tän tekemään?
+Bj{o}rnsonin artikkelia vanhemmat artikkelit käyttävät joko epäsystemaattisen tuntuisia menetelmiä, kuten \citep{karlsson2006case}, \citep{staalhane2003post} ja kausaalianalyysin osalta \citep{card1998learning}, tai perustuvat artikkelin \citep{birk2002postmortem} kuvaamaan retrospektiivimenetelmään.
 
-kamaa johdannosta, sopiiko tänne?\\
-\textit{Kandidaatintyössä tehdään synteesi kirjallisuuskatsauksessa kerätyssä aineistossa esitetyistä retrospektiivien juurisyyanalyysi-menetelmistä. On mahdollista, että osa aineistosta käsittelee raskaampaa, suuremman mittakaavan retrospektiiviä, joka pidettäisiin esimerkiksi projektin jälkeieen (post project review). Mikäli synteesin kuvaama menetelmä osoittautuu ketterän ohjelmistokehitystiimin retrospektiiviin liian raskaaksi, karsitaan siitä tähän tarkoitukseen ylimitoitetut kohdat pois. Lopputuloksen tulisi olla sellainen, että tiimi voi suorittaa sen ketterälle retrospektiiville varatussa, verrattain lyhyessä ajassa.}
+Kuitenkin on otettava huomioon, ettei yksikään artikkeleissa kuvatuista menetelmistä kuvaa suoraan ketterää retrospektiiviä, vaan suuremman mittakaavan ja enemmän aikaa vieviä retrospektiivejä, kuten projektin jälkeen pidettäviä retrospektiivejä. (tähän kappaleeseen viitteet) Artikkelien kuvaamista menetelmistä valitaan siis parhaat palat, minkä jälkeen niitä skaalataan kevyemmiksi ja siten paremmin sopiviksi käytännöiksi ketterään retrospektiiviin.
+
+Syötteen kehittämisvaiheeseen valitaan KJ-menetelmä, koska se on monissa artikkeleissa käytetty syötteen kehittämismenetelmä ja parantaa Bj{o}rnsonin mukaan retrospektiivin osallistujien aktiivisuutta \citep{Bjornson2009}. KJ-session jälkeen valitsemme ehdotetuista positiivisista ja negatiivisista kokemuksista olennaisimmat priorisoimalla ehdotukset
+
+Pareto-analyysi \citep{staalhane2004root}, Pareto-taulukko \citep{card1998learning}, \citep{kalinowksi2012evidence} tai brainwriting \citep{Lehtinen2011} olisivat kaikki hyviä varmoja tapoja tehdä priorisointi oikein perustein. Ne ovat kaikki kuitenkin myös aikaa vieviä menetelmiä. Myös ryhmäkeskustelu \citep{staalhane2003post} voi viedä paljon aikaa. Perinteinen käsiäänestys voisi olla tehokas tapa hoitaa priorisointi. Siinä käytäisiin ehdotetut kokemus-luokat läpi ja jokainen saisi äänestää niistä yhtä suosikikseen. Eniten ääniä saanut luokka valittaisiin kausaalianalyysiin.
+
+Kausaalianalyysiin valitaan menetelmäksi KJ-menetelmä ja syy-seuraus-suhteiden visualisointiin suunnattu verkko, joita suositellaan artikkeleissa \citep{Lehtinen2011}, \citep{Bjornson2009}. Kausaalianalyysin päätteeksi tärkeimmät juurisyyt valitaan käsiäänestyksellä.
 
 
 
