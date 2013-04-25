@@ -104,7 +104,9 @@ Artikkeleja lukiessa kandidaatintyön tekijä kirjoitti olennaisilta vaikuttavis
 \end{table}
 
 \subsection{Tulosten analysointi}
-TODO
+Artikkeleissa kuvatut menetelmät on jaettu seuraaviin yhteisiin vaiheisiin: syötteen kehittäminen, kausaalianalyysi ja parannusideoiden kehittäminen. Jako on samankaltainen, kuin mitä Lehtinen on käyttänyt artikkelissaan \citep{Lehtinen2011}. Syötteen kehittämisvaiheessa kerätään ne aiheet, joita juurisyyanalyysissä halutaan analysoida syvemmin. Käytännössä tämä tarkoittaa analysoitavan työrupeaman tärkeimpien ongelmien ja onnistumisten tunnistamista. Kausaalianalyysivaiheessa suoritetaan varsinainen juurisyyanalyysi. Parannusideoiden kehittämisvaiheessa kehitetään kehitysideoita valituille juurisyille. Retrospektiivimenetelmät esitellään ja analysoidaan tämän jaon pohjalta. Jaon myötä niitä on myös mahdollista vertailla keskenään.
+
+Syynteesin kuvaaman retrospektiivimenetelmän pitäisi olla toteutettavissa 1-2 tunnin pituisessa ketterän kehitystiimin omin resurssein järjestämässä iteraatioretrospektiivissä. Synteesissä kuvattu retrospektiivimenetelmä on priorisointimenetelmää lukuunottamatta koottu artikkelien kuvaamista menetelmistä. Systeemaattisia menetelmiä on suosittu vähemmän systemaattisten yli. Tämä johtuu siitä, että oletettavasti systemaattisten menetelmien hyvät tulokset ovat helpommin toistettavissa, kuin väljemmin kuvattujen ja vähemmän systemaattisten. Lisäksi systemaattiset menetelmät lienevät myös helpommin ketterän kehitystiimin omin resurssein käytettäviä. Valittujen menetelmien keveys on vaikuttanut olennaisesti niiden valintaan. Kandidaatintyön tekijä on käyttänyt menetelmien valintaan myös omaa harkintaansa.
 
 \section{Systemaattinen kirjallisuuskatsauksen tulokset}
 Systemaattisessa kirjallisuuskatsauksessa kandidaatintyöhön karsiutui kymmenen artikkelia. Niiden julkaisuvuodet ovat välillä 1998-2012. Tarkemman artikkelien julkaisuvuosijakauman näet taulukosta \ref{tab:julkaisuvuodet}.
@@ -135,7 +137,7 @@ Artikkelit on julkaistu neljässä eri lehdessä, jotka ovat IEEE Software, Info
 
 Valituissa artikkeleissa on kuvattu jokin retrospektiivissä käytettävä menetelmä, joka sisältää juurisyyanalyysin käytön. Jotkin artikkeleista sisälsivät useamman menetelmän kuvauksen. Joissain tapauksissa toinen kuvattu menetelmä ei sisältänyt juurisyyanalyysiä \citep{staalhane2004root}, \citep{dingsoyr2003extending}. Nämä menetelmät on jätetty huomioimatta tässä kandidaatintyössä.
 
-Artikkeleissa kuvatut menetelmät on jaettavissa seuraaviin yhteisiin vaiheisiin: syötteen kehittäminen, kausaalianalyysi ja parannusideoiden kehittäminen. Jako on samankaltainen, kuin mitä Lehtinen on käyttänyt artikkelissaan \citep{Lehtinen2011}. Syötteen kehittämisvaiheessa kerätään ne aiheet, joita juurisyyanalyysissä halutaan analysoida syvemmin. Kausaalianalyysivaiheessa suoritetaan varsinainen juurisyyanalyysi. Parannusideoiden kehittämisvaiheessa kehitetään kehitysideoita valituille juurisyille. Ainoastaan neljässä menetelmässä kuvatuista 12:sta menetelmästä sisältää tämän viimeisen vaiheen. Menetelmien vaiheet on kuvattu taulukossa \ref{retrovaiheet_taulukko} ja tarkemmin pohdinta-kappaleessa.
+Menetelmät on jaettu seuraaviin vaiheisiin: syötteen keräämiseen, kausaalianalyysiin ja parannusideoiden kehittämiseen. Vaiheiden sisältö eri menetelmien kohdalla on kuvattu taulukossa \ref{retrovaiheet_taulukko}. Menetelmien vaiheita on avattu tarkemmin pohdinta-kappaleessa.
 
 \begin{center}
 \begin{longtable}{|p{3cm}|p{4cm}|p{4cm}|p{4cm}|}
@@ -205,102 +207,6 @@ Myös ryhmäkeskustelussa ilmenneiden prioriteettien perusteella voidaan muodost
 
 Artikkelissa \citep{Lehtinen2011} pidetyssä fokus-ryhmän tapaamisessa tehdään priorisointia, vaikkei sitä eksplisiittisesti mainitakaan. Kuvatussa fokus-ryhmän tapaamisessa valitaan yksi ongelma, jota otetaan käsiteltäväksi kausaalianalyysiin \citep{Lehtinen2011}.
 
-
-\begin{comment}
-Kalinowski
-1) Ennen tapaamista
-kerätään sopiva datajoukko
-2) Luokitellaan
-data 3) Pareto-chart:it
-mainitaan hyvänä tapana
-datan pääluokkien
-tunnistamiseen
-
-Lehtinen
-Fokus-ryhmän tapaaminen
-
-björnson 1\&2:
-KJ
-
-karlsson
-1) Kerätään sopiva
-datajoukko (valitulle
-ohjelmistojulkaisulle
-toteutettuja
-vaatimuksia) 2) Uudelleenarvioidaan
-datajoukko 3) Visualisoidaan
-saatu
-data
-
-de sousa
-1) Osallistujat täytt
-ävät etukäteen kyselyn,
-joka toimii joko
-muistin virkistyksen
-ä tai retrospektiivin
-fokuksen löytämisessä
-2) KJ-sessio / Strukturoitu
-haastattelu
-
-stålhane 2004
-Tehdään Paretoanalyysi
-defekteistä
-
-
-(Stalhane
-et al., 2003)
-menetelmä 1
-1) Fasilitaattori ker
-ää etukäteen projektip
-äälliköltä taustatietoa
-projektista 2) KJsessio
-3) KJ-session
-tulosten priorisointi
-Fishbone -
-
-(Stalhane
-et al., 2003)
-menetelmä 2
-1) Fasilitaattori kerää
-etukäteen dokumenteista
-projektin
-taustatietoja 2)
-Strukturoitu haastattelu
-(valkotaulu ja fläppitaulu dokumentointina
-ja muistin
-tukena keskustelun
-ajan)
-
-dinsöyr ja hanssen 2003
-KJ sessio
-
-birk et al
-1) Fasilitaattori tutustuu
-projektiin,
-käy mm. kaikki dokumentit
-läpi. 2)
-Asetetaan retrospektiiville
-tavoite 3)
-Kerätään positiivisia
-ja negatiivisia kokemuksia
-KJ-sessioilla,
-semistrukturoiduilla
-haastatteluilla tai
-fasilitoiduilla ryhmäkeskusteluilla.
-
-card 1998
-1) Valitaan sopiva
-datajoukko (voidaan
-tehdä etukäteen) 2)
-Luokitellaan datajoukko
-(voidaan tehdä
-etukäteen) 3) Tunnistetaan
-olennaisimmat
-datapisteet Parertochart:
-in avulla
-\end{comment}
-
-
 \subsubsection{Kausaalianalyysi}
 Kausaalianalyysivaiheessa tehdään varsinainen juurisyyanalyysi, eli analysoidaan, mistä valittu ongelma tai onnistuminen johtuu ja pyritään keksimään sille selittäviä syitä. 
 
@@ -363,14 +269,29 @@ Kausaalianalyysiin valitaan menetelmäksi KJ-menetelmä ja syy-seuraus-suhteiden
 
 Parannusideoiden kehitysmenetelmien joukosta valitaan systemaattiselta ja samalla varsin kevyeltä vaikuttava artikkelin \citep{staalhane2004root} suosittelemalla menetelmä. Siinä parannusideat kehitetään osallistujien kesken brainstorming-tekniikalla, jonka tuloksena kehitetään kehitysidea-taulukko. Näistä valitaan äänestämällä ne ehdotukset, jotka valitan toteutettavaksi \citep{staalhane2004root}. Äänestys voitaisiin suorittaa käsiäänestyksellä. Kehitystiimi voi valita parannusideoita toteutettavaksi sen verran, kun uskoo ehtivänsä toteuttaa seuraavan iteraation aikana. Kandidaatintyön tekijä arvioi oman kokemuksensa perusteella tämän olevan todennäköisesti noin 1-3 parannusideaa
 
-Kuvattu synteesi-menetelmä on käsiäänestystä lukuunottamatta koottu artikkelien kuvaamista menetelmistä. Systeemaattisia menetelmiä on suosittu vähemmän systemaattisten yli. Tämä johtuu siitä, että oletettavasti systemaattisten menetelmien hyvät tulokset ovat helpommin toistettavissa, kuin väljemmin kuvattujen ja vähemmän systemaattisten. Nämä lienevät samalla myös helpommin ketterän kehitystiimin omin resurssein käytettäviä. Valittujen menetelmien keveys on vaikuttanut olennaisesti niiden valintaan. Lisäksi kandidaatintyön tekijä on käyttänyt menetelmien valintaan omaa harkintaansa. Syynteesin kuvaaman retrospektiivimenetelmän pitäisi olla toteutettavissa 1-2 tunnin pituisessa ketterän kehitystiimin omin resurssein.
-
 \subsection{Kandidaatintyön validiteetti ja sen uhkat}
-Systemaattisen kirjallisuuskatsauksen validiteettiin vaikuttaa luonnollisesti se, että sen on suurimmalta osin suorittanut yksi henkilö (kandidaatintyön kirjoittaja) oman arviokykynsä mukaan. Kandidaatityön ohjaaja on auttanut kandidaatintyön tekijää esimerkiksi hakusanojen valinnassa, mutta suorittava työ, kuten artikkeline arviointi ja rajaus on ollut kandidaatintyön tekijän vastuulla. On mahdollista, että joitain olennaisia artikkeleja karsiutui väärin perustein pois, koska abstraktia oli tulkittiin väärin. On myös todennäköistä, ettei valittuhakutermimme saavuttanut kaikkia olennaisia artikkeleja, mikäli ne eivät sisältäneet käytettyjä hakusanoja.
 
-Silti on perusteltua pitää suoritettua systemaattista kirjallisuuskatsausta huomattavasti luotettavampana ja tieteellisempänä tutkimusmenetelmänä, kuin tyypillinen sattumanvaraisten, erilaisten hakusanojen kokeilu eri hakukoneissa ja niiden hakutuloksista mielivaltaisin perustein valittujen artikkelien lukeminen. Tarkat ja hyvin dokumentoidut artikkelien valintakriteerit ja muut systemaattisen kirjallisuuskatsauksen eri vaiheet tekevät tutkimuksesta helposti toistettavan ja tarkistettavan. Tämä parantaa tehdyn tutkimuksen validiteettia huomattavsti.
+Tässä kappaleessa pohditaan kandidaatintyön validiteettia ja sen uhkia käyttäen artikkelin \citep{runeson2009guidelines} määrittämää validointiskeemaa.
 
-Lisäksi aineistohaun rajaaminen ennalta karsittuun joukkoon (Scopus-hakukone) ja sieltä pelkkien tieteellisten artikkelien, jotka käyvät julkaisuvaiheessa tiukan karsintaprosessin, valinta parantaa käsitellyn aineiston luotettavuutta.
+\subsubsection{Konstruktion validiteetti}
+Konstruktion validiteetti kuvaa sitä, mitä uhkia tutkimusmenetelmät aiheuttavat tutkimuskysymyksien kannalta? Kandidaatintyön konstruktion validiteetti voidaan mieltää hyväksi. Systemaattinen kirjallisuuskatsaus on menetelmänä luotettava, tarkka ja toistettava. Tämä taataan sillä, että kaikki sen vaiheet on tarkkaan määriteltyjä ja dokumentoituja.
+
+\subsubsection{Ulkoinen validiteetti}
+Ulkoinen validiteetti kuvaa sitä, ovatko tutkimuksen tulokset yleistettävissä. Jos ne ovat, niin missä määrin?
+Kandidaatintyön on tarkoitus kuvata sitä, minkälaisia menetelmiä kirjallisuus kuvaa juurisyyanalyysiä soveltaviin retrospektiiveihin. On mahdollista, ettei Scopus-tietokanta, johon aineistohaku tehtiin sisällä kaikkia olennaisia artikkeleja. Scopus-tietokannan laajuudesta johtuen tämä on kuitenkin epätodennäköistä. "Scopus on monitieteellinen viittaus- ja tiivistelmätietokanta, joka kattaa 15.000 tieteellistä lehteä yli 4.000 kustantajalta" \citep{nelliScopusKuvaus}.
+
+Aineistohauku rajattiin ennalta karsittuun joukkoon (Scopus-hakukone). Sieltä valittiin pelkät tieteelliset artikkelit, jotka kirjallisuudesta todennäköisimmin sisältävät objektiivista tutkimustietoa. Näistä valinnoista johtuen voidaan mieltää, että käytetty on ollut sisällöltään luotettavaa ja tasokasta.
+
+Voi olla, ettei valittuhakutermimme saavuttanut kaikkia olennaisia artikkeleja, mikäli ne eivät sisältäneet termissä käytettyjä hakusanoja. On kuitenkin odotettavissa, että hakusanat sisältävät kattavat suuren osan tavotelluista artikkeleista. Lisäksi hakutermin luotettavuutta lisää se, että hakutermi on muodostettu harkiten ja iteroiden. Lopullinen hakutermi muodostettiin yhdessä kandidaatintyön ohjaajan kanssa. 
+
+Mainittujen perustelujen valossa voitaneen olettaa, että kandidaatintyön tulokset kattavat merkittävän osan niistä artikkeleista, jotka kuvaavat juurisyyanalyysiä soveltavia retrospektiivejä. Tulokset lienevät pienellä varauksella yleistettävissä juurisyyanalyysiä soveltavien retrospektiivien kuvaukseksi aiemmassa kirjallisuudessa.
+
+\subsubsection{Luotettavuus}
+Luotettavuus kuvaa sitä, kuinka paljon tulokset riippuivat tutkimuksen tekijästä. Voiko joku muu, joka toistaa samat tutkimuksen vaiheet odottaa saavansa samat tulokset?
+
+Kandidaatintyön tulosten luotettavuutta uhkaa eniten se, että työn on suurimmalta osin suorittanut yksi henkilö (kandidaatintyön kirjoittaja) oman arviokykynsä mukaan. Kandidaatityön ohjaaja on auttanut kandidaatintyön tekijää esimerkiksi hakusanojen valinnassa ja lopullisen hakutermin muodostamisessa, mutta suorittava työ, kuten artikkelien arviointi ja rajaus on ollut kandidaatintyön tekijän vastuulla. On mahdollista, että joitain olennaisia artikkeleja karsiutui väärin perustein pois, mikäli kandiaatintyön tekijä oli tulkittiin työn tiivistelmää väärin.
+
+Silti, vaikka artikkeleista olisi rajattu väärin perustein muutama artikkeli, on perusteltua olettaa, että suoritettu systemaattinen kirjallisuuskatsaus kattoi huomattavasti laajemman joukon tieteellisesti merkittäviä artikkeleja, kuin ei-systemaattinen lähestymistapa, jossa kokeillaan sattumanvaraisesti erilaisia hakusanoja eri hakukoneissa ja valitaan niiden hakutuloksista omien mieltymysten perusteella artikkeleja, konferenssipapereita, ja muuta kirjallisuutta.
 
 \section{Yhteenveto}
 Tämän kandiaatintyön tavoitteena on vastata seuraaviin tutkimuskysymyksiin:
